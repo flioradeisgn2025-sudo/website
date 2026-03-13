@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HeartPulse, Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-content">
         <Link to="/" className="logo">
-          <img src="/src/assets/logo.png" alt="Smile Bright Logo" style={{ height: '55px' }} />
+          <img src={logo} alt="Smile Bright Logo" className="logo-img" />
         </Link>
 
         {/* Desktop Nav */}
