@@ -1,5 +1,6 @@
 import React from 'react';
 import { HeartPulse, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
                 <div className="footer-grid">
                     <div className="footer-col brand-col">
                         <a href="#" className="logo">
-                            <img src="/src/assets/logo.png" alt="Smile Bright Logo" style={{ height: '60px', filter: 'brightness(0) invert(1)' }} />
+                            <img src={logo} alt="Smile Bright Logo" style={{ height: '60px', filter: 'brightness(0) invert(1)' }} />
                         </a>
                         <p className="footer-desc">
                             Providing advanced medical care with compassion. Our mission is to
