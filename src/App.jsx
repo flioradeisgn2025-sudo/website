@@ -43,7 +43,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router basename="/dental-hospital-website/">
+    <Router basename="/website/">
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* About Us */}
