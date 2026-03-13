@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { HeartPulse, Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.png';
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +19,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-content">
         <Link to="/" className="logo">
-          <img src={logo} alt="Smile Bright Logo" className="logo-img" />
+          <img src={`${baseUrl}logo.png`} alt="Smile Bright Logo" className="logo-img" />
         </Link>
 
         {/* Desktop Nav */}

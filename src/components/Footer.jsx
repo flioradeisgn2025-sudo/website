@@ -1,8 +1,7 @@
 import React from 'react';
 import { HeartPulse, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import logo from '../assets/logo.png';
-
 const Footer = () => {
+    const baseUrl = import.meta.env.BASE_URL;
     return (
         <footer className="footer section">
             <div className="container">
@@ -10,7 +9,7 @@ const Footer = () => {
                 <div className="footer-grid">
                     <div className="footer-col brand-col">
                         <a href="#" className="logo">
-                            <img src={logo} alt="Smile Bright Logo" style={{ height: '60px', filter: 'brightness(0) invert(1)' }} />
+                            <img src={`${baseUrl}logo.png`} alt="Smile Bright Logo" style={{ height: '60px', filter: 'brightness(0) invert(1)' }} />
                         </a>
                         <p className="footer-desc">
                             Providing advanced medical care with compassion. Our mission is to
