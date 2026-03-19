@@ -15,17 +15,17 @@ const Stats = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <span className="section-subtitle">Why Choose Us</span>
-                    <h2>Dedicated to Excellence in Healthcare.</h2>
+                    <h2>Dedicated to Excellence in Dental Care.</h2>
                     <p>
-                        For over two decades, NovaCare has been at the forefront of medical
-                        innovation, ensuring every patient receives world-class treatment in
-                        a compassionate environment.
+                        For over two decades, Acharya Dental — Smile Bright has been at the
+                        forefront of dental innovation, delivering painless, precision care and
+                        life-changing smiles for patients across India and beyond.
                     </p>
                     <ul className="stats-list">
-                        <li>✓ Advanced Medical Technology</li>
-                        <li>✓ Expert Team of Specialists</li>
-                        <li>✓ 24/7 Emergency Services</li>
-                        <li>✓ Affordable Care Options</li>
+                        <li>✓ Advanced Digital Dental Technology</li>
+                        <li>✓ Invasalign Diamond Provider Certification</li>
+                        <li>✓ 5,000+ Successful Implants Placed</li>
+                        <li>✓ In-House Laboratory for Same-Day Crowns</li>
                     </ul>
                 </motion.div>
 
@@ -43,10 +43,10 @@ const Stats = () => {
                     }}
                 >
                     {[
-                        { metric: "25+", text: "Years of Experience" },
-                        { metric: "150+", text: "Medical Specialists" },
-                        { metric: "50k+", text: "Happy Patients" },
-                        { metric: "12+", text: "Awards Won" }
+                        { metric: "20+", text: "Years of Excellence" },
+                        { metric: "5,000+", text: "Implants Placed" },
+                        { metric: "25k+", text: "Happy Patients" },
+                        { metric: "18+", text: "Awards Won" }
                     ].map((stat, index) => (
                         <motion.div
                             key={index}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Activity, CalendarDays, HeartPulse } from 'lucide-react';
+import { ArrowRight, Smile, CalendarDays, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -14,16 +14,17 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <div className="hero-badge">
-                        <Activity size={16} />
-                        <span>Excellence in Healthcare</span>
+                        <Smile size={16} />
+                        <span>Excellence in Dental Care</span>
                     </div>
                     <h1>
-                        Advanced Care.<br />
-                        <span className="text-secondary">Compassionate</span> Healing.
+                        Beautiful Smiles,<br />
+                        <span className="text-secondary">Exceptional</span> Dental Care.
                     </h1>
                     <p className="hero-description">
-                        Welcome to NovaCare Hospital. We combine cutting-edge medical technology
-                        with world-class specialists to provide the highest standard of personalized care.
+                        Welcome to Acharya Dental — Smile Bright. We combine cutting-edge dental
+                        technology with specialist expertise to deliver painless, precision care
+                        and life-changing smiles.
                     </p>
 
                     <div className="hero-ctas">
@@ -33,23 +34,23 @@ const Hero = () => {
                         </button>
                         <button className="btn btn-secondary glass-btn">
                             <CalendarDays size={20} />
-                            View Specialists
+                            View Our Services
                         </button>
                     </div>
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <h4>24/7</h4>
-                            <p>Emergency Care</p>
+                            <h4>20+</h4>
+                            <p>Years of Excellence</p>
                         </div>
                         <div className="stat-separator"></div>
                         <div className="stat-item">
-                            <h4>150+</h4>
-                            <p>Expert Doctors</p>
+                            <h4>5,000+</h4>
+                            <p>Implants Placed</p>
                         </div>
                         <div className="stat-separator"></div>
                         <div className="stat-item">
-                            <h4>50k+</h4>
+                            <h4>25k+</h4>
                             <p>Happy Patients</p>
                         </div>
                     </div>
@@ -63,18 +64,18 @@ const Hero = () => {
                 >
                     <div className="hero-image-decor"></div>
                     <img
-                        src="https://images.unsplash.com/photo-1551076805-e18690c5e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                        alt="Doctor advising patient"
+                        src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Dental specialist treating a patient"
                         className="hero-image"
                     />
                     {/* Floating glass card element */}
                     <div className="floating-card glass-card">
                         <div className="card-icon-wrapper pulse-anim">
-                            <HeartPulse size={24} color="var(--secondary-color)" />
+                            <Star size={24} color="var(--secondary-color)" fill="var(--secondary-color)" />
                         </div>
                         <div className="card-text">
                             <span className="bold">Top Rated</span>
-                            <span>Healthcare Provider</span>
+                            <span>Dental Clinic in Bangalore</span>
                         </div>
                     </div>
                 </motion.div>

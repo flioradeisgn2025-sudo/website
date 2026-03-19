@@ -9,7 +9,7 @@ export const servicesData = [
     subtitle: 'Dental Implants',
     tagline: 'Restore Your Smile with Permanent, Natural-Looking Teeth',
     heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
-    color: '#e53935',
+    color: '#7B6CF6',
     overview: `Missing teeth affect more than your smile — they impact your confidence, ability to eat, and long-term oral health. At Acharya Dental, we offer state-of-the-art tooth replacement options, including dental implants, implant-supported bridges, and full-arch restorations. Our implants are crafted from titanium and fuse naturally with your jawbone, providing a permanent, stable foundation that looks, feels, and functions like your natural teeth.
 
 Whether you've lost a single tooth or multiple teeth due to decay, injury, or gum disease, our specialist Dr. Varun Acharya designs a personalised treatment plan to restore full function and aesthetics.`,
@@ -255,7 +255,7 @@ From mild nitrous oxide sedation (laughing gas) to oral sedation and IV (intrave
     subtitle: "Caring for Your Child's Smile",
     tagline: "Building Healthy Smiles and Positive Dental Habits from Day One",
     heroImage: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
-    color: '#f4511e',
+    color: '#F59E0B',
     overview: `Children's dental health sets the foundation for a lifetime of healthy smiles. At Acharya Dental, we have created a warm, welcoming, child-friendly environment where little patients feel completely at ease. Our paediatric dentistry team is specially trained in child behaviour management, making dental visits a positive — even fun — experience.
 
 From the first tooth to teenage years, we provide comprehensive care including check-ups, fluoride treatments, dental sealants, early orthodontic assessment, and treatment of cavities using the gentlest, most modern techniques available.`,
@@ -378,7 +378,7 @@ Choose from our power in-chair whitening (results in 60–90 minutes) using adva
     subtitle: 'Early Detection Saves Lives',
     tagline: 'Quick, Painless Screening That Could Save Your Life',
     heroImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
-    color: '#e53935',
+    color: '#7B6CF6',
     overview: `Oral cancer is one of the most common cancers in India, yet it is one of the most curable when detected early. At Acharya Dental, oral cancer screening is part of every comprehensive check-up. Dr. Vijailakshmi Acharya, our specialist in Oral Medicine and Radiology, is highly trained in identifying the earliest signs of oral cancer and pre-cancerous lesions.
 
 Our screening takes just a few minutes and involves a thorough visual and tactile examination of all oral soft tissues — lips, tongue, cheeks, floor of mouth, palate, and throat — combined with advanced diagnostic tools such as VELscope fluorescence imaging.`,

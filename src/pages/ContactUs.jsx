@@ -58,7 +58,7 @@ const ContactUs = () => {
       <main style={{ paddingTop: '80px' }}>
 
         {/* Hero */}
-        <section className="page-hero-banner" style={{ background: 'linear-gradient(135deg, #0b2b4d 0%, #cc0000 100%)' }}>
+        <section className="page-hero-banner" style={{ background: 'linear-gradient(135deg, #2d1b8e 0%, #7B6CF6 100%)' }}>
           <div className="page-hero-overlay" />
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

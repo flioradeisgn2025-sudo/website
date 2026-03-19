@@ -73,7 +73,7 @@ const Feedback = () => {
       <main style={{ paddingTop: '80px' }}>
 
         {/* Hero */}
-        <section className="page-hero-banner" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #cc0000 100%)' }}>
+        <section className="page-hero-banner" style={{ background: 'linear-gradient(135deg, #1a1040 0%, #7B6CF6 100%)' }}>
           <div className="page-hero-overlay" />
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
@@ -132,7 +132,7 @@ const Feedback = () => {
             <AnimatePresence mode="wait">
               {submitted ? (
                 <motion.div key="success" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="form-success-card glass-card" style={{ textAlign: 'center', padding: '4rem 2rem' }}>
-                  <Heart size={60} fill="#cc0000" color="#cc0000" />
+                  <Heart size={60} fill="#7B6CF6" color="#7B6CF6" />
                   <h2 style={{ color: 'var(--text-primary)', margin: '1.5rem 0 0.75rem' }}>Thank You, {form.name || 'Patient'}!</h2>
                   <p style={{ color: 'var(--text-secondary)', maxWidth: '440px', margin: '0 auto 2rem', lineHeight: 1.8 }}>
                     Your feedback has been received. It truly helps us continue improving and delivering the best possible dental care.

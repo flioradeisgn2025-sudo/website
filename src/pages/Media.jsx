@@ -51,7 +51,7 @@ const Media = () => {
             <main style={{ paddingTop: '80px' }}>
 
                 {/* Page Hero */}
-                <section className="page-hero-banner" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #cc0000 100%)' }}>
+                <section className="page-hero-banner" style={{ background: 'linear-gradient(135deg, #1a1040 0%, #7B6CF6 100%)' }}>
                     <div className="page-hero-overlay" />
                     <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

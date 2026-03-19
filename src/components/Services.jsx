@@ -1,38 +1,45 @@
 import React from 'react';
-import { Stethoscope, Brain, Baby, Eye, Activity, Heart, ArrowRight } from 'lucide-react';
+import { Smile, AlignCenter, Zap, SunMedium, ShieldCheck, Baby, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const services = [
     {
-        icon: <Heart size={32} />,
-        title: 'Cardiology',
-        description: 'Expert care for your heart with state-of-the-art diagnostic and treatment facilities.'
+        icon: <Smile size={32} />,
+        title: 'Teeth Replacement',
+        description: 'Restore your smile with premium dental implants and full-arch restorations that look, feel, and function like natural teeth.',
+        slug: 'teeth-replacement',
     },
     {
-        icon: <Brain size={32} />,
-        title: 'Neurology',
-        description: 'Advanced neurological treatments for complex brain and nervous system disorders.'
+        icon: <AlignCenter size={32} />,
+        title: 'Teeth Alignment',
+        description: 'Straighten your smile comfortably with Invisalign clear aligners or traditional braces, tailored to your lifestyle.',
+        slug: 'teeth-alignment',
+    },
+    {
+        icon: <Zap size={32} />,
+        title: 'Laser Dentistry',
+        description: 'Minimally invasive laser treatments for gum reshaping, cavity care, and more — with near-zero discomfort and faster healing.',
+        slug: 'laser-dentistry',
+    },
+    {
+        icon: <SunMedium size={32} />,
+        title: 'Teeth Whitening',
+        description: 'Achieve up to 8–10 shades whiter teeth in a single professional in-chair whitening session.',
+        slug: 'teeth-whitening',
+    },
+    {
+        icon: <ShieldCheck size={32} />,
+        title: 'Preventive Dentistry',
+        description: 'Protect your smile with comprehensive check-ups, professional cleaning, fluoride treatments, and personalised care plans.',
+        slug: 'preventive-dentistry',
     },
     {
         icon: <Baby size={32} />,
-        title: 'Pediatrics',
-        description: 'Compassionate and comprehensive healthcare for infants, children, and adolescents.'
+        title: 'Paediatric Dentistry',
+        description: 'Gentle, fun, and fear-free dental care for children of all ages in our purpose-designed child-friendly environment.',
+        slug: 'paediatric-dentistry',
     },
-    {
-        icon: <Eye size={32} />,
-        title: 'Ophthalmology',
-        description: 'Precision eye care from routine checkups to advanced surgical procedures.'
-    },
-    {
-        icon: <Activity size={32} />,
-        title: 'Emergency Care',
-        description: '24/7 world-class emergency medical services equipped for critical situations.'
-    },
-    {
-        icon: <Stethoscope size={32} />,
-        title: 'General Surgery',
-        description: 'Minimally invasive and general surgical solutions by experienced surgeons.'
-    }
 ];
 
 const Services = () => {
@@ -84,9 +91,9 @@ const Services = () => {
                             </div>
                             <h3>{service.title}</h3>
                             <p>{service.description}</p>
-                            <a href="#" className="service-link">
+                            <Link to={`/services/${service.slug}`} className="service-link">
                                 Learn more <ArrowRight size={16} />
-                            </a>
+                            </Link>
                         </motion.div>
                     ))}
                 </motion.div>

@@ -1,28 +1,21 @@
 import React from 'react';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const doctors = [
     {
-        name: 'Dr. Sarah Jenkins',
-        specialty: 'Chief Cardiologist',
-        image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    },
-    {
-        name: 'Dr. Michael Chen',
-        specialty: 'Head of Neurology',
-        image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    },
-    {
-        name: 'Dr. Emily Carter',
-        specialty: 'Pediatrics Specialist',
+        name: 'Dr. Vijailakshmi Acharya',
+        specialty: 'Oral Medicine & Radiology, Founder',
         image: 'https://images.unsplash.com/photo-1594824432243-7dbcbba6c63e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        link: '/about/dr-vijailakshmi',
     },
     {
-        name: 'Dr. James Wilson',
-        specialty: 'General Surgeon',
+        name: 'Dr. Varun Acharya',
+        specialty: 'Prosthodontics & Implantology, BDS MDS',
         image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    }
+        link: '/about/dr-varun',
+    },
 ];
 
 const Doctors = () => {
@@ -36,8 +29,8 @@ const Doctors = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
                 >
-                    <span className="section-subtitle">Our Specialists</span>
-                    <h2 className="section-title">Meet Our Expert Medical Team</h2>
+                    <span className="section-subtitle">Meet the Specialists</span>
+                    <h2 className="section-title">Your Expert Dental Team</h2>
                 </motion.div>
 
                 <motion.div
@@ -78,6 +71,9 @@ const Doctors = () => {
                             <div className="doctor-info">
                                 <h3>{doctor.name}</h3>
                                 <p>{doctor.specialty}</p>
+                                <Link to={doctor.link} className="service-link" style={{ marginTop: '0.75rem' }}>
+                                    View Profile →
+                                </Link>
                             </div>
                         </motion.div>
                     ))}

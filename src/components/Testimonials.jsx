@@ -4,19 +4,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
     {
-        text: "The care I received at NovaCare was exceptional. The cardiology team was incredibly proactive, and the facilities are world-class. I cannot thank the staff enough for their dedication and compassion.",
-        name: "Robert Fox",
-        role: "Patient (Cardiology)"
+        text: "Dr. Varun placed 3 implants and the results are absolutely life-changing. You cannot tell they are not real teeth. The whole process was far less painful than I feared. The team at Acharya Dental is truly exceptional.",
+        name: "Priya Sharma",
+        role: "Patient — Dental Implants, Bangalore"
     },
     {
-        text: "My son's treatment experience was smooth and stress-free. The pediatric ward is beautifully designed, and Dr. Carter made sure we understood every step of the process. Highly recommended.",
-        name: "Jane Smith",
-        role: "Patient Parent (Pediatrics)"
+        text: "Dr. Vijailakshmi is a true artist. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.",
+        name: "Ananya Reddy",
+        role: "Patient — Full Mouth Rehabilitation, Hyderabad"
     },
     {
-        text: "From admission to discharge, the professionalism of the NovaCare team is unmatched. I felt safe and cared for entirely during my surgery.",
-        name: "Eleanor Pena",
-        role: "Patient (Surgery)"
+        text: "I needed gum treatment and was terrified. The laser gum procedure at Acharya Dental was completely painless — no cuts, no stitches. I was back to work the same evening! Absolutely incredible experience.",
+        name: "Mohammed Ashraf",
+        role: "Patient — Laser Dentistry, Chennai"
     }
 ];
 
@@ -46,7 +46,7 @@ const Testimonials = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="section-subtitle">Patient Stories</span>
+                        <span className="section-subtitle">Real Patient Stories</span>
                         <h2>What Our Patients Say About Us</h2>
                         <div className="testimonial-controls">
                             <button onClick={prevTestimonial} className="control-btn"><ChevronLeft /></button>

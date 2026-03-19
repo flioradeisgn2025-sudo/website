@@ -48,7 +48,7 @@ const DrVarun = () => {
             <main style={{ paddingTop: '80px' }}>
 
                 {/* Hero Banner */}
-                <section className="doctor-profile-hero" style={{ background: 'linear-gradient(135deg, #0d3b66 0%, #cc0000 100%)' }}>
+                <section className="doctor-profile-hero" style={{ background: 'linear-gradient(135deg, #2d1b8e 0%, #7B6CF6 100%)' }}>
                     <div className="doctor-hero-overlay" />
                     <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                         <motion.div className="doctor-hero-content" initial="hidden" animate="visible" variants={fadeUp}>
