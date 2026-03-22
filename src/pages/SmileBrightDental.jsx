@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, BookOpen, Star, GraduationCap, Stethoscope, Phone, Mail, MapPin, CheckCircle2 } from 'lucide-react';
+import { Award, BookOpen, Star, Stethoscope, Phone, Mail, MapPin, CheckCircle2, ShieldCheck } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -13,34 +13,32 @@ const fadeUp = {
     }),
 };
 
-const qualifications = [
-    'BDS – Bachelor of Dental Surgery, Rajiv Gandhi University of Health Sciences',
-    'MDS – Master of Dental Surgery (Oral Medicine & Radiology)',
-    'Fellowship in Implantology – International Congress of Oral Implantologists',
-    'Certified Laser Dentistry Practitioner',
+const facilities = [
+    'State-of-the-art diagnostic imaging',
+    'Advanced sterilization protocols',
+    'In-house dental laboratory',
+    'Comfortable, anxiety-free environment',
 ];
 
 const expertise = [
-    'Full Mouth Rehabilitation',
-    'Dental Implants',
-    'Laser Dentistry',
-    'Oral Cancer Screening',
-    'Smile Designing',
-    'Cosmetic Dentistry',
-    'Sedation Dentistry',
-    'Paediatric Dentistry',
+    'Comprehensive Dental Care',
+    'Specialized Implantology',
+    'Laser & Preventive Care',
+    'Cosmetic Smile Makeovers',
+    '24/7 Support for Emergencies',
+    'Patient-Centric Approach',
 ];
 
 const milestones = [
-    { year: '2002', event: 'Graduated BDS with Distinction' },
-    { year: '2005', event: 'Completed MDS in Oral Medicine & Radiology' },
     { year: '2007', event: 'Founded Smile Bright Dental Clinic' },
-    { year: '2012', event: 'Received State-Level Excellence in Dentistry Award' },
+    { year: '2012', event: 'Recognized as Top Clinic in Bangalore' },
+    { year: '2016', event: 'Pioneered Advanced Implant Technology' },
     { year: '2018', event: 'Introduced Laser Dentistry to the clinic' },
+    { year: '2021', event: 'Awarded Best Patient Experience' },
     { year: '2023', event: 'Surpassed 25,000 successful treatments' },
 ];
 
-const DrVijailakshmi = () => {
+const SmileBrightDental = () => {
     return (
         <>
             <Header />
@@ -56,17 +54,17 @@ const DrVijailakshmi = () => {
                             animate="visible"
                             variants={fadeUp}
                         >
-                            <span className="section-subtitle">Our Specialist</span>
+                            <span className="section-subtitle">About Us</span>
                             <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
-                                Dr. Vijailakshmi Acharya
+                                Smile Bright Dental
                             </h1>
                             <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', marginTop: '0.75rem' }}>
-                                BDS, MDS (Oral Medicine &amp; Radiology) &nbsp;|&nbsp; 20+ Years of Excellence
+                                Bangalore's Premier Dental Destination &nbsp;|&nbsp; 20+ Years of Excellence
                             </p>
                             <div className="doctor-badges">
-                                <span className="doctor-badge-chip"><Star size={14} /> Top Rated Specialist</span>
+                                <span className="doctor-badge-chip"><Star size={14} /> Top Rated</span>
                                 <span className="doctor-badge-chip"><Award size={14} /> Award Winning</span>
-                                <span className="doctor-badge-chip"><Stethoscope size={14} /> 25,000+ Patients</span>
+                                <span className="doctor-badge-chip"><Stethoscope size={14} /> 25,000+ Happy Smiles</span>
                             </div>
                         </motion.div>
                     </div>
@@ -80,19 +78,19 @@ const DrVijailakshmi = () => {
                             <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                                 <div className="doctor-photo-card glass-card">
                                     <img
-                                        src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                        alt="Dr. Vijailakshmi Acharya"
+                                        src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Smile Bright Clinic"
                                         className="doctor-profile-photo"
                                     />
                                     <div className="doctor-contact-info">
-                                        <h3 style={{ marginBottom: '1.25rem' }}>Book a Consultation</h3>
+                                        <h3 style={{ marginBottom: '1.25rem' }}>Visit Our Clinic</h3>
                                         <a href="tel:+919876543210" className="contact-row">
                                             <Phone size={18} color="var(--primary-color)" />
                                             <span>+91 98765 43210</span>
                                         </a>
-                                        <a href="mailto:dr.vijailakshmi@smilebrightdental.com" className="contact-row">
+                                        <a href="mailto:info@smilebrightdental.com" className="contact-row">
                                             <Mail size={18} color="var(--primary-color)" />
-                                            <span>dr.vijailakshmi@smilebrightdental.com</span>
+                                            <span>info@smilebrightdental.com</span>
                                         </a>
                                         <div className="contact-row">
                                             <MapPin size={18} color="var(--primary-color)" />
@@ -108,31 +106,25 @@ const DrVijailakshmi = () => {
                             {/* Right – Bio */}
                             <div>
                                 <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                                    <span className="section-subtitle">About the Doctor</span>
-                                    <h2 style={{ marginBottom: '1rem' }}>A Legacy of Compassionate Dental Care</h2>
+                                    <span className="section-subtitle">Our Mission</span>
+                                    <h2 style={{ marginBottom: '1rem' }}>Exceptional Dental Care with a Human Touch</h2>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                                        Dr. Vijailakshmi Acharya is a highly acclaimed dental surgeon and oral medicine specialist
-                                        with over two decades of experience. She is the co-founder and clinical director of
-                                        Smile Bright Dental Clinic, a state-of-the-art facility renowned for delivering
-                                        world-class dental care with a personal touch.
+                                        At Smile Bright Dental, we believe a healthy, confident smile can transform lives. For nearly two decades, our multi-specialty clinic has stood as a beacon of dental excellence in Bangalore, offering a comprehensive suite of advanced treatments delivered with unmatched precision and care.
                                     </p>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2rem' }}>
-                                        Trained at some of India's premier dental institutions, Dr. Vijailakshmi has dedicated
-                                        her career to transforming smiles and improving the quality of life for thousands of
-                                        patients. Her gentle approach, combined with pioneering use of advanced technologies
-                                        like laser dentistry, has earned her recognition at the state and national level.
+                                        Our world-class doctors bring together global expertise and the latest in dental technology to ensure every patient experiences painless, effective, and lasting results. From preventative care to complex full-mouth rehabilitations, our patient-first approach guarantees a comfortable and reassuring journey toward optimal oral health.
                                     </p>
                                 </motion.div>
 
-                                {/* Qualifications */}
+                                {/* Facilities */}
                                 <motion.div custom={2} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                                     <div className="info-block">
                                         <div className="info-block-title">
-                                            <GraduationCap size={22} color="var(--primary-color)" />
-                                            <h3>Qualifications</h3>
+                                            <ShieldCheck size={22} color="var(--primary-color)" />
+                                            <h3>Why Choose Us?</h3>
                                         </div>
                                         <ul className="qualification-list">
-                                            {qualifications.map((q, i) => (
+                                            {facilities.map((q, i) => (
                                                 <li key={i} className="qualification-item">
                                                     <CheckCircle2 size={16} color="var(--primary-color)" />
                                                     <span>{q}</span>
@@ -142,12 +134,12 @@ const DrVijailakshmi = () => {
                                     </div>
                                 </motion.div>
 
-                                {/* Areas of Expertise */}
+                                {/* Core Values */}
                                 <motion.div custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                                     <div className="info-block" style={{ marginTop: '1.5rem' }}>
                                         <div className="info-block-title">
-                                            <Stethoscope size={22} color="var(--primary-color)" />
-                                            <h3>Areas of Expertise</h3>
+                                            <Star size={22} color="var(--primary-color)" />
+                                            <h3>Our Approach</h3>
                                         </div>
                                         <div className="expertise-tags">
                                             {expertise.map((e, i) => (
@@ -161,12 +153,12 @@ const DrVijailakshmi = () => {
                     </div>
                 </section>
 
-                {/* Career Milestones */}
+                {/* Clinic Milestones */}
                 <section className="section section-alt">
                     <div className="container">
                         <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                            <span className="section-subtitle">Journey of Excellence</span>
-                            <h2>Career Milestones</h2>
+                            <span className="section-subtitle">A Legacy Built on Trust</span>
+                            <h2>Our Journey</h2>
                         </motion.div>
                         <div className="timeline">
                             {milestones.map((m, i) => (
@@ -196,14 +188,14 @@ const DrVijailakshmi = () => {
                         <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                             <div className="info-block-title" style={{ marginBottom: '2rem' }}>
                                 <BookOpen size={26} color="var(--primary-color)" />
-                                <h2>Research &amp; Publications</h2>
+                                <h2>Clinical Excellence & Research</h2>
                             </div>
                         </motion.div>
                         <div className="publications-grid">
                             {[
-                                { title: 'Laser Therapy in Management of Oral Mucositis', journal: 'Journal of Oral Medicine, 2019' },
-                                { title: 'Digital Smile Design: A Contemporary Approach', journal: 'Indian Dental Review, 2021' },
-                                { title: 'Full Mouth Rehabilitation in Bruxism Patients', journal: 'Dental Clinics of India, 2022' },
+                                { title: 'Innovations in Sedation Dentistry', journal: 'Smile Bright Internal Review, 2022' },
+                                { title: 'Painless Implantology Best Practices', journal: 'Dental Excellence Symposium, 2023' },
+                                { title: 'Digital Smile Makeovers Handbook', journal: 'Cosmetic Dentistry Quarterly, 2024' },
                             ].map((pub, i) => (
                                 <motion.div key={i} custom={i + 1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                                     <div className="publication-card glass-card">
@@ -223,4 +215,4 @@ const DrVijailakshmi = () => {
     );
 };
 
-export default DrVijailakshmi;
+export default SmileBrightDental;

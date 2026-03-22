@@ -29,8 +29,7 @@ const Footer = () => {
                     <div className="footer-col">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><Link to="/about/dr-vijailakshmi">Dr. Vijailakshmi Acharya</Link></li>
-                            <li><Link to="/about/dr-varun">Dr. Varun Acharya</Link></li>
+                            <li><Link to="/about/smile-bright-dental">Smile Bright Dental</Link></li>
                             <li><Link to="/testimonials">Patient Testimonials</Link></li>
                             <li><Link to="/about/blog">Blog</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>

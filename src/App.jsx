@@ -9,8 +9,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
 // About Us Pages
-import DrVijailakshmi from './pages/DrVijailakshmi';
-import DrVarun from './pages/DrVarun';
+import SmileBrightDental from './pages/SmileBrightDental';
 import Blog from './pages/Blog';
 import Media from './pages/Media';
 import Awards from './pages/Awards';
@@ -47,8 +46,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* About Us */}
-        <Route path="/about/dr-vijailakshmi" element={<DrVijailakshmi />} />
-        <Route path="/about/dr-varun" element={<DrVarun />} />
+        <Route path="/about/smile-bright-dental" element={<SmileBrightDental />} />
         <Route path="/about/blog" element={<Blog />} />
         <Route path="/about/media" element={<Media />} />
         <Route path="/about/awards" element={<Awards />} />

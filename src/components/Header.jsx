@@ -29,8 +29,7 @@ const Header = () => {
               About Us <ChevronDown size={14} style={{ display: 'inline', marginLeft: '2px' }} />
             </a>
             <div className="dropdown-menu">
-              <Link to="/about/dr-vijailakshmi" className="dropdown-item">Dr. Vijailakshmi Acharya</Link>
-              <Link to="/about/dr-varun" className="dropdown-item">Dr. Varun Acharya</Link>
+              <Link to="/about/smile-bright-dental" className="dropdown-item">Smile Bright Dental</Link>
               <Link to="/about/blog" className="dropdown-item">Blog</Link>
               <Link to="/about/media" className="dropdown-item">Media</Link>
               <Link to="/about/awards" className="dropdown-item">Awards</Link>
@@ -94,8 +93,7 @@ const Header = () => {
           <div className="has-dropdown">
             <a href="#about" className="nav-link">About Us</a>
             <div className="mobile-dropdown-menu">
-              <Link to="/about/dr-vijailakshmi" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Dr. Vijailakshmi Acharya</Link>
-              <Link to="/about/dr-varun" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Dr. Varun Acharya</Link>
+              <Link to="/about/smile-bright-dental" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Smile Bright Dental</Link>
               <Link to="/about/blog" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
               <Link to="/about/media" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
               <Link to="/about/awards" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Awards</Link>
