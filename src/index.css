@@ -222,16 +222,16 @@ h3 {
   width: 100%;
   z-index: 1000;
   transition: all var(--transition-normal);
-  padding: 1.5rem 0;
-}
-
-.header.scrolled {
-  padding: 0.875rem 0;
+  padding: 0.75rem 0;
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   box-shadow: var(--shadow-sm);
   border-bottom: 1px solid var(--glass-border);
+}
+
+.header.scrolled {
+  padding: 0.5rem 0;
 }
 
 .header-content {
@@ -255,14 +255,23 @@ h3 {
 }
 
 .logo-img {
-  height: 120px;
+  height: 85px;
   width: auto;
   object-fit: contain;
   transition: height var(--transition-normal);
 }
 
 .header.scrolled .logo-img {
-  height: 80px;
+  height: 65px;
+}
+
+@media (max-width: 992px) {
+  .logo-img {
+    height: 60px;
+  }
+  .header.scrolled .logo-img {
+    height: 50px;
+  }
 }
 
 .logo-icon {
@@ -574,19 +583,11 @@ h3 {
   }
 
   .floating-card {
-    bottom: -1rem;
-    left: 50%;
-    transform: translateX(-50%) !important;
-    animation: floatMobile 4s ease-in-out infinite;
-  }
-
-  @keyframes floatMobile {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-10px); }
+    display: none;
   }
 
   .hero {
-    padding-top: 6rem;
+    padding-top: 8rem;
     min-height: auto;
   }
 }
@@ -1027,6 +1028,7 @@ h3 {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     text-align: center;
+    margin-top: 2rem; /* Fix sticky header overlap */
   }
 
   .testimonial-controls {
@@ -1180,6 +1182,34 @@ h3 {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .brand-col .logo {
+    justify-content: center;
+  }
+
+  .footer-desc {
+    margin: 0 auto 2rem;
+  }
+
+  .footer-col h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-info li {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .footer-bottom {

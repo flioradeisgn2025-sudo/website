@@ -58,8 +58,9 @@ const SmileBrightDental = () => {
                             <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
                                 Smile Bright Dental
                             </h1>
-                            <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', marginTop: '0.75rem' }}>
-                                Bangalore's Premier Dental Destination &nbsp;|&nbsp; 20+ Years of Excellence
+                            <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', marginTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+                                <span>Bangalore's Premier Dental Destination</span>
+                                <span style={{ opacity: 0.7, fontSize: '1rem' }}>20+ Years of Excellence</span>
                             </p>
                             <div className="doctor-badges">
                                 <span className="doctor-badge-chip"><Star size={14} /> Top Rated</span>

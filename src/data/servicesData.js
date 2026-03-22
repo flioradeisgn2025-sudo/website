@@ -213,7 +213,7 @@ Dr. Vijailakshmi Acharya is a certified laser dentistry practitioner with extens
     title: 'Sedation Dentistry',
     subtitle: 'Relax, Sleep, and Wake Up with a Beautiful Smile',
     tagline: 'Experience Dental Care Without Fear or Anxiety',
-    heroImage: 'https://images.unsplash.com/photo-1584467735871-8e0963aa454d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#3949ab',
     overview: `Dental anxiety affects millions of people worldwide and is one of the leading reasons for neglected oral health. At Acharya Dental, we offer a complete range of sedation options so that even the most anxious patients can receive the dental care they need — completely comfortably.
 
@@ -336,7 +336,7 @@ Our hygienists use the latest ultrasonic scaling technology combined with hand i
     title: 'Teeth Whitening',
     subtitle: 'Professional In-Chair & Take-Home Whitening',
     tagline: 'A Brighter, More Radiant Smile in Just One Visit',
-    heroImage: 'https://images.unsplash.com/photo-1581387969551-e4c6b33f6b58?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#fdd835',
     overview: `A bright, white smile can transform your appearance and self-confidence. At Acharya Dental, we offer professional-grade teeth whitening solutions that are both safe and dramatically more effective than over-the-counter products.
 

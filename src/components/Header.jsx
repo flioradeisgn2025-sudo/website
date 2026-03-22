@@ -87,9 +87,8 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Nav Drawer */}
       {isMobileMenuOpen && (
-        <div className="mobile-nav glass-card animate-fade-in">
+        <div className="mobile-nav animate-fade-in">
           <div className="has-dropdown">
             <a href="#about" className="nav-link">About Us</a>
             <div className="mobile-dropdown-menu">

@@ -40,9 +40,12 @@ function HomePage() {
   );
 }
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
     <Router basename="/website/">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* About Us */}
