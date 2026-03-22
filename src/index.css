@@ -2,11 +2,11 @@
 
 :root {
   /* Premium Color Palette — Purple */
-  --primary-color: #7B6CF6;
+  --primary-color: #8500b9;
   /* Soft Violet */
-  --secondary-color: #5B4BDB;
+  --secondary-color: #d265ff;
   /* Deep Indigo */
-  --accent-color: #9D8FF9;
+  --accent-color: #e58cff;
   /* Light Violet Accent */
 
   --bg-color-main: #F4F2FF;
@@ -16,23 +16,23 @@
   --text-secondary: #6c757d;
   --text-light: #ffffff;
 
-  --border-color: rgba(123, 108, 246, 0.12);
+  --border-color: rgba(133, 0, 185, 0.12);
 
   /* Layout & Spacing */
   --max-width: 1280px;
   --section-padding: clamp(3rem, 8vw, 6.5rem) clamp(1rem, 5vw, 2rem);
 
   /* Effects */
-  --shadow-sm: 0 4px 6px rgba(91, 75, 219, 0.08);
-  --shadow-md: 0 10px 20px rgba(91, 75, 219, 0.12);
-  --shadow-lg: 0 20px 40px rgba(91, 75, 219, 0.18);
+  --shadow-sm: 0 4px 6px rgba(210, 101, 255, 0.08);
+  --shadow-md: 0 10px 20px rgba(210, 101, 255, 0.12);
+  --shadow-lg: 0 20px 40px rgba(210, 101, 255, 0.18);
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
 
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(123, 108, 246, 0.15);
+  --glass-border: rgba(133, 0, 185, 0.15);
   --glass-blur: blur(12px);
 }
 
@@ -147,7 +147,7 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: #4232C2;
+  background-color: #6a0094;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -255,9 +255,14 @@ h3 {
 }
 
 .logo-img {
-  height: 50px;
+  height: 120px;
   width: auto;
   object-fit: contain;
+  transition: height var(--transition-normal);
+}
+
+.header.scrolled .logo-img {
+  height: 80px;
 }
 
 .logo-icon {
@@ -330,7 +335,7 @@ h3 {
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: var(--shadow-lg);
-  background: #3d2fc2; /* Solid deep indigo for mobile menu */
+  background: #5a007d; /* Solid deep indigo for mobile menu */
   z-index: 1001;
 }
 
@@ -392,7 +397,7 @@ h3 {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: rgba(123, 108, 246, 0.1);
+  background-color: rgba(133, 0, 185, 0.1);
   color: var(--secondary-color);
   border-radius: 50px;
   font-weight: 600;
@@ -490,7 +495,7 @@ h3 {
 }
 
 .card-icon-wrapper {
-  background-color: rgba(123, 108, 246, 0.1);
+  background-color: rgba(133, 0, 185, 0.1);
   padding: 0.75rem;
   border-radius: 50%;
 }
@@ -664,7 +669,7 @@ h3 {
   color: var(--secondary-color);
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background-color: rgba(123, 108, 246, 0.1);
+  background-color: rgba(133, 0, 185, 0.1);
   border-radius: 50%;
   display: inline-flex;
   transition: all var(--transition-normal);
@@ -878,7 +883,7 @@ h3 {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
-  background: linear-gradient(to top, rgba(91, 75, 219, 0.92), transparent);
+  background: linear-gradient(to top, rgba(210, 101, 255, 0.92), transparent);
   transition: bottom var(--transition-normal);
 }
 
@@ -1298,7 +1303,7 @@ h3 {
 /* ========================================================================= */
 .page-hero-banner {
   position: relative;
-  background: linear-gradient(135deg, #2d1b8e 0%, #7B6CF6 100%);
+  background: linear-gradient(135deg, #2d1b8e 0%, #8500b9 100%);
   padding: 6rem 0 4rem;
   overflow: hidden;
 }
@@ -1316,7 +1321,7 @@ h3 {
 /* ========================================================================= */
 .doctor-profile-hero {
   position: relative;
-  background: linear-gradient(135deg, #2d1b8e 0%, #7B6CF6 100%);
+  background: linear-gradient(135deg, #2d1b8e 0%, #8500b9 100%);
   padding: 6rem 0 4rem;
   overflow: hidden;
 }
@@ -1684,7 +1689,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  background: rgba(123, 108, 246, 0.1);
+  background: rgba(133, 0, 185, 0.1);
   color: var(--primary-color);
   padding: 0.3rem 0.75rem;
   border-radius: 50px;
@@ -1875,7 +1880,7 @@ h3 {
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--primary-color);
-  background: rgba(123, 108, 246, 0.1);
+  background: rgba(133, 0, 185, 0.1);
   padding: 0.25rem 0.75rem;
   border-radius: 50px;
 }
@@ -1962,7 +1967,7 @@ h3 {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  background: rgba(123, 108, 246, 0.1);
+  background: rgba(133, 0, 185, 0.1);
   color: var(--primary-color);
   font-size: 0.85rem;
   font-weight: 700;
@@ -1993,7 +1998,7 @@ h3 {
 }
 
 .cert-icon-wrapper {
-  background: rgba(123, 108, 246, 0.1);
+  background: rgba(133, 0, 185, 0.1);
   padding: 0.75rem;
   border-radius: 12px;
   flex-shrink: 0;
@@ -2237,7 +2242,7 @@ h3 {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at top right, rgba(123, 108, 246, 0.15) 0%, transparent 60%);
+  background: radial-gradient(ellipse at top right, rgba(133, 0, 185, 0.15) 0%, transparent 60%);
 }
 
 .service-why-grid {
@@ -2270,8 +2275,8 @@ h3 {
 }
 
 .service-trust-stat {
-  background: rgba(123, 108, 246, 0.08);
-  border: 1px solid rgba(123, 108, 246, 0.2);
+  background: rgba(133, 0, 185, 0.08);
+  border: 1px solid rgba(133, 0, 185, 0.2);
   border-radius: 16px;
   padding: 2rem;
   text-align: center;
@@ -2385,7 +2390,7 @@ h3 {
 
 /* Appointment CTA */
 .service-appointment-cta {
-  background: linear-gradient(135deg, #7B6CF6 0%, #5B4BDB 100%);
+  background: linear-gradient(135deg, #8500b9 0%, #d265ff 100%);
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
@@ -2518,7 +2523,7 @@ h3 {
   display: flex;
   align-items: center;
   padding: 7rem 0 4rem;
-  background: linear-gradient(135deg, #1a1040 0%, #2d1b8e 60%, #5B4BDB 100%);
+  background: linear-gradient(135deg, #1a1040 0%, #2d1b8e 60%, #d265ff 100%);
   overflow: hidden;
 }
 .intl-hero::before {
@@ -2565,7 +2570,7 @@ h3 {
 .intl-icon-wrapper {
   width: 56px; height: 56px;
   border-radius: 14px;
-  background: #7B6CF615;
+  background: #8500b915;
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 1.25rem;
 }
@@ -2598,7 +2603,7 @@ h3 {
 .cost-table .highlight-col {
   color: var(--primary-color);
   font-weight: 700;
-  background: #7B6CF608;
+  background: #8500b908;
 }
 .intl-why-section {
   position: relative;
@@ -2713,7 +2718,7 @@ h3 {
 }
 .tour-spot-icon {
   width: 42px; height: 42px; border-radius: 10px;
-  background: #7B6CF612;
+  background: #8500b912;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
