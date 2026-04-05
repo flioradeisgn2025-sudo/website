@@ -12,37 +12,37 @@ const fadeUp = {
 const allTestimonials = [
   {
     name: 'Priya Sharma', location: 'Bangalore', rating: 5, treatment: 'Dental Implants',
-    text: 'I had been living with missing teeth for years, embarrassed to smile. Dr. Varun placed 3 implants and the results are absolutely life-changing. You cannot tell they are not real teeth. The whole process was far less painful than I feared.',
+    text: 'I had been living with missing teeth for years, embarrassed to smile. Dr. Sasha Helene performed my treatment and the results are absolutely life-changing. You cannot tell they are not real teeth. The whole process was far less painful than I feared.',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Rajesh Kulkarni', location: 'Mysore', rating: 5, treatment: 'Invisalign',
-    text: 'I am 42 and always had crooked teeth. My daughter convinced me to try Invisalign at Acharya Dental and I am so glad I listened! In 14 months I have the straightest teeth I have ever had. Such a gentle and professional team.',
+    text: 'I am 42 and always had crooked teeth. My daughter convinced me to try Invisalign at Smile Bright Dental and I am so glad I listened! In 14 months I have the straightest teeth I have ever had. Such a gentle and professional team.',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Ananya Reddy', location: 'Hyderabad', rating: 5, treatment: 'Full Mouth Rehabilitation',
-    text: 'Dr. Vijailakshmi is a true artist. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.',
+    text: 'Dr. Sasha Helene is a true artist. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.',
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Mohammed Ashraf', location: 'Chennai', rating: 5, treatment: 'Laser Dentistry',
-    text: 'I needed gum treatment and was terrified. Chose Acharya Dental after reading reviews. The laser gum procedure was completely painless — no cuts, no stitches. I was back to work the same evening!',
+    text: 'I needed treatment and was terrified. Chose Smile Bright Dental after reading reviews. The laser procedure was completely painless — no cuts, no stitches. I was back to work the same evening!',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Sunita Nair', location: 'Kochi', rating: 5, treatment: 'Teeth Whitening',
-    text: 'I tried every whitening toothpaste with no results. One session of in-chair whitening at Acharya Dental gave me 7 shades whiter teeth! So happy with the results. The appointment was relaxing and the team explained everything.',
+    text: 'I tried every whitening toothpaste with no results. One session of in-chair whitening at Smile Bright Dental gave me 7 shades whiter teeth! So happy with the results. The appointment was relaxing and the team explained everything.',
     avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Amit Joshi', location: 'Pune', rating: 5, treatment: "Children's Dentistry",
-    text: "My 7-year-old was petrified of dentists. The paediatric team at Acharya Dental worked magic — he left happy and asked when he can come back! The clinic has a dedicated kids area, cartoon shows, and the kindest staff.",
+    text: "My 7-year-old was petrified of dentists. The paediatric team at Smile Bright Dental worked magic — he left happy and asked when he can come back! The clinic has a dedicated kids area, cartoon shows, and the kindest staff.",
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Deepa Menon', location: 'Trivandrum', rating: 5, treatment: 'Root Canal',
-    text: "I had severe tooth pain and was told I needed a root canal. I came in petrified but left completely impressed. Dr. Vijailakshmi's precision and the clinic's sedation options made it the most comfortable dental experience I've ever had.",
+    text: "I had severe tooth pain and was told I needed a root canal. I came in petrified but left completely impressed. Dr. Sasha Helene's precision and the clinic's sedation options made it the most comfortable dental experience I've ever had.",
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&auto=format',
   },
   {
@@ -52,7 +52,7 @@ const allTestimonials = [
   },
   {
     name: 'Lakshmi Patel', location: 'Surat', rating: 5, treatment: 'Dental Implants',
-    text: 'Flew from Surat specifically for Dr. Varun. Worth every bit of the journey. His expertise in implants is extraordinary and the after-care support is exceptional. My new teeth feel completely natural.',
+    text: 'Flew specifically for Dr. Sasha Helene. Worth every bit of the journey. Her expertise is extraordinary and the after-care support is exceptional. My new teeth feel completely natural.',
     avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&h=80&fit=crop&auto=format',
   },
 ];
@@ -107,7 +107,7 @@ const TestimonialsPage = () => {
               <span className="section-subtitle">Real Stories, Real Smiles</span>
               <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Patient Testimonials</h1>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', marginTop: '0.75rem', maxWidth: '580px' }}>
-                Over 25,000 patients trust Acharya Dental. Hear what they have to say about their experience.
+                Over 25,000 patients trust Smile Bright Dental. Hear what they have to say about their experience.
               </p>
             </motion.div>
           </div>
@@ -214,7 +214,7 @@ const TestimonialsPage = () => {
               <ThumbsUp size={48} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
               <h2 style={{ marginBottom: '1rem' }}>Share Your Experience</h2>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: 1.8 }}>
-                Had a great experience at Acharya Dental? We would love to hear from you and help others make an informed choice.
+                Had a great experience at Smile Bright Dental? We would love to hear from you and help others make an informed choice.
               </p>
               <a href="/contact/feedback" className="btn btn-primary">Write a Review</a>
             </motion.div>

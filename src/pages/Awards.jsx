@@ -28,7 +28,7 @@ const awards = [
         org: 'Indian Dental Association – Karnataka Chapter',
         year: '2024',
         color: '#C0C0C0',
-        description: 'Awarded to Dr. Vijailakshmi Acharya for pioneering contributions to the field of oral medicine and patient-centric care.',
+        description: 'Awarded to Dr. Sasha Helene for pioneering contributions to the field of endodontics and patient-centric care.',
     },
     {
         icon: Star,
@@ -36,7 +36,7 @@ const awards = [
         org: 'International Congress of Oral Implantologists',
         year: '2024',
         color: '#CD7F32',
-        description: 'Dr. Varun Acharya was honoured by ICOI for exceptional skill and a track record of over 5,000 successful implant procedures.',
+        description: 'Recognized for exceptional skill and a track record of thousands of successful dental procedures.',
     },
     {
         icon: ShieldCheck,

@@ -4,11 +4,11 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Stats from './components/Stats';
-import Doctors from './components/Doctors';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
 // About Us Pages
+import DoctorProfile from './pages/DoctorProfile';
 import SmileBrightDental from './pages/SmileBrightDental';
 import Blog from './pages/Blog';
 import Media from './pages/Media';
@@ -32,7 +32,6 @@ function HomePage() {
         <Hero />
         <Services />
         <Stats />
-        <Doctors />
         <Testimonials />
       </main>
       <Footer />
@@ -49,6 +48,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* About Us */}
+        <Route path="/about/dr-sasha-helene" element={<DoctorProfile />} />
         <Route path="/about/smile-bright-dental" element={<SmileBrightDental />} />
         <Route path="/about/blog" element={<Blog />} />
         <Route path="/about/media" element={<Media />} />

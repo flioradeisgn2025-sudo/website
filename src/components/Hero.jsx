@@ -22,7 +22,7 @@ const Hero = () => {
                         <span className="text-secondary">Exceptional</span> Dental Care.
                     </h1>
                     <p className="hero-description">
-                        Welcome to Acharya Dental — Smile Bright. We combine cutting-edge dental
+                        Welcome to Smile Bright Dental. We combine cutting-edge dental
                         technology with specialist expertise to deliver painless, precision care
                         and life-changing smiles.
                     </p>

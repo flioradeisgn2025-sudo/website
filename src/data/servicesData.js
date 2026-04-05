@@ -1,4 +1,4 @@
-// Services data based on Acharya Dental reference (acharyadental.com)
+// Services data based on Smile Bright Dental reference
 // Each service has: slug, title, tagline, heroImage, icon, overview, whyUs,
 //   benefits (array), procedure (array of steps), faqs, relatedServices
 
@@ -10,9 +10,9 @@ export const servicesData = [
     tagline: 'Restore Your Smile with Permanent, Natural-Looking Teeth',
     heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#7B6CF6',
-    overview: `Missing teeth affect more than your smile — they impact your confidence, ability to eat, and long-term oral health. At Acharya Dental, we offer state-of-the-art tooth replacement options, including dental implants, implant-supported bridges, and full-arch restorations. Our implants are crafted from titanium and fuse naturally with your jawbone, providing a permanent, stable foundation that looks, feels, and functions like your natural teeth.
+    overview: `Missing teeth affect more than your smile — they impact your confidence, ability to eat, and long-term oral health. At Smile Bright Dental, we offer state-of-the-art tooth replacement options, including dental implants, implant-supported bridges, and full-arch restorations. Our implants are crafted from titanium and fuse naturally with your jawbone, providing a permanent, stable foundation that looks, feels, and functions like your natural teeth.
 
-Whether you've lost a single tooth or multiple teeth due to decay, injury, or gum disease, our specialist Dr. Varun Acharya designs a personalised treatment plan to restore full function and aesthetics.`,
+Whether you've lost a single tooth or multiple teeth due to decay, injury, or gum disease, our specialist Dr. Sasha Helene designs a personalised treatment plan to restore full function and aesthetics.`,
     benefits: [
       'Looks, feels and functions exactly like natural teeth',
       'Prevents jawbone loss caused by missing teeth',
@@ -29,7 +29,7 @@ Whether you've lost a single tooth or multiple teeth due to decay, injury, or gu
       { step: '05', title: 'Crown Fitting', desc: 'A custom-made, tooth-coloured ceramic crown is placed, completing your new natural-looking tooth.' },
     ],
     whyUs: [
-      'Over 5,000 implants placed by Dr. Varun Acharya',
+      'Years of advanced implant procedures by Dr. Sasha Helene',
       'Swiss and Korean premium-grade implant systems',
       '3D CBCT guided implant surgery for precision',
       'In-house dental laboratory for same-day crowns',
@@ -51,9 +51,9 @@ Whether you've lost a single tooth or multiple teeth due to decay, injury, or gu
     tagline: 'Straighten Your Smile Comfortably and Discreetly',
     heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#1e88e5',
-    overview: `Crooked, crowded, or gapped teeth can affect your confidence and oral health. At Acharya Dental, we offer a comprehensive range of orthodontic solutions — from traditional metal braces to advanced clear aligners (Invisalign) — to suit every lifestyle, age, and budget.
+    overview: `Crooked, crowded, or gapped teeth can affect your confidence and oral health. At Smile Bright Dental, we offer a comprehensive range of orthodontic solutions — from traditional metal braces to advanced clear aligners (Invisalign) — to suit every lifestyle, age, and budget.
 
-Dr. Varun Acharya, our certified Invisalign Diamond Provider, uses the latest digital smile design technology to map your treatment and show you the expected results before you even begin. Whether for children, teens, or adults, we create beautiful, perfectly aligned smiles.`,
+Dr. Sasha Helene, our expert specialist, uses the latest digital smile design technology to map your treatment and show you the expected results before you even begin. Whether for children, teens, or adults, we create beautiful, perfectly aligned smiles.`,
     benefits: [
       'Correct crowding, gaps, overbite, underbite, and crossbite',
       'Invisible clear aligner options available',
@@ -92,9 +92,9 @@ Dr. Varun Acharya, our certified Invisalign Diamond Provider, uses the latest di
     tagline: 'Advanced Techniques to Ensure a Completely Pain-Free Dental Experience',
     heroImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#43a047',
-    overview: `Dental anxiety and fear of pain are among the most common reasons people avoid the dentist. At Acharya Dental, we believe every patient deserves care that is gentle, comfortable, and completely pain-free. Our team is trained in the latest pain management and anxiety-reduction protocols, including topical anaesthesia, computer-controlled injections, nitrous oxide, and IV sedation.
+    overview: `Dental anxiety and fear of pain are among the most common reasons people avoid the dentist. At Smile Bright Dental, we believe every patient deserves care that is gentle, comfortable, and completely pain-free. Our team is trained in the latest pain management and anxiety-reduction protocols, including topical anaesthesia, computer-controlled injections, nitrous oxide, and IV sedation.
 
-Dr. Vijailakshmi Acharya and her team take extra care with fearful patients, explaining every step of the procedure, using the gentlest techniques, and never rushing. Your comfort is our highest priority.`,
+Dr. Sasha Helene and her team take extra care with fearful patients, explaining every step of the procedure, using the gentlest techniques, and never rushing. Your comfort is our highest priority.`,
     benefits: [
       'Virtually painless injections using computer-controlled delivery',
       'Topical anaesthetics applied before any injection',
@@ -133,7 +133,7 @@ Dr. Vijailakshmi Acharya and her team take extra care with fearful patients, exp
     tagline: 'Prevention Is Better — and Cheaper — Than Cure',
     heroImage: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#00897b',
-    overview: `The most effective dental care is the care that prevents problems before they start. Our comprehensive preventive dentistry programme at Acharya Dental is designed to keep your teeth and gums healthy throughout every stage of life. From routine check-ups and professional cleanings to fluoride treatments, sealants, and custom mouthguards, we provide a full range of preventive services for adults and children alike.
+    overview: `The most effective dental care is the care that prevents problems before they start. Our comprehensive preventive dentistry programme at Smile Bright Dental is designed to keep your teeth and gums healthy throughout every stage of life. From routine check-ups and professional cleanings to fluoride treatments, sealants, and custom mouthguards, we provide a full range of preventive services for adults and children alike.
 
 Regular visits to Acharya Dental allow us to detect early signs of decay, gum disease, and oral cancer — catching minor issues before they become major (and costly) problems.`,
     benefits: [
@@ -174,9 +174,9 @@ Regular visits to Acharya Dental allow us to detect early signs of decay, gum di
     tagline: 'Minimally Invasive Dental Treatment with Near-Zero Discomfort',
     heroImage: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#8e24aa',
-    overview: `Laser dentistry represents one of the most significant advances in modern oral care. At Acharya Dental, we use FDA-approved soft and hard tissue dental lasers to perform a wide range of procedures with extraordinary precision, minimal discomfort, and dramatically faster healing times compared to traditional methods.
+    overview: `Laser dentistry represents one of the most significant advances in modern oral care. At Smile Bright Dental, we use FDA-approved soft and hard tissue dental lasers to perform a wide range of procedures with extraordinary precision, minimal discomfort, and dramatically faster healing times compared to traditional methods.
 
-Dr. Vijailakshmi Acharya is a certified laser dentistry practitioner with extensive clinical experience. Laser treatment eliminates the need for scalpels in most soft tissue procedures, reduces bleeding and swelling, and often requires no stitches — making recovery much easier.`,
+Dr. Sasha Helene is a certified laser dentistry practitioner with extensive clinical experience. Laser treatment eliminates the need for scalpels in most soft tissue procedures, reduces bleeding and swelling, and often requires no stitches — making recovery much easier.`,
     benefits: [
       'Minimally invasive — often no scalpel or stitches required',
       'Significant reduction in pain and discomfort',
@@ -194,7 +194,7 @@ Dr. Vijailakshmi Acharya is a certified laser dentistry practitioner with extens
     ],
     whyUs: [
       'FDA-approved soft and hard tissue laser systems',
-      'Dr. Vijailakshmi — certified laser dentistry practitioner',
+      'Dr. Sasha Helene — certified laser dentistry practitioner',
       'Used for gum reshaping, cavity treatment, teeth whitening & more',
       'Ideal for children and anxious patients',
       'State-of-the-art laser suite',
@@ -215,7 +215,7 @@ Dr. Vijailakshmi Acharya is a certified laser dentistry practitioner with extens
     tagline: 'Experience Dental Care Without Fear or Anxiety',
     heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#3949ab',
-    overview: `Dental anxiety affects millions of people worldwide and is one of the leading reasons for neglected oral health. At Acharya Dental, we offer a complete range of sedation options so that even the most anxious patients can receive the dental care they need — completely comfortably.
+    overview: `Dental anxiety affects millions of people worldwide and is one of the leading reasons for neglected oral health. At Smile Bright Dental, we offer a complete range of sedation options so that even the most anxious patients can receive the dental care they need — completely comfortably.
 
 From mild nitrous oxide sedation (laughing gas) to oral sedation and IV (intravenous) sedation, our sedation specialists customise your experience. With sedation dentistry, complex multi-procedure visits can be completed in a single appointment while you rest in complete comfort.`,
     benefits: [
@@ -256,7 +256,7 @@ From mild nitrous oxide sedation (laughing gas) to oral sedation and IV (intrave
     tagline: "Building Healthy Smiles and Positive Dental Habits from Day One",
     heroImage: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#F59E0B',
-    overview: `Children's dental health sets the foundation for a lifetime of healthy smiles. At Acharya Dental, we have created a warm, welcoming, child-friendly environment where little patients feel completely at ease. Our paediatric dentistry team is specially trained in child behaviour management, making dental visits a positive — even fun — experience.
+    overview: `Children's dental health sets the foundation for a lifetime of healthy smiles. At Smile Bright Dental, we have created a warm, welcoming, child-friendly environment where little patients feel completely at ease. Our paediatric dentistry team is specially trained in child behaviour management, making dental visits a positive — even fun — experience.
 
 From the first tooth to teenage years, we provide comprehensive care including check-ups, fluoride treatments, dental sealants, early orthodontic assessment, and treatment of cavities using the gentlest, most modern techniques available.`,
     benefits: [
@@ -297,7 +297,7 @@ From the first tooth to teenage years, we provide comprehensive care including c
     tagline: 'Start Fresh with a Professionally Clean, Healthy Smile',
     heroImage: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#00acc1',
-    overview: `Even with excellent daily brushing and flossing, plaque and tartar accumulate in areas that are impossible to reach at home. Professional teeth cleaning at Acharya Dental removes this buildup, preventing gum disease, tooth decay, and bad breath.
+    overview: `Even with excellent daily brushing and flossing, plaque and tartar accumulate in areas that are impossible to reach at home. Professional teeth cleaning at Smile Bright Dental removes this buildup, preventing gum disease, tooth decay, and bad breath.
 
 Our hygienists use the latest ultrasonic scaling technology combined with hand instruments to gently and thoroughly clean all tooth surfaces — above and below the gumline. Each session concludes with polishing to remove surface stains and leave your teeth feeling incredibly smooth and clean.`,
     benefits: [
@@ -338,7 +338,7 @@ Our hygienists use the latest ultrasonic scaling technology combined with hand i
     tagline: 'A Brighter, More Radiant Smile in Just One Visit',
     heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#fdd835',
-    overview: `A bright, white smile can transform your appearance and self-confidence. At Acharya Dental, we offer professional-grade teeth whitening solutions that are both safe and dramatically more effective than over-the-counter products.
+    overview: `A bright, white smile can transform your appearance and self-confidence. At Smile Bright Dental, we offer professional-grade teeth whitening solutions that are both safe and dramatically more effective than over-the-counter products.
 
 Choose from our power in-chair whitening (results in 60–90 minutes) using advanced laser or LED light activation, or take-home whitening kits with custom-fitted trays for gradual whitening at your own pace. Both options are supervised by our dental team to ensure even, lasting, and safe results.`,
     benefits: [
@@ -379,7 +379,7 @@ Choose from our power in-chair whitening (results in 60–90 minutes) using adva
     tagline: 'Quick, Painless Screening That Could Save Your Life',
     heroImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#7B6CF6',
-    overview: `Oral cancer is one of the most common cancers in India, yet it is one of the most curable when detected early. At Acharya Dental, oral cancer screening is part of every comprehensive check-up. Dr. Vijailakshmi Acharya, our specialist in Oral Medicine and Radiology, is highly trained in identifying the earliest signs of oral cancer and pre-cancerous lesions.
+    overview: `Oral cancer is one of the most common cancers in India, yet it is one of the most curable when detected early. At Smile Bright Dental, oral cancer screening is part of every comprehensive check-up. Dr. Sasha Helene is highly trained in identifying the earliest signs of oral cancer and pre-cancerous lesions.
 
 Our screening takes just a few minutes and involves a thorough visual and tactile examination of all oral soft tissues — lips, tongue, cheeks, floor of mouth, palate, and throat — combined with advanced diagnostic tools such as VELscope fluorescence imaging.`,
     benefits: [
@@ -398,7 +398,7 @@ Our screening takes just a few minutes and involves a thorough visual and tactil
       { step: '05', title: 'Results & Follow-Up', desc: 'Normal findings are recorded. Any suspicious areas are biopsied or referred to a specialist for further assessment promptly.' },
     ],
     whyUs: [
-      'Specialist in Oral Medicine & Radiology — Dr. Vijailakshmi Acharya',
+      'Expert Oral Health Specialist — Dr. Sasha Helene',
       'VELscope advanced fluorescence screening technology',
       'Routine screening at every check-up appointment',
       'Biopsy services available on-site',
@@ -420,9 +420,9 @@ Our screening takes just a few minutes and involves a thorough visual and tactil
     tagline: 'World-Class Restorations Crafted In-House for Speed and Precision',
     heroImage: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
     color: '#546e7a',
-    overview: `Most dental clinics outsource their crowns, bridges, and dentures to external laboratories — causing lengthy waiting times and compromised quality control. At Acharya Dental, we are proud to operate a fully equipped, in-house dental laboratory staffed by expert dental technicians.
+    overview: `Most dental clinics outsource their crowns, bridges, and dentures to external laboratories — causing lengthy waiting times and compromised quality control. At Smile Bright Dental, we are proud to operate a fully equipped, in-house dental laboratory staffed by expert dental technicians.
 
-This means your crowns, veneers, bridges, dentures, and orthodontic appliances are fabricated on-site — often on the same day — under the direct supervision of Dr. Varun Acharya. The result is superior quality, perfect shade matching, and significantly shorter treatment times.`,
+This means your crowns, veneers, bridges, dentures, and orthodontic appliances are fabricated on-site — often on the same day — under the direct supervision of Dr. Sasha Helene. The result is superior quality, perfect shade matching, and significantly shorter treatment times.`,
     benefits: [
       'Same-day or next-day crowns and restorations in many cases',
       'Direct communication between dentist and technician for perfection',
@@ -441,7 +441,7 @@ This means your crowns, veneers, bridges, dentures, and orthodontic appliances a
     whyUs: [
       'Fully equipped on-site digital dental laboratory',
       'CAD/CAM milling for same-day ceramic restorations',
-      'Expert dental technicians supervised by Dr. Varun Acharya',
+      'Expert dental technicians supervised by Dr. Sasha Helene',
       'Digital shade matching — pixel-perfect colour accuracy',
       'High-strength zirconia, e.max, and premium materials',
     ],

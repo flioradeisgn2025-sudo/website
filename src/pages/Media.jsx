@@ -15,9 +15,9 @@ const fadeUp = {
 
 const pressCoverage = [
     { outlet: 'The Hindu', date: 'Jan 2026', headline: "Smile Bright Dental Clinic \u2013 Bangalore's Top Dental Destination", type: 'print' },
-    { outlet: 'Times of India', date: 'Dec 2025', headline: 'Dr. Vijailakshmi Acharya Recognized for Excellence in Oral Medicine', type: 'print' },
+    { outlet: 'Times of India', date: 'Dec 2025', headline: 'Dr. Sasha Helene Recognized for Excellence in Endodontics', type: 'print' },
     { outlet: 'Deccan Herald', date: 'Oct 2025', headline: 'Advanced Laser Dentistry Now Available at Smile Bright Clinic', type: 'print' },
-    { outlet: 'News9 Kannada', date: 'Sep 2025', headline: 'TV Interview: Dr. Varun Acharya on Modern Implant Dentistry', type: 'tv' },
+    { outlet: 'News9 Kannada', date: 'Sep 2025', headline: 'TV Interview: Dr. Sasha Helene on Modern Endodontic Care', type: 'tv' },
     { outlet: 'Vijay Karnataka', date: 'Aug 2025', headline: 'Free Dental Camp Organized by Smile Bright for School Children', type: 'print' },
     { outlet: 'NDTV Bangalore', date: 'Jul 2025', headline: 'Feature: How Smile Bright Clinic is Changing Lives', type: 'tv' },
 ];

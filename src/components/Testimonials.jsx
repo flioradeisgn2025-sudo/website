@@ -4,19 +4,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
     {
-        text: "Dr. Varun placed 3 implants and the results are absolutely life-changing. You cannot tell they are not real teeth. The whole process was far less painful than I feared. The team at Acharya Dental is truly exceptional.",
+        text: "Dr. Sasha Helene performed my treatment and the results are absolutely life-changing. I am so glad I chose this clinic. The whole process was far less painful than I feared. The team at Smile Bright Dental is truly exceptional.",
         name: "Priya Sharma",
-        role: "Patient — Dental Implants, Bangalore"
+        role: "Patient — Dental Care, Bangalore"
     },
     {
-        text: "Dr. Vijailakshmi is a true artist. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.",
+        text: "Dr. Sasha Helene is a true expert. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.",
         name: "Ananya Reddy",
-        role: "Patient — Full Mouth Rehabilitation, Hyderabad"
+        role: "Patient — Smile Makeover, Hyderabad"
     },
     {
-        text: "I needed gum treatment and was terrified. The laser gum procedure at Acharya Dental was completely painless — no cuts, no stitches. I was back to work the same evening! Absolutely incredible experience.",
+        text: "I needed treatment and was terrified. The laser procedure at Smile Bright Dental was completely painless — no cuts, no stitches. I was back to work the same evening! Absolutely incredible experience.",
         name: "Mohammed Ashraf",
-        role: "Patient — Laser Dentistry, Chennai"
+        role: "Patient — Laser Care, Chennai"
     }
 ];
 

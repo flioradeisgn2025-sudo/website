@@ -5,16 +5,10 @@ import { motion } from 'framer-motion';
 
 const doctors = [
     {
-        name: 'Dr. Vijailakshmi Acharya',
-        specialty: 'Oral Medicine & Radiology, Founder',
-        image: 'https://images.unsplash.com/photo-1594824432243-7dbcbba6c63e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '/about/dr-vijailakshmi',
-    },
-    {
-        name: 'Dr. Varun Acharya',
-        specialty: 'Prosthodontics & Implantology, BDS MDS',
-        image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '/about/dr-varun',
+        name: 'Dr. Sasha Helene',
+        specialty: 'BDS MDS (Endodontist)',
+        image: '/website/dr-sasha.png',
+        link: '/about/smile-bright-dental',
     },
 ];
 

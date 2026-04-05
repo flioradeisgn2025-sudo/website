@@ -19,7 +19,7 @@ const tourSpots = [
   {
     id: 2, icon: Eye,
     title: 'Consultation Rooms',
-    desc: 'Spacious, private, and fully equipped consultation rooms where Dr. Vijailakshmi and Dr. Varun Acharya review your case, take X-rays, and craft your personalised treatment plan.',
+    desc: 'Spacious, private, and fully equipped consultation rooms where Dr. Sasha Helene reviews your case, takes X-rays, and crafts your personalised treatment plan.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
   },
   {

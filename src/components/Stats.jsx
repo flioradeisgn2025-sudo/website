@@ -17,14 +17,14 @@ const Stats = () => {
                     <span className="section-subtitle">Why Choose Us</span>
                     <h2>Dedicated to Excellence in Dental Care.</h2>
                     <p>
-                        For over two decades, Acharya Dental — Smile Bright has been at the
+                        For over two decades, Smile Bright Dental has been at the
                         forefront of dental innovation, delivering painless, precision care and
                         life-changing smiles for patients across India and beyond.
                     </p>
                     <ul className="stats-list">
                         <li>✓ Advanced Digital Dental Technology</li>
-                        <li>✓ Invasalign Diamond Provider Certification</li>
-                        <li>✓ 5,000+ Successful Implants Placed</li>
+                        <li>✓ Specialist Endodontic & Implant Care</li>
+                        <li>✓ Thousands of Successful Procedures</li>
                         <li>✓ In-House Laboratory for Same-Day Crowns</li>
                     </ul>
                 </motion.div>

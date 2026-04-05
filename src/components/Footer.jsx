@@ -14,7 +14,7 @@ const Footer = () => {
                             <img src={`${baseUrl}logo.png`} alt="Smile Bright Logo" style={{ height: '60px', filter: 'brightness(0) invert(1)' }} />
                         </a>
                         <p className="footer-desc">
-                            Acharya Dental — Smile Bright is Bangalore's premier dental clinic,
+                            Smile Bright Dental is Bangalore's premier dental clinic,
                             delivering pain-free, precision dental care and life-changing smiles
                             for over 20 years.
                         </p>
@@ -52,7 +52,7 @@ const Footer = () => {
                         <ul className="contact-info">
                             <li>
                                 <MapPin size={20} />
-                                <span>Acharya Dental, Smile Bright Clinic, Bangalore, Karnataka</span>
+                                <span>Smile Bright Dental Clinic, MG Road, Bangalore, Karnataka</span>
                             </li>
                             <li>
                                 <Phone size={20} />
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Acharya Dental — Smile Bright. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Smile Bright Dental. All rights reserved.</p>
                     <div className="footer-legal">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
