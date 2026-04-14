@@ -52,15 +52,15 @@ const Footer = () => {
                         <ul className="contact-info">
                             <li>
                                 <MapPin size={20} />
-                                <span>Smile Bright Dental Clinic, MG Road, Bangalore, Karnataka</span>
+                                <span>#38/238, Angappa Naicken Street, Mannady, Landmark: Near Eidgah Mosque., Chennai, Tamil Nadu 600001</span>
                             </li>
                             <li>
                                 <Phone size={20} />
-                                <span>+91 98765 43210</span>
+                                <span>+91 94444 08087</span>
                             </li>
                             <li>
                                 <Mail size={20} />
-                                <span>info@smilebrightdental.com</span>
+                                <span>ayeshasubhan1408@gmail.com</span>
                             </li>
                         </ul>
                     </div>

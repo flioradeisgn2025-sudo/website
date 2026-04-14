@@ -25,7 +25,7 @@ const Stats = () => {
                         <li>✓ Advanced Digital Dental Technology</li>
                         <li>✓ Specialist Endodontic & Implant Care</li>
                         <li>✓ Thousands of Successful Procedures</li>
-                        <li>✓ In-House Laboratory for Same-Day Crowns</li>
+
                     </ul>
                 </motion.div>
 

@@ -8,7 +8,7 @@ export const servicesData = [
     title: 'Teeth Replacement',
     subtitle: 'Dental Implants',
     tagline: 'Restore Your Smile with Permanent, Natural-Looking Teeth',
-    heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/teeth_replacement.png',
     color: '#7B6CF6',
     overview: `Missing teeth affect more than your smile — they impact your confidence, ability to eat, and long-term oral health. At Smile Bright Dental, we offer state-of-the-art tooth replacement options, including dental implants, implant-supported bridges, and full-arch restorations. Our implants are crafted from titanium and fuse naturally with your jawbone, providing a permanent, stable foundation that looks, feels, and functions like your natural teeth.
 
@@ -49,7 +49,7 @@ Whether you've lost a single tooth or multiple teeth due to decay, injury, or gu
     title: 'Teeth Alignment',
     subtitle: 'Braces & Invisalign',
     tagline: 'Straighten Your Smile Comfortably and Discreetly',
-    heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/teeth_alignment.png',
     color: '#1e88e5',
     overview: `Crooked, crowded, or gapped teeth can affect your confidence and oral health. At Smile Bright Dental, we offer a comprehensive range of orthodontic solutions — from traditional metal braces to advanced clear aligners (Invisalign) — to suit every lifestyle, age, and budget.
 
@@ -90,7 +90,7 @@ Dr. Sasha Helene, our expert specialist, uses the latest digital smile design te
     title: 'Pain Management',
     subtitle: 'Comfortable, Pain-Free Dental Care',
     tagline: 'Advanced Techniques to Ensure a Completely Pain-Free Dental Experience',
-    heroImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/pain_management.png',
     color: '#43a047',
     overview: `Dental anxiety and fear of pain are among the most common reasons people avoid the dentist. At Smile Bright Dental, we believe every patient deserves care that is gentle, comfortable, and completely pain-free. Our team is trained in the latest pain management and anxiety-reduction protocols, including topical anaesthesia, computer-controlled injections, nitrous oxide, and IV sedation.
 
@@ -131,7 +131,7 @@ Dr. Sasha Helene and her team take extra care with fearful patients, explaining 
     title: 'Preventive Dentistry',
     subtitle: 'Protect Your Smile Before Problems Start',
     tagline: 'Prevention Is Better — and Cheaper — Than Cure',
-    heroImage: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/preventive_dentistry.png',
     color: '#00897b',
     overview: `The most effective dental care is the care that prevents problems before they start. Our comprehensive preventive dentistry programme at Smile Bright Dental is designed to keep your teeth and gums healthy throughout every stage of life. From routine check-ups and professional cleanings to fluoride treatments, sealants, and custom mouthguards, we provide a full range of preventive services for adults and children alike.
 
@@ -172,7 +172,7 @@ Regular visits to Acharya Dental allow us to detect early signs of decay, gum di
     title: 'Laser Dentistry',
     subtitle: 'Precision Treatment, Faster Healing',
     tagline: 'Minimally Invasive Dental Treatment with Near-Zero Discomfort',
-    heroImage: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/laser_dentistry.png',
     color: '#8e24aa',
     overview: `Laser dentistry represents one of the most significant advances in modern oral care. At Smile Bright Dental, we use FDA-approved soft and hard tissue dental lasers to perform a wide range of procedures with extraordinary precision, minimal discomfort, and dramatically faster healing times compared to traditional methods.
 
@@ -213,7 +213,7 @@ Dr. Sasha Helene is a certified laser dentistry practitioner with extensive clin
     title: 'Sedation Dentistry',
     subtitle: 'Relax, Sleep, and Wake Up with a Beautiful Smile',
     tagline: 'Experience Dental Care Without Fear or Anxiety',
-    heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/sedation_dentistry.png',
     color: '#3949ab',
     overview: `Dental anxiety affects millions of people worldwide and is one of the leading reasons for neglected oral health. At Smile Bright Dental, we offer a complete range of sedation options so that even the most anxious patients can receive the dental care they need — completely comfortably.
 
@@ -254,7 +254,7 @@ From mild nitrous oxide sedation (laughing gas) to oral sedation and IV (intrave
     title: 'Paediatric Dentistry',
     subtitle: "Caring for Your Child's Smile",
     tagline: "Building Healthy Smiles and Positive Dental Habits from Day One",
-    heroImage: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/paediatric_dentistry.png',
     color: '#F59E0B',
     overview: `Children's dental health sets the foundation for a lifetime of healthy smiles. At Smile Bright Dental, we have created a warm, welcoming, child-friendly environment where little patients feel completely at ease. Our paediatric dentistry team is specially trained in child behaviour management, making dental visits a positive — even fun — experience.
 
@@ -295,7 +295,7 @@ From the first tooth to teenage years, we provide comprehensive care including c
     title: 'Teeth Cleaning',
     subtitle: 'Professional Scaling & Polishing',
     tagline: 'Start Fresh with a Professionally Clean, Healthy Smile',
-    heroImage: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/teeth_cleaning.png',
     color: '#00acc1',
     overview: `Even with excellent daily brushing and flossing, plaque and tartar accumulate in areas that are impossible to reach at home. Professional teeth cleaning at Smile Bright Dental removes this buildup, preventing gum disease, tooth decay, and bad breath.
 
@@ -336,7 +336,7 @@ Our hygienists use the latest ultrasonic scaling technology combined with hand i
     title: 'Teeth Whitening',
     subtitle: 'Professional In-Chair & Take-Home Whitening',
     tagline: 'A Brighter, More Radiant Smile in Just One Visit',
-    heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/teeth_whitening.png',
     color: '#fdd835',
     overview: `A bright, white smile can transform your appearance and self-confidence. At Smile Bright Dental, we offer professional-grade teeth whitening solutions that are both safe and dramatically more effective than over-the-counter products.
 
@@ -377,7 +377,7 @@ Choose from our power in-chair whitening (results in 60–90 minutes) using adva
     title: 'Oral Cancer Screening',
     subtitle: 'Early Detection Saves Lives',
     tagline: 'Quick, Painless Screening That Could Save Your Life',
-    heroImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
+    heroImage: '/website/services/preventive_dentistry.png',
     color: '#7B6CF6',
     overview: `Oral cancer is one of the most common cancers in India, yet it is one of the most curable when detected early. At Smile Bright Dental, oral cancer screening is part of every comprehensive check-up. Dr. Sasha Helene is highly trained in identifying the earliest signs of oral cancer and pre-cancerous lesions.
 
@@ -413,46 +413,6 @@ Our screening takes just a few minutes and involves a thorough visual and tactil
     relatedServices: ['preventive-dentistry', 'teeth-cleaning', 'laser-dentistry'],
   },
 
-  {
-    slug: 'in-house-laboratory',
-    title: 'In-House Laboratory',
-    subtitle: 'Same-Day Dental Restorations',
-    tagline: 'World-Class Restorations Crafted In-House for Speed and Precision',
-    heroImage: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80',
-    color: '#546e7a',
-    overview: `Most dental clinics outsource their crowns, bridges, and dentures to external laboratories — causing lengthy waiting times and compromised quality control. At Smile Bright Dental, we are proud to operate a fully equipped, in-house dental laboratory staffed by expert dental technicians.
-
-This means your crowns, veneers, bridges, dentures, and orthodontic appliances are fabricated on-site — often on the same day — under the direct supervision of Dr. Sasha Helene. The result is superior quality, perfect shade matching, and significantly shorter treatment times.`,
-    benefits: [
-      'Same-day or next-day crowns and restorations in many cases',
-      'Direct communication between dentist and technician for perfection',
-      'Superior quality control — no compromise on materials',
-      'Fabrication of crowns, bridges, veneers, dentures, retainers, and more',
-      'Perfect shade matching using digital spectrophotometers',
-      'Reduces total number of dental visits required',
-    ],
-    procedure: [
-      { step: '01', title: 'Digital Impression', desc: 'An intraoral scanner captures a precise 3D digital model of your teeth — no messy impression paste required.' },
-      { step: '02', title: 'Shade Selection', desc: 'Using digital shade mapping, we select the exact colour match for your restoration against your natural teeth.' },
-      { step: '03', title: 'CAD/CAM Design', desc: 'Our laboratory team uses computer-aided design software to create your restoration with micron-level precision.' },
-      { step: '04', title: 'Milling & Fabrication', desc: 'The restoration is milled from a solid block of high-strength ceramic, zirconia, or resin using our in-house CAD/CAM milling unit.' },
-      { step: '05', title: 'Fitting & Delivery', desc: 'The restoration is checked for fit, bite, and aesthetics, then polished and cemented or bonded in the same appointment.' },
-    ],
-    whyUs: [
-      'Fully equipped on-site digital dental laboratory',
-      'CAD/CAM milling for same-day ceramic restorations',
-      'Expert dental technicians supervised by Dr. Sasha Helene',
-      'Digital shade matching — pixel-perfect colour accuracy',
-      'High-strength zirconia, e.max, and premium materials',
-    ],
-    faqs: [
-      { q: 'Can I really get a crown in one day?', a: 'Yes! With our CAD/CAM in-house lab, many single crowns can be designed, milled, and fitted in a single appointment of 2–3 hours.' },
-      { q: 'Are in-house lab restorations as good as external lab ones?', a: 'Ours are better. Direct supervision by the treating dentist and use of premium materials means superior quality and shade matching.' },
-      { q: 'What restorations are made in the in-house lab?', a: 'Crowns, bridges, veneers, inlays, onlays, dentures, partial dentures, retainers, night guards, and more.' },
-      { q: 'What materials are used?', a: 'We use high-strength zirconia, lithium disilicate (e.max), PMMA, and other premium dental materials for durable, natural-looking results.' },
-    ],
-    relatedServices: ['teeth-replacement', 'teeth-alignment', 'teeth-whitening'],
-  },
 ];
 
 export const getServiceBySlug = (slug) => servicesData.find(s => s.slug === slug);

@@ -59,8 +59,7 @@ const SmileBrightDental = () => {
                                 Smile Bright Dental
                             </h1>
                             <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', marginTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
-                                <span>Bangalore's Premier Dental Destination</span>
-                                <span style={{ opacity: 0.7, fontSize: '1rem' }}>20+ Years of Excellence</span>
+
                             </p>
                             <div className="doctor-badges">
                                 <span className="doctor-badge-chip"><Star size={14} /> Top Rated</span>
@@ -85,13 +84,13 @@ const SmileBrightDental = () => {
                                     />
                                     <div className="doctor-contact-info">
                                         <h3 style={{ marginBottom: '1.25rem' }}>Visit Our Clinic</h3>
-                                        <a href="tel:+919876543210" className="contact-row">
-                                            <Phone size={18} color="var(--primary-color)" />
-                                            <span>+91 98765 43210</span>
+                                        <a href="tel:+919444408087" className="contact-row">
+                                            <Phone size={18} />
+                                            <span>+91 94444 08087</span>
                                         </a>
-                                        <a href="mailto:info@smilebrightdental.com" className="contact-row">
-                                            <Mail size={18} color="var(--primary-color)" />
-                                            <span>info@smilebrightdental.com</span>
+                                        <a href="mailto:ayeshasubhan1408@gmail.com" className="contact-row">
+                                            <Mail size={18} />
+                                            <span>ayeshasubhan1408@gmail.com</span>
                                         </a>
                                         <div className="contact-row">
                                             <MapPin size={18} color="var(--primary-color)" />

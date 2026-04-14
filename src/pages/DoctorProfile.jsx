@@ -74,13 +74,13 @@ const DoctorProfile = () => {
                                     />
                                     <div className="doctor-contact-info" style={{ padding: '2rem' }}>
                                         <h3 style={{ marginBottom: '1.25rem', fontSize: '1.4rem' }}>Request a Consultation</h3>
-                                        <a href="tel:+919876543210" className="contact-row">
+                                        <a href="tel:+919444408087" className="contact-row">
                                             <Phone size={18} color="var(--primary-color)" />
-                                            <span>+91 98765 43210</span>
+                                            <span>+91 94444 08087</span>
                                         </a>
-                                        <a href="mailto:appointments@smilebrightdental.com" className="contact-row">
+                                        <a href="mailto:ayeshasubhan1408@gmail.com" className="contact-row">
                                             <Mail size={18} color="var(--primary-color)" />
-                                            <span>appointments@smilebrightdental.com</span>
+                                            <span>ayeshasubhan1408@gmail.com</span>
                                         </a>
                                         <button className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>
                                             Book Appointment

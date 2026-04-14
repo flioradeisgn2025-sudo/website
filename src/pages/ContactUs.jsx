@@ -12,25 +12,25 @@ const fadeUp = {
 const contactInfo = [
   {
     icon: Phone, title: 'Call Us', color: '#4CAF50',
-    lines: ['+91 98765 43210', '+91 98765 43211'],
+    lines: ['+91 94444 08087'],
     note: 'Mon–Sat: 9 AM – 8 PM',
-    action: 'tel:+919876543210',
+    action: 'tel:+919444408087',
   },
   {
     icon: Mail, title: 'Email Us', color: '#2196F3',
-    lines: ['info@acharyadental.com', 'appointments@acharyadental.com'],
+    lines: ['ayeshasubhan1408@gmail.com'],
     note: 'We reply within 4 hours',
-    action: 'mailto:info@acharyadental.com',
+    action: 'mailto:ayeshasubhan1408@gmail.com',
   },
   {
     icon: MapPin, title: 'Visit Us', color: '#FF5722',
-    lines: ['No. 42, MG Road, Shivajinagar,', 'Bangalore – 560001, Karnataka'],
-    note: 'Near Trinity Metro Station',
+    lines: ['#38/238, Angappa Naicken Street', 'Mannady, Chennai, 600001'],
+    note: 'Landmark: Near Eidgah Mosque.',
     action: 'https://maps.google.com',
   },
   {
     icon: Clock, title: 'Clinic Hours', color: '#9C27B0',
-    lines: ['Mon – Sat: 9:00 AM – 8:00 PM', 'Sunday: 10:00 AM – 2:00 PM'],
+    lines: ['Mon - Sat : 9:00 AM - 09:00 PM'],
     note: 'Emergency: Always available',
     action: null,
   },
@@ -132,7 +132,7 @@ const ContactUs = () => {
                       </div>
                       <div className="form-group">
                         <label className="form-label">Phone Number *</label>
-                        <input className="form-input" type="tel" name="phone" value={form.phone} onChange={handleChange} placeholder="+91 98765 43210" required />
+                        <input className="form-input" type="tel" name="phone" value={form.phone} onChange={handleChange} placeholder="+91 94444 08087" required />
                       </div>
                     </div>
                     <div className="form-group">
@@ -164,7 +164,7 @@ const ContactUs = () => {
                 <div className="map-embed" style={{ marginBottom: '1.5rem' }}>
                   <iframe
                     title="Acharya Dental"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9847823617!2d77.6024!3d12.9766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzM1LjgiTiA3N8KwMzYnMDguNiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    src="https://maps.google.com/maps?q=13.0985869,80.2912231&t=&z=17&ie=UTF8&iwloc=&output=embed"
                     width="100%" height="350" style={{ border: 0, borderRadius: '16px' }} allowFullScreen loading="lazy"
                   />
                 </div>
@@ -198,7 +198,7 @@ const ContactUs = () => {
                 <p style={{ color: 'rgba(255,255,255,0.9)' }}>Get instant replies — we respond within minutes during clinic hours</p>
               </div>
             </div>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: '#fff', color: '#25D366', fontWeight: 700 }}>
+            <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: '#fff', color: '#25D366', fontWeight: 700 }}>
               Start Chat
             </a>
           </div>

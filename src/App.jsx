@@ -10,16 +10,13 @@ import Footer from './components/Footer';
 // About Us Pages
 import DoctorProfile from './pages/DoctorProfile';
 import SmileBrightDental from './pages/SmileBrightDental';
-import Blog from './pages/Blog';
 import Media from './pages/Media';
-import Awards from './pages/Awards';
 
 // Services Page (shared template)
 import ServicePage from './pages/ServicePage';
 
 // Other Pages
 import TestimonialsPage from './pages/TestimonialsPage';
-import InternationalPatients from './pages/InternationalPatients';
 import TakeATour from './pages/TakeATour';
 import ContactUs from './pages/ContactUs';
 import Feedback from './pages/Feedback';
@@ -50,14 +47,11 @@ function App() {
         {/* About Us */}
         <Route path="/about/dr-sasha-helene" element={<DoctorProfile />} />
         <Route path="/about/smile-bright-dental" element={<SmileBrightDental />} />
-        <Route path="/about/blog" element={<Blog />} />
         <Route path="/about/media" element={<Media />} />
-        <Route path="/about/awards" element={<Awards />} />
         {/* Services — single dynamic route for all 11 services */}
         <Route path="/services/:slug" element={<ServicePage />} />
         {/* Other pages */}
         <Route path="/testimonials" element={<TestimonialsPage />} />
-        <Route path="/international-patients" element={<InternationalPatients />} />
         <Route path="/take-a-tour" element={<TakeATour />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/contact/feedback" element={<Feedback />} />

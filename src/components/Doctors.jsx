@@ -7,7 +7,7 @@ const doctors = [
     {
         name: 'Dr. Sasha Helene',
         specialty: 'BDS MDS (Endodontist)',
-        image: '/website/dr-sasha.png',
+        image: '/website/doctor_portrait.png',
         link: '/about/smile-bright-dental',
     },
 ];

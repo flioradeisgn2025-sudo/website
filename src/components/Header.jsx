@@ -31,9 +31,7 @@ const Header = () => {
             <div className="dropdown-menu">
               <Link to="/about/dr-sasha-helene" className="dropdown-item">Dr. Sasha Helene</Link>
               <Link to="/about/smile-bright-dental" className="dropdown-item">Smile Bright Dental</Link>
-              <Link to="/about/blog" className="dropdown-item">Blog</Link>
               <Link to="/about/media" className="dropdown-item">Media</Link>
-              <Link to="/about/awards" className="dropdown-item">Awards</Link>
             </div>
           </div>
           <div className="nav-item has-dropdown">
@@ -51,15 +49,11 @@ const Header = () => {
               <Link to="/services/teeth-cleaning" className="dropdown-item">Teeth Cleaning</Link>
               <Link to="/services/teeth-whitening" className="dropdown-item">Teeth Whitening</Link>
               <Link to="/services/oral-cancer-screening" className="dropdown-item">Oral Cancer Screening</Link>
-              <Link to="/services/in-house-laboratory" className="dropdown-item">In-House Laboratory</Link>
             </div>
           </div>
 
           <div className="nav-item">
             <Link to="/testimonials" className="nav-link">Testimonials</Link>
-          </div>
-          <div className="nav-item">
-            <Link to="/international-patients" className="nav-link">International Patients</Link>
           </div>
           <div className="nav-item">
             <Link to="/take-a-tour" className="nav-link">Take a Tour</Link>
@@ -95,9 +89,7 @@ const Header = () => {
             <div className="mobile-dropdown-menu">
               <Link to="/about/dr-sasha-helene" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Dr. Sasha Helene</Link>
               <Link to="/about/smile-bright-dental" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Smile Bright Dental</Link>
-              <Link to="/about/blog" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
               <Link to="/about/media" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
-              <Link to="/about/awards" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Awards</Link>
             </div>
           </div>
           <div className="has-dropdown">
@@ -109,7 +101,6 @@ const Header = () => {
             </div>
           </div>
           <Link to="/testimonials" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Testimonials</Link>
-          <Link to="/international-patients" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>International Patients</Link>
           <Link to="/take-a-tour" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Take a Tour</Link>
           <Link to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
           <Link to="/contact/feedback" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Feedback</Link>

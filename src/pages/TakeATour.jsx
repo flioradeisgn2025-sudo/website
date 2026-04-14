@@ -74,10 +74,10 @@ const TakeATour = () => {
               </p>
               <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap', alignItems: 'center' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'rgba(255,255,255,0.85)', fontSize: '0.95rem' }}>
-                  <Clock size={16} /> Mon–Sat: 9:00 AM – 8:00 PM
+                  <Clock size={16} /> Mon - Sat : 9:00 AM - 09:00 PM
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'rgba(255,255,255,0.85)', fontSize: '0.95rem' }}>
-                  <MapPin size={16} /> MG Road, Bangalore 560001
+                  <MapPin size={16} /> #38/238, Angappa Naicken Street, Mannady, Chennai
                 </div>
               </div>
             </motion.div>
@@ -155,15 +155,14 @@ const TakeATour = () => {
                   <Clock size={22} color="var(--primary-color)" />
                   <div>
                     <h4 style={{ color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Clinic Hours</h4>
-                    <p style={{ color: 'var(--text-secondary)' }}>Monday – Saturday: 9:00 AM – 8:00 PM</p>
-                    <p style={{ color: 'var(--text-secondary)' }}>Sunday: 10:00 AM – 2:00 PM (emergency only)</p>
+                    <p style={{ color: 'var(--text-secondary)' }}>Mon - Sat : 9:00 AM - 09:00 PM</p>
                   </div>
                 </div>
                 <div className="visit-detail-row">
                   <MapPin size={22} color="var(--primary-color)" />
                   <div>
                     <h4 style={{ color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Location</h4>
-                    <p style={{ color: 'var(--text-secondary)' }}>Acharya Dental, No. 42, MG Road, Shivajinagar, Bangalore – 560001</p>
+                    <p style={{ color: 'var(--text-secondary)' }}>#38/238, Angappa Naicken Street, Mannady, Landmark: Near Eidgah Mosque., Chennai, Tamil Nadu 600001</p>
                     <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 600, fontSize: '0.9rem' }}>Get Directions →</a>
                   </div>
                 </div>
@@ -172,7 +171,7 @@ const TakeATour = () => {
                 <div className="map-embed">
                   <iframe
                     title="Acharya Dental Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9847823617!2d77.6024!3d12.9766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzM1LjgiTiA3N8KwMzYnMDguNiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    src="https://maps.google.com/maps?q=13.0985869,80.2912231&t=&z=17&ie=UTF8&iwloc=&output=embed"
                     width="100%" height="300" style={{ border: 0, borderRadius: '12px' }} allowFullScreen loading="lazy"
                   />
                 </div>

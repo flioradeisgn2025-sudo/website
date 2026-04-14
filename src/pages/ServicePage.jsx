@@ -67,8 +67,8 @@ const ServicePage = () => {
                 <button className="btn btn-primary">
                   <CalendarDays size={18} /> Book Appointment
                 </button>
-                <a href="tel:+919876543210" className="btn btn-ghost-white">
-                  <Phone size={18} /> Call Us Now
+                <a href="tel:+919444408087" className="btn btn-ghost-white">
+                  <Phone size={18} /> +91 94444 08087
                 </a>
               </div>
             </motion.div>
@@ -101,8 +101,8 @@ const ServicePage = () => {
                 <div className="service-cta-box" style={{ background: `${service.color}15`, borderColor: `${service.color}30` }}>
                   <Phone size={20} color={service.color} />
                   <div>
-                    <p style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Call for Free Consultation</p>
-                    <a href="tel:+919876543210" style={{ color: service.color, fontWeight: 600 }}>+91 98765 43210</a>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.25rem' }}>Call us on <br/>
+                    <a href="tel:+919444408087" style={{ color: service.color, fontWeight: 600 }}>+91 94444 08087</a></p>
                   </div>
                 </div>
               </div>
@@ -110,27 +110,6 @@ const ServicePage = () => {
           </div>
         </section>
 
-        {/* ── Procedure Steps ──────────────────────────────────── */}
-        <section className="section section-alt">
-          <div className="container">
-            <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <span className="section-subtitle">How It Works</span>
-              <h2>Step-by-Step Procedure</h2>
-            </motion.div>
-            <div className="service-steps-grid">
-              {service.procedure.map((step, i) => (
-                <motion.div key={i} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                  <div className="service-step-card">
-                    <div className="service-step-number" style={{ background: service.color }}>{step.step}</div>
-                    <div className="service-step-connector" style={{ background: service.color }} />
-                    <h3 style={{ color: 'var(--text-primary)', marginBottom: '0.6rem', fontSize: '1.1rem' }}>{step.title}</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.7 }}>{step.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* ── Why Choose Us ────────────────────────────────────── */}
         <section className="section service-why-section" style={{ '--service-color': service.color }}>
@@ -243,8 +222,8 @@ const ServicePage = () => {
                 <button className="btn btn-primary" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
                   <CalendarDays size={20} /> Book Appointment
                 </button>
-                <a href="tel:+919876543210" className="btn btn-ghost-white" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
-                  <Phone size={20} /> +91 98765 43210
+                <a href="tel:+919444408087" className="btn btn-ghost-white" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
+                  <Phone size={20} /> +91 94444 08087
                 </a>
               </div>
             </motion.div>
