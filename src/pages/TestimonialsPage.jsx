@@ -12,7 +12,7 @@ const fadeUp = {
 const allTestimonials = [
   {
     name: 'Priya Sharma', location: 'Bangalore', rating: 5, treatment: 'Dental Implants',
-    text: 'I had been living with missing teeth for years, embarrassed to smile. Dr. Sasha Helene performed my treatment and the results are absolutely life-changing. You cannot tell they are not real teeth. The whole process was far less painful than I feared.',
+    text: 'I had been living with missing teeth for years, embarrassed to smile. Dr. Ponni Valavan, MDS (OMFS) performed my treatment and the results are absolutely life-changing. You cannot tell they are not real teeth. The whole process was far less painful than I feared.',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&auto=format',
   },
   {
@@ -22,7 +22,7 @@ const allTestimonials = [
   },
   {
     name: 'Ananya Reddy', location: 'Hyderabad', rating: 5, treatment: 'Full Mouth Rehabilitation',
-    text: 'Dr. Sasha Helene is a true artist. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.',
+    text: 'Dr. Ponni Valavan, MDS (OMFS) is a true artist. He rebuilt my entire smile after years of neglect. His patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.',
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&auto=format',
   },
   {
@@ -42,7 +42,7 @@ const allTestimonials = [
   },
   {
     name: 'Deepa Menon', location: 'Trivandrum', rating: 5, treatment: 'Root Canal',
-    text: "I had severe tooth pain and was told I needed a root canal. I came in petrified but left completely impressed. Dr. Sasha Helene's precision and the clinic's sedation options made it the most comfortable dental experience I've ever had.",
+    text: "I had severe tooth pain and was told I needed a root canal. I came in petrified but left completely impressed. Dr. Ponni Valavan, MDS (OMFS)'s precision and the clinic's sedation options made it the most comfortable dental experience I've ever had.",
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&auto=format',
   },
   {
@@ -52,7 +52,7 @@ const allTestimonials = [
   },
   {
     name: 'Lakshmi Patel', location: 'Surat', rating: 5, treatment: 'Dental Implants',
-    text: 'Flew specifically for Dr. Sasha Helene. Worth every bit of the journey. Her expertise is extraordinary and the after-care support is exceptional. My new teeth feel completely natural.',
+    text: 'Flew specifically for Dr. Ponni Valavan, MDS (OMFS). Worth every bit of the journey. His expertise is extraordinary and the after-care support is exceptional. My new teeth feel completely natural.',
     avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&h=80&fit=crop&auto=format',
   },
 ];

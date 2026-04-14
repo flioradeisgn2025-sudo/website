@@ -29,7 +29,7 @@ const Header = () => {
               About Us <ChevronDown size={14} style={{ display: 'inline', marginLeft: '2px' }} />
             </a>
             <div className="dropdown-menu">
-              <Link to="/about/dr-sasha-helene" className="dropdown-item">Dr. Sasha Helene</Link>
+              <Link to="/about/dr-ponni-valavan" className="dropdown-item">Dr. Ponni Valavan, MDS (OMFS)</Link>
               <Link to="/about/smile-bright-dental" className="dropdown-item">Smile Bright Dental</Link>
               <Link to="/about/media" className="dropdown-item">Media</Link>
             </div>
@@ -87,7 +87,7 @@ const Header = () => {
           <div className="has-dropdown">
             <a href="#about" className="nav-link">About Us</a>
             <div className="mobile-dropdown-menu">
-              <Link to="/about/dr-sasha-helene" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Dr. Sasha Helene</Link>
+              <Link to="/about/dr-ponni-valavan" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Dr. Ponni Valavan, MDS (OMFS)</Link>
               <Link to="/about/smile-bright-dental" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Smile Bright Dental</Link>
               <Link to="/about/media" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
             </div>

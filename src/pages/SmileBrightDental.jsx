@@ -112,7 +112,7 @@ const SmileBrightDental = () => {
                                         At Smile Bright Dental, we believe a healthy, confident smile can transform lives. For nearly two decades, our multi-specialty clinic has stood as a beacon of dental excellence in Bangalore, offering a comprehensive suite of advanced treatments delivered with unmatched precision and care.
                                     </p>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2rem' }}>
-                                        Our lead specialist, Dr. Sasha Helene, brings together global expertise and the latest in dental technology to ensure every patient experiences painless, effective, and lasting results. From preventative care to complex endodontic treatments and full-mouth rehabilitations, our patient-first approach guarantees a comfortable and reassuring journey toward optimal oral health.
+                                        Our lead specialist, Dr. Ponni Valavan, MDS (OMFS), brings together global expertise and the latest in dental technology to ensure every patient experiences painless, effective, and lasting results. From preventative care to complex endodontic treatments and full-mouth rehabilitations, our patient-first approach guarantees a comfortable and reassuring journey toward optimal oral health.
                                     </p>
                                 </motion.div>
 

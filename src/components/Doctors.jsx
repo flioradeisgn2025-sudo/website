@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const doctors = [
     {
-        name: 'Dr. Sasha Helene',
+        name: 'Dr. Ponni Valavan, MDS (OMFS)',
         specialty: 'BDS MDS (Endodontist)',
         image: '/website/doctor_portrait.png',
         link: '/about/smile-bright-dental',
