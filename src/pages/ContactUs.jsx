@@ -174,7 +174,7 @@ const ContactUs = () => {
                     ['Trinity Metro Station', '200m walk'],
                     ['MG Road Commercial Street', '0.3 km'],
                     ['Ulsoor Lake', '1.2 km'],
-                    ['Bangalore Railway Station', '3.5 km'],
+                    ['Chennai Railway Station', '3.5 km'],
                   ].map(([place, dist], i) => (
                     <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: i < 3 ? '1px solid var(--border-color)' : 'none' }}>
                       <span style={{ color: 'var(--text-primary)', fontSize: '0.9rem' }}>{place}</span>

@@ -75,7 +75,7 @@ const Hero = () => {
                         </div>
                         <div className="card-text">
                             <span className="bold">Top Rated</span>
-                            <span>Dental Clinic in Bangalore</span>
+                            <span>Dental Clinic in Chennai</span>
                         </div>
                     </div>
                 </motion.div>

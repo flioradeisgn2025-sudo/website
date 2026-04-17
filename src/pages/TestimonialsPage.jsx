@@ -11,7 +11,7 @@ const fadeUp = {
 
 const allTestimonials = [
   {
-    name: 'Priya Sharma', location: 'Bangalore', rating: 5, treatment: 'Dental Implants',
+    name: 'Priya Sharma', location: 'Chennai', rating: 5, treatment: 'Dental Implants',
     text: 'I had been living with missing teeth for years, embarrassed to smile. Dr. Ponni Valavan, MDS (OMFS) performed my treatment and the results are absolutely life-changing. You cannot tell they are not real teeth. The whole process was far less painful than I feared.',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&auto=format',
   },
@@ -46,7 +46,7 @@ const allTestimonials = [
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&auto=format',
   },
   {
-    name: 'Venkatesh Rao', location: 'Bangalore', rating: 5, treatment: 'Smile Makeover',
+    name: 'Venkatesh Rao', location: 'Chennai', rating: 5, treatment: 'Smile Makeover',
     text: 'My smile makeover with veneers and whitening is incredible — I look 10 years younger. The in-house lab means everything matched perfectly and was done in just 2 visits. Worth every rupee.',
     avatar: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=80&h=80&fit=crop&auto=format',
   },

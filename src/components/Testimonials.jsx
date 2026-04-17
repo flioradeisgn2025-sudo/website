@@ -6,7 +6,7 @@ const testimonials = [
     {
         text: "Dr. Ponni Valavan, MDS (OMFS) performed my treatment and the results are absolutely life-changing. I am so glad I chose this clinic. The whole process was far less painful than I feared. The team at Smile Bright Dental is truly exceptional.",
         name: "Priya Sharma",
-        role: "Patient — Dental Care, Bangalore"
+        role: "Patient — Dental Care, Chennai"
     },
     {
         text: "Dr. Ponni Valavan, MDS (OMFS) is a true expert. He rebuilt my entire smile after years of neglect. His patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.",

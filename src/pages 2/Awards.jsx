@@ -16,11 +16,11 @@ const fadeUp = {
 const awards = [
     {
         icon: Trophy,
-        title: 'Best Dental Clinic – Bangalore',
+        title: 'Best Dental Clinic – Chennai',
         org: 'Healthcare Excellence Awards',
         year: '2025',
         color: '#FFD700',
-        description: 'Recognized as the top dental clinic in Bangalore for outstanding patient outcomes, advanced technology, and clinical excellence.',
+        description: 'Recognized as the top dental clinic in Chennai for outstanding patient outcomes, advanced technology, and clinical excellence.',
     },
     {
         icon: Medal,
@@ -57,10 +57,10 @@ const awards = [
     {
         icon: Users,
         title: 'Community Health Champion',
-        org: 'Bangalore Urban District Health Authority',
+        org: 'Chennai Urban District Health Authority',
         year: '2022',
         color: '#2196F3',
-        description: 'Recognized for conducting free dental camps that served 3,000+ underprivileged patients across Bangalore district.',
+        description: 'Recognized for conducting free dental camps that served 3,000+ underprivileged patients across Chennai district.',
     },
 ];
 

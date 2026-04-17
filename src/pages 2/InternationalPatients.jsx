@@ -13,14 +13,14 @@ const countries = ['UAE', 'UK', 'USA', 'Singapore', 'Australia', 'Canada', 'Saud
 
 const services = [
   { icon: CalendarDays, title: 'Pre-Arrival Consultation', desc: 'Virtual video consultations with our specialists before you travel, so your treatment plan is ready when you arrive.' },
-  { icon: Plane, title: 'Airport Pickup Assistance', desc: 'We coordinate comfortable airport transfers and help you settle into Bangalore before your appointment.' },
-  { icon: HeartPulse, title: 'Priority Treatment Scheduling', desc: 'International patients receive priority scheduling to maximise your time in Bangalore.' },
+  { icon: Plane, title: 'Airport Pickup Assistance', desc: 'We coordinate comfortable airport transfers and help you settle into Chennai before your appointment.' },
+  { icon: HeartPulse, title: 'Priority Treatment Scheduling', desc: 'International patients receive priority scheduling to maximise your time in Chennai.' },
   { icon: Globe, title: 'Hotel & Accommodation', desc: 'Partnered hotels near our clinic offer discounted stays for international patients and their families.' },
   { icon: Shield, title: 'Comprehensive After-Care', desc: 'Detailed treatment records, X-rays, and digital files provided for follow-up care at your home dentist.' },
   { icon: Mail, title: 'Dedicated International Coordinator', desc: 'A dedicated English-speaking patient coordinator handles all your queries before, during, and after your visit.' },
 ];
 
-const whyBangalore = [
+const whyChennai = [
   'World-class dental expertise at a fraction of Western costs',
   'No waiting lists — treatment within days of arrival',
   'Shorter travel times for South & South-East Asian patients',
@@ -52,7 +52,7 @@ const InternationalPatients = () => (
             </div>
             <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.8)' }}>Welcome, International Patients</span>
             <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.5rem)', maxWidth: '700px' }}>
-              World-Class Dental Care in Bangalore — For Patients Worldwide
+              World-Class Dental Care in Chennai — For Patients Worldwide
             </h1>
             <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', maxWidth: '580px', marginTop: '1rem', lineHeight: 1.7 }}>
               Acharya Dental welcomes patients from across the globe. Receive the same world-class treatment at a fraction of the cost, with personalised support every step of the way.
@@ -142,16 +142,16 @@ const InternationalPatients = () => (
         </div>
       </section>
 
-      {/* Why Bangalore */}
+      {/* Why Chennai */}
       <section className="section intl-why-section">
         <div className="intl-why-overlay" />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="intl-why-grid">
             <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)' }}>Why Choose Bangalore</span>
+              <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)' }}>Why Choose Chennai</span>
               <h2 style={{ color: '#fff' }}>India's Silicon Valley — Your Perfect Dental Destination</h2>
               <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
-                {whyBangalore.map((w, i) => (
+                {whyChennai.map((w, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                     <CheckCircle2 size={18} color="#4CAF50" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <span style={{ color: 'rgba(255,255,255,0.9)' }}>{w}</span>
@@ -170,7 +170,7 @@ const InternationalPatients = () => (
                     <Phone size={18} color="#4CAF50" /><span>WhatsApp: +91 98765 43210</span>
                   </a>
                   <div className="contact-row" style={{ color: 'rgba(255,255,255,0.85)', cursor: 'default' }}>
-                    <MapPin size={18} color="#FF6B6B" /><span>Acharya Dental, MG Road, Bangalore 560001</span>
+                    <MapPin size={18} color="#FF6B6B" /><span>Acharya Dental, MG Road, Chennai 560001</span>
                   </div>
                 </div>
                 <button className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>

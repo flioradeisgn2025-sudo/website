@@ -22,7 +22,7 @@ const education = [
 
 const highlights = [
     'Specialist in Painless Root Canal Treatments',
-    'Pioneering Microscopic Endodontics in Bangalore',
+    'Pioneering Microscopic Endodontics in Chennai',
     'Over 15 Years of Clinical Excellence',
     'Recognized as Top Endodontist in the Region',
 ];
@@ -95,7 +95,7 @@ const DoctorProfile = () => {
                                     <span className="section-subtitle">Excellence in Endodontics</span>
                                     <h2 style={{ marginBottom: '1.5rem', fontSize: '2.4rem' }}>Commitment to Precision and Patient Comfort</h2>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem', fontSize: '1.1rem' }}>
-                                        Dr. Sasha Helene is a distinguished specialist in Endodontics, renowned for her gentle approach and technical mastery in corrective dental procedures. With over 15 years of clinical experience, she has pioneered painless root canal technologies in Bangalore, transforming the patient experience through microscopic precision and laser-assisted treatments.
+                                        Dr. Sasha Helene is a distinguished specialist in Endodontics, renowned for her gentle approach and technical mastery in corrective dental procedures. With over 15 years of clinical experience, she has pioneered painless root canal technologies in Chennai, transforming the patient experience through microscopic precision and laser-assisted treatments.
                                     </p>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2.5rem', fontSize: '1.1rem' }}>
                                         A firm believer in biological tooth preservation, Dr. Sasha Helene employs advanced diagnostic imaging and minimally invasive techniques to ensure the longevity of natural teeth. Her dedication to clinical excellence and patient-first philosophy has made her a trusted name in complex dental rehabilitations.

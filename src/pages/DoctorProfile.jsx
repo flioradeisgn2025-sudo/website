@@ -22,7 +22,7 @@ const education = [
 
 const highlights = [
     'Specialist in Painless Root Canal Treatments',
-    'Pioneering Microscopic Endodontics in Bangalore',
+    'Pioneering Microscopic Endodontics in Chennai',
     'Over 15 Years of Clinical Excellence',
     'Recognized as Top Endodontist in the Region',
 ];
@@ -95,7 +95,7 @@ const DoctorProfile = () => {
                                     <span className="section-subtitle">Excellence in Endodontics</span>
                                     <h2 style={{ marginBottom: '1.5rem', fontSize: '2.4rem' }}>Commitment to Precision and Patient Comfort</h2>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem', fontSize: '1.1rem' }}>
-                                        Dr. Ponni Valavan, MDS (OMFS) is a distinguished specialist in Endodontics, renowned for his gentle approach and technical mastery in corrective dental procedures. With over 15 years of clinical experience, he has pioneered painless root canal technologies in Bangalore, transforming the patient experience through microscopic precision and laser-assisted treatments.
+                                        Dr. Ponni Valavan, MDS (OMFS) is a distinguished specialist in Endodontics, renowned for his gentle approach and technical mastery in corrective dental procedures. With over 15 years of clinical experience, he has pioneered painless root canal technologies in Chennai, transforming the patient experience through microscopic precision and laser-assisted treatments.
                                     </p>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2.5rem', fontSize: '1.1rem' }}>
                                         A firm believer in biological tooth preservation, Dr. Ponni Valavan, MDS (OMFS) employs advanced diagnostic imaging and minimally invasive techniques to ensure the longevity of natural teeth. His dedication to clinical excellence and patient-first philosophy has made his a trusted name in complex dental rehabilitations.

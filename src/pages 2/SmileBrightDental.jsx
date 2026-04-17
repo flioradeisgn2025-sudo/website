@@ -31,7 +31,7 @@ const expertise = [
 
 const milestones = [
     { year: '2007', event: 'Founded Smile Bright Dental Clinic' },
-    { year: '2012', event: 'Recognized as Top Clinic in Bangalore' },
+    { year: '2012', event: 'Recognized as Top Clinic in Chennai' },
     { year: '2016', event: 'Pioneered Advanced Implant Technology' },
     { year: '2018', event: 'Introduced Laser Dentistry to the clinic' },
     { year: '2021', event: 'Awarded Best Patient Experience' },
@@ -94,7 +94,7 @@ const SmileBrightDental = () => {
                                         </a>
                                         <div className="contact-row">
                                             <MapPin size={18} color="var(--primary-color)" />
-                                            <span>Smile Bright Dental Clinic, Bangalore</span>
+                                            <span>Smile Bright Dental Clinic, Chennai</span>
                                         </div>
                                         <button className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>
                                             Book Appointment
@@ -109,7 +109,7 @@ const SmileBrightDental = () => {
                                     <span className="section-subtitle">Our Mission</span>
                                     <h2 style={{ marginBottom: '1rem' }}>Exceptional Dental Care with a Human Touch</h2>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                                        At Smile Bright Dental, we believe a healthy, confident smile can transform lives. For nearly two decades, our multi-specialty clinic has stood as a beacon of dental excellence in Bangalore, offering a comprehensive suite of advanced treatments delivered with unmatched precision and care.
+                                        At Smile Bright Dental, we believe a healthy, confident smile can transform lives. For nearly two decades, our multi-specialty clinic has stood as a beacon of dental excellence in Chennai, offering a comprehensive suite of advanced treatments delivered with unmatched precision and care.
                                     </p>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2rem' }}>
                                         Our lead specialist, Dr. Sasha Helene, brings together global expertise and the latest in dental technology to ensure every patient experiences painless, effective, and lasting results. From preventative care to complex endodontic treatments and full-mouth rehabilitations, our patient-first approach guarantees a comfortable and reassuring journey toward optimal oral health.
