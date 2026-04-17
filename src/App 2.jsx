@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 
 // About Us Pages
 import DoctorProfile from './pages/DoctorProfile';
-import Doctors from './pages/Doctors';
 import SmileBrightDental from './pages/SmileBrightDental';
 import Media from './pages/Media';
 
@@ -46,7 +45,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* About Us */}
-        <Route path="/about/doctors" element={<Doctors />} />
         <Route path="/about/dr-sasha-helene" element={<DoctorProfile />} />
         <Route path="/about/smile-bright-dental" element={<SmileBrightDental />} />
         <Route path="/about/media" element={<Media />} />

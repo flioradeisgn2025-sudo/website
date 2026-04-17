@@ -19,9 +19,9 @@ const categories = [
 ];
 
 const StarRating = ({ value, onChange, label }) => (
-  <div className="star-rating-group" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
-    <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', flex: '1 1 150px' }}>{label}</span>
-    <div style={{ display: 'flex', gap: '4px', flex: '0 0 auto' }}>
+  <div className="star-rating-group">
+    <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', minWidth: '180px' }}>{label}</span>
+    <div style={{ display: 'flex', gap: '4px' }}>
       {[1, 2, 3, 4, 5].map(star => (
         <button
           type="button"
@@ -169,7 +169,7 @@ const Feedback = () => {
                   {/* Recommend */}
                   <div style={{ margin: '2rem 0' }}>
                     <h4 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>Would you recommend us to a friend or family?</h4>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+                    <div style={{ display: 'flex', gap: '1rem' }}>
                       {['Yes, definitely!', 'Maybe', 'No'].map(opt => (
                         <button
                           type="button" key={opt}
