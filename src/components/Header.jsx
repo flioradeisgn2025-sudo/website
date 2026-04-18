@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { HeartPulse, Menu, X, ChevronDown } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const baseUrl = import.meta.env.BASE_URL;
+
+  // Active Link Helper
+  const isActive = (path) => location.pathname === path;
+  const isAboutActive = location.pathname.startsWith('/about');
+  const isServicesActive = location.pathname.startsWith('/services');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,17 +32,17 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="desktop-nav">
           <div className="nav-item has-dropdown">
-            <a href="#about" className="nav-link">
+            <a href="#" className={`nav-link ${isAboutActive ? 'active' : ''}`} onClick={(e) => e.preventDefault()}>
               About Us <ChevronDown size={14} style={{ display: 'inline', marginLeft: '2px' }} />
             </a>
             <div className="dropdown-menu">
-              <Link to="/about/doctors" className="dropdown-item">Doctors</Link>
-              <Link to="/about/smile-bright-dental" className="dropdown-item">Smile Bright Dental</Link>
-              <Link to="/about/media" className="dropdown-item">Media</Link>
+              <Link to="/about/doctors" className={`dropdown-item ${isActive('/about/doctors') ? 'active' : ''}`}>Doctors</Link>
+              <Link to="/about/smile-bright-dental" className={`dropdown-item ${isActive('/about/smile-bright-dental') ? 'active' : ''}`}>Smile Bright Dental</Link>
+              <Link to="/about/media" className={`dropdown-item ${isActive('/about/media') ? 'active' : ''}`}>Media Center</Link>
             </div>
           </div>
           <div className="nav-item has-dropdown">
-            <a href="#services" className="nav-link">
+            <a href="#" className={`nav-link ${isServicesActive ? 'active' : ''}`} onClick={(e) => e.preventDefault()}>
               Services <ChevronDown size={14} style={{ display: 'inline', marginLeft: '2px' }} />
             </a>
             <div className="dropdown-menu">
@@ -53,24 +60,24 @@ const Header = () => {
           </div>
 
           <div className="nav-item">
-            <Link to="/testimonials" className="nav-link">Testimonials</Link>
+            <Link to="/testimonials" className={`nav-link ${isActive('/testimonials') ? 'active' : ''}`}>Testimonials</Link>
           </div>
           <div className="nav-item">
-            <Link to="/take-a-tour" className="nav-link">Take a Tour</Link>
+            <Link to="/take-a-tour" className={`nav-link ${isActive('/take-a-tour') ? 'active' : ''}`}>Take a Tour</Link>
           </div>
           <div className="nav-item has-dropdown">
-            <a href="#contact" className="nav-link">
+            <a href="#" className={`nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={(e) => e.preventDefault()}>
               Contact Us <ChevronDown size={14} style={{ display: 'inline', marginLeft: '2px' }} />
             </a>
             <div className="dropdown-menu" style={{ right: 0, left: 'auto' }}>
-              <Link to="/contact" className="dropdown-item">Contact Us</Link>
-              <Link to="/contact/feedback" className="dropdown-item">Feedback</Link>
+              <Link to="/contact" className={`dropdown-item ${isActive('/contact') ? 'active' : ''}`}>Contact Us</Link>
+              <Link to="/contact/feedback" className={`dropdown-item ${isActive('/contact/feedback') ? 'active' : ''}`}>Feedback</Link>
             </div>
           </div>
         </nav>
 
         <div className="header-actions desktop-nav">
-          <button className="btn btn-primary">Book Appointment</button>
+          <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Appointment</a>
         </div>
 
         {/* Mobile Toggle */}
@@ -82,33 +89,101 @@ const Header = () => {
         </button>
       </div>
 
-      {isMobileMenuOpen && (
-        <div className="mobile-nav animate-fade-in">
-          <div className="has-dropdown">
-            <a href="#about" className="nav-link">About Us</a>
-            <div className="mobile-dropdown-menu">
-              <Link to="/about/doctors" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Doctors</Link>
-              <Link to="/about/smile-bright-dental" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Smile Bright Dental</Link>
-              <Link to="/about/media" className="dropdown-item" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
-            </div>
-          </div>
-          <div className="has-dropdown">
-            <a href="#services" className="nav-link">Services</a>
-            <div className="mobile-dropdown-menu">
-              <a href="#" className="dropdown-item">Teeth Replacement</a>
-              <a href="#" className="dropdown-item">Teeth Alignment</a>
-              <a href="#" className="dropdown-item">Pain Management</a>
-            </div>
-          </div>
-          <Link to="/testimonials" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Testimonials</Link>
-          <Link to="/take-a-tour" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Take a Tour</Link>
-          <Link to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
-          <Link to="/contact/feedback" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Feedback</Link>
-          <div className="mobile-nav-actions">
-            <button className="btn btn-primary w-full">Book Appointment</button>
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            className="mobile-nav-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div
+              className="mobile-nav-content"
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            >
+              <div className="mobile-nav-header">
+                <Link to="/" className="logo" onClick={() => setIsMobileMenuOpen(false)}>
+                  <img src={`${baseUrl}logo.png`} alt="Smile Bright Logo" className="logo-img" />
+                </Link>
+                <button className="mobile-close-btn" onClick={() => setIsMobileMenuOpen(false)}>
+                  <X size={32} />
+                </button>
+              </div>
+
+              <nav className="mobile-menu-items">
+                {[
+                  {
+                    title: 'About Us',
+                    items: [
+                      { label: 'Doctors', link: '/about/doctors' },
+                      { label: 'Smile Bright Dental', link: '/about/smile-bright-dental' }
+                    ]
+                  },
+                  {
+                    title: 'Services',
+                    items: [
+                      { label: 'Teeth Replacement', link: '/services/teeth-replacement' },
+                      { label: 'Teeth Alignment', link: '/services/teeth-alignment' },
+                      { label: 'Teeth Cleaning', link: '/services/teeth-cleaning' }
+                    ]
+                  },
+                  { label: 'Testimonials', link: '/testimonials' },
+                  { label: 'Take a Tour', link: '/take-a-tour' },
+                  { label: 'Contact Us', link: '/contact' }
+                ].map((item, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 + idx * 0.05 }}
+                  >
+                    {item.items ? (
+                      <div className="mobile-dropdown">
+                        <span className="mobile-nav-label">{item.title}</span>
+                        <div className="mobile-dropdown-content">
+                          {item.items.map((sub, sIdx) => (
+                            <Link
+                              key={sIdx}
+                              to={sub.link}
+                              className="mobile-dropdown-link"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                              {sub.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <Link
+                        to={item.link}
+                        className="mobile-nav-link"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    )}
+                  </motion.div>
+                ))}
+              </nav>
+
+              <motion.div
+                className="mobile-nav-footer"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+              >
+                <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary w-full">
+                  Book Appointment
+                </a>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };

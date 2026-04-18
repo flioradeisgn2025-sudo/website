@@ -28,7 +28,7 @@ const awards = [
         org: 'Indian Dental Association – Karnataka Chapter',
         year: '2024',
         color: '#C0C0C0',
-        description: 'Awarded to Dr. Ponni Valavan, MDS (OMFS) for pioneering contributions to the field of endodontics and patient-centric care.',
+        description: 'Awarded to Dr. Ayesha Subhan, BDS, MBA for pioneering contributions to the field of endodontics and patient-centric care.',
     },
     {
         icon: Star,

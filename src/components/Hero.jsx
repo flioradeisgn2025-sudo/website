@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Smile, CalendarDays, Star } from 'lucide-react';
+import { ArrowRight, Smile, CalendarDays, Star, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -28,29 +28,29 @@ const Hero = () => {
                     </p>
 
                     <div className="hero-ctas">
-                        <button className="btn btn-primary">
+                        <button className="btn btn-primary" onClick={() => window.location.href = 'https://wa.me/919444408087'}>
                             Book an Appointment
                             <ArrowRight size={20} />
                         </button>
-                        <button className="btn btn-secondary glass-btn">
-                            <CalendarDays size={20} />
-                            View Our Services
-                        </button>
+                        <a href="tel:+919444408087" className="btn btn-secondary glass-btn">
+                            <Phone size={20} />
+                            Contact Us
+                        </a>
                     </div>
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <h4>20+</h4>
+                            <h4>10+</h4>
                             <p>Years of Excellence</p>
                         </div>
                         <div className="stat-separator"></div>
                         <div className="stat-item">
-                            <h4>5,000+</h4>
+                            <h4>2,000+</h4>
                             <p>Implants Placed</p>
                         </div>
                         <div className="stat-separator"></div>
                         <div className="stat-item">
-                            <h4>25k+</h4>
+                            <h4>15k+</h4>
                             <p>Happy Patients</p>
                         </div>
                     </div>

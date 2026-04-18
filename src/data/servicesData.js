@@ -12,7 +12,7 @@ export const servicesData = [
     color: '#7B6CF6',
     overview: `Missing teeth affect more than your smile — they impact your confidence, ability to eat, and long-term oral health. At Smile Bright Dental, we offer state-of-the-art tooth replacement options, including dental implants, implant-supported bridges, and full-arch restorations. Our implants are crafted from titanium and fuse naturally with your jawbone, providing a permanent, stable foundation that looks, feels, and functions like your natural teeth.
 
-Whether you've lost a single tooth or multiple teeth due to decay, injury, or gum disease, our specialist Dr. Ponni Valavan, MDS (OMFS) designs a personalised treatment plan to restore full function and aesthetics.`,
+Whether you've lost a single tooth or multiple teeth due to decay, injury, or gum disease, our specialist Dr. Ayesha Subhan, BDS, MBA designs a personalised treatment plan to restore full function and aesthetics.`,
     benefits: [
       'Looks, feels and functions exactly like natural teeth',
       'Prevents jawbone loss caused by missing teeth',
@@ -29,7 +29,7 @@ Whether you've lost a single tooth or multiple teeth due to decay, injury, or gu
       { step: '05', title: 'Crown Fitting', desc: 'A custom-made, tooth-coloured ceramic crown is placed, completing your new natural-looking tooth.' },
     ],
     whyUs: [
-      'Years of advanced implant procedures by Dr. Ponni Valavan, MDS (OMFS)',
+      'Years of advanced implant procedures by Dr. Ayesha Subhan, BDS, MBA',
       'Swiss and Korean premium-grade implant systems',
       '3D CBCT guided implant surgery for precision',
       'In-house dental laboratory for same-day crowns',
@@ -53,7 +53,7 @@ Whether you've lost a single tooth or multiple teeth due to decay, injury, or gu
     color: '#1e88e5',
     overview: `Crooked, crowded, or gapped teeth can affect your confidence and oral health. At Smile Bright Dental, we offer a comprehensive range of orthodontic solutions — from traditional metal braces to advanced clear aligners (Invisalign) — to suit every lifestyle, age, and budget.
 
-Dr. Ponni Valavan, MDS (OMFS), our expert specialist, uses the latest digital smile design technology to map your treatment and show you the expected results before you even begin. Whether for children, teens, or adults, we create beautiful, perfectly aligned smiles.`,
+Dr. Ayesha Subhan, BDS, MBA, our expert specialist, uses the latest digital smile design technology to map your treatment and show you the expected results before you even begin. Whether for children, teens, or adults, we create beautiful, perfectly aligned smiles.`,
     benefits: [
       'Correct crowding, gaps, overbite, underbite, and crossbite',
       'Invisible clear aligner options available',
@@ -94,7 +94,7 @@ Dr. Ponni Valavan, MDS (OMFS), our expert specialist, uses the latest digital sm
     color: '#43a047',
     overview: `Dental anxiety and fear of pain are among the most common reasons people avoid the dentist. At Smile Bright Dental, we believe every patient deserves care that is gentle, comfortable, and completely pain-free. Our team is trained in the latest pain management and anxiety-reduction protocols, including topical anaesthesia, computer-controlled injections, nitrous oxide, and IV sedation.
 
-Dr. Ponni Valavan, MDS (OMFS) and his team take extra care with fearful patients, explaining every step of the procedure, using the gentlest techniques, and never rushing. Your comfort is our highest priority.`,
+Dr. Ayesha Subhan, BDS, MBA and her team take extra care with fearful patients, explaining every step of the procedure, using the gentlest techniques, and never rushing. Your comfort is our highest priority.`,
     benefits: [
       'Virtually painless injections using computer-controlled delivery',
       'Topical anaesthetics applied before any injection',
@@ -135,7 +135,7 @@ Dr. Ponni Valavan, MDS (OMFS) and his team take extra care with fearful patients
     color: '#00897b',
     overview: `The most effective dental care is the care that prevents problems before they start. Our comprehensive preventive dentistry programme at Smile Bright Dental is designed to keep your teeth and gums healthy throughout every stage of life. From routine check-ups and professional cleanings to fluoride treatments, sealants, and custom mouthguards, we provide a full range of preventive services for adults and children alike.
 
-Regular visits to Acharya Dental allow us to detect early signs of decay, gum disease, and oral cancer — catching minor issues before they become major (and costly) problems.`,
+Regular visits to Smile Bright Dental allow us to detect early signs of decay, gum disease, and oral cancer — catching minor issues before they become major (and costly) problems.`,
     benefits: [
       'Detect cavities, gum disease, and oral cancer early',
       'Professional removal of plaque and tartar buildup',
@@ -176,7 +176,7 @@ Regular visits to Acharya Dental allow us to detect early signs of decay, gum di
     color: '#8e24aa',
     overview: `Laser dentistry represents one of the most significant advances in modern oral care. At Smile Bright Dental, we use FDA-approved soft and hard tissue dental lasers to perform a wide range of procedures with extraordinary precision, minimal discomfort, and dramatically faster healing times compared to traditional methods.
 
-Dr. Ponni Valavan, MDS (OMFS) is a certified laser dentistry practitioner with extensive clinical experience. Laser treatment eliminates the need for scalpels in most soft tissue procedures, reduces bleeding and swelling, and often requires no stitches — making recovery much easier.`,
+Dr. Ayesha Subhan, BDS, MBA is a certified laser dentistry practitioner with extensive clinical experience. Laser treatment eliminates the need for scalpels in most soft tissue procedures, reduces bleeding and swelling, and often requires no stitches — making recovery much easier.`,
     benefits: [
       'Minimally invasive — often no scalpel or stitches required',
       'Significant reduction in pain and discomfort',
@@ -194,7 +194,7 @@ Dr. Ponni Valavan, MDS (OMFS) is a certified laser dentistry practitioner with e
     ],
     whyUs: [
       'FDA-approved soft and hard tissue laser systems',
-      'Dr. Ponni Valavan, MDS (OMFS) — certified laser dentistry practitioner',
+      'Dr. Ayesha Subhan, BDS, MBA — certified laser dentistry practitioner',
       'Used for gum reshaping, cavity treatment, teeth whitening & more',
       'Ideal for children and anxious patients',
       'State-of-the-art laser suite',
@@ -379,7 +379,7 @@ Choose from our power in-chair whitening (results in 60–90 minutes) using adva
     tagline: 'Quick, Painless Screening That Could Save Your Life',
     heroImage: '/website/services/preventive_dentistry.png',
     color: '#7B6CF6',
-    overview: `Oral cancer is one of the most common cancers in India, yet it is one of the most curable when detected early. At Smile Bright Dental, oral cancer screening is part of every comprehensive check-up. Dr. Ponni Valavan, MDS (OMFS) is highly trained in identifying the earliest signs of oral cancer and pre-cancerous lesions.
+    overview: `Oral cancer is one of the most common cancers in India, yet it is one of the most curable when detected early. At Smile Bright Dental, oral cancer screening is part of every comprehensive check-up. Dr. Ayesha Subhan, BDS, MBA is highly trained in identifying the earliest signs of oral cancer and pre-cancerous lesions.
 
 Our screening takes just a few minutes and involves a thorough visual and tactile examination of all oral soft tissues — lips, tongue, cheeks, floor of mouth, palate, and throat — combined with advanced diagnostic tools such as VELscope fluorescence imaging.`,
     benefits: [
@@ -398,7 +398,7 @@ Our screening takes just a few minutes and involves a thorough visual and tactil
       { step: '05', title: 'Results & Follow-Up', desc: 'Normal findings are recorded. Any suspicious areas are biopsied or referred to a specialist for further assessment promptly.' },
     ],
     whyUs: [
-      'Expert Oral Health Specialist — Dr. Ponni Valavan, MDS (OMFS)',
+      'Expert Oral Health Specialist — Dr. Ayesha Subhan, BDS, MBA',
       'VELscope advanced fluorescence screening technology',
       'Routine screening at every check-up appointment',
       'Biopsy services available on-site',

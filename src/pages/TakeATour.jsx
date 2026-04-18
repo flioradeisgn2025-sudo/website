@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Play, X, ChevronLeft, ChevronRight, MapPin, Clock, Eye, Sparkles, FlaskConical, Baby, Layers } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Play, X, ChevronLeft, ChevronRight, MapPin, Clock, Eye, Sparkles, Layers } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1, ease: 'easeOut' } }),
-};
 
 const tourSpots = [
   {
@@ -19,7 +14,7 @@ const tourSpots = [
   {
     id: 2, icon: Eye,
     title: 'Consultation Rooms',
-    desc: 'Spacious, private, and fully equipped consultation rooms where Dr. Ponni Valavan, MDS (OMFS) reviews your case, takes X-rays, and crafts your personalised treatment plan.',
+    desc: 'Spacious, private, and fully equipped consultation rooms where Dr. Ayesha Subhan, BDS, MBA reviews your case, takes X-rays, and crafts your personalised treatment plan.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
   },
   {
@@ -27,24 +22,6 @@ const tourSpots = [
     title: 'Treatment Suites',
     desc: 'Our state-of-the-art treatment chairs feature intraoral cameras, overhead LED lights, and entertainment screens so you stay relaxed and informed throughout your procedure.',
     image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    id: 4, icon: Baby,
-    title: 'Paediatric Zone',
-    desc: 'A dedicated, colourful, and fun children\'s area with games, cartoon screens, and a specially trained team that makes dental visits exciting for little ones.',
-    image: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    id: 5, icon: FlaskConical,
-    title: 'In-House Digital Laboratory',
-    desc: 'Our fully equipped CAD/CAM dental laboratory crafts your crowns, veneers, and bridges on-site with precision milling technology for same-day restorations.',
-    image: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    id: 6, icon: Layers,
-    title: 'Laser & Imaging Suite',
-    desc: 'Dedicated suite housing our 3D CBCT scanner for precision implant planning and our FDA-approved dental laser system for minimally invasive procedures.',
-    image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
   },
 ];
 
@@ -58,148 +35,189 @@ const TakeATour = () => {
   const navNext = () => { const i = (current + 1) % tourSpots.length; setCurrent(i); setLightbox(tourSpots[i]); };
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Header />
-      <main style={{ paddingTop: '80px' }}>
+      <main className="tour-page-main">
 
         {/* Hero */}
-        <section className="tour-hero">
-          <div className="tour-hero-overlay" />
-          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-              <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.8)' }}>Explore Our Clinic</span>
-              <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Take a Virtual Tour</h1>
-              <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', maxWidth: '560px', marginTop: '0.75rem', lineHeight: 1.7 }}>
-                See how Acharya Dental has created a world-class, calming, and hygienic clinic experience designed around your comfort and safety.
+        <section className="page-hero tour-hero-premium">
+          <div className="container relative z-10">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
+              <span className="section-subtitle light">Explore Our Clinic</span>
+              <h1 className="section-title light">Take a Virtual Tour</h1>
+              <p className="hero-description light">
+                Experience the world-class hygiene and comfort of Smile Bright Dental 
+                from the comfort of your home.
               </p>
-              <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap', alignItems: 'center' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'rgba(255,255,255,0.85)', fontSize: '0.95rem' }}>
-                  <Clock size={16} /> Mon - Sat : 9:00 AM - 09:00 PM
+              <div className="hero-info-pills">
+                <div className="hero-info-pill">
+                  <Clock size={16} /> <span>Daily : 9 AM - 9 PM</span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'rgba(255,255,255,0.85)', fontSize: '0.95rem' }}>
-                  <MapPin size={16} /> #38/238, Angappa Naicken Street, Mannady, Chennai
+                <div className="hero-info-pill">
+                  <MapPin size={16} /> <span>Mannady, Chennai</span>
                 </div>
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Video Tour */}
+        {/* Video Tour Section */}
         <section className="section">
           <div className="container">
-            <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <span className="section-subtitle">360° Experience</span>
-              <h2>Video Tour of Our Clinic</h2>
-            </motion.div>
-            <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <div className="video-tour-wrapper glass-card">
-                <img
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
-                  alt="Clinic video tour"
-                  className="video-tour-thumb"
-                />
-                <div className="video-tour-overlay">
-                  <button className="video-tour-play-btn">
-                    <Play size={32} fill="#fff" color="#fff" />
-                  </button>
-                  <p style={{ color: '#fff', marginTop: '1rem', fontWeight: 600, fontSize: '1.1rem' }}>
-                    Watch 2-min clinic tour
-                  </p>
-                </div>
+            <motion.div 
+                className="section-header" 
+                style={{ textAlign: 'center', justifyContent: 'center' }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+            >
+              <div>
+                <span className="section-subtitle">The Experience</span>
+                <h2 className="section-title">Video Walkthrough</h2>
               </div>
+            </motion.div>
+            
+            <motion.div 
+                className="video-tour-premium glass-card"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+            >
+                <div className="video-placeholder">
+                    <img 
+                        src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
+                        alt="Clinic Preview" 
+                    />
+                    <div className="video-overlay-premium">
+                        <button className="video-play-button-premium">
+                            <Play size={32} fill="white" />
+                        </button>
+                        <p>Watch full clinic tour</p>
+                    </div>
+                </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Gallery Tour Spots */}
+        {/* Gallery Spots */}
         <section className="section section-alt">
           <div className="container">
-            <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <span className="section-subtitle">Photo Tour</span>
-              <h2>Explore Each Area</h2>
-            </motion.div>
-            <div className="tour-spots-grid">
+            <div className="section-header">
+                <div>
+                   <span className="section-subtitle">Clinical Excellence</span>
+                   <h2 className="section-title">Explore Our Facility</h2>
+                </div>
+            </div>
+            
+            <div className="tour-grid-premium">
               {tourSpots.map((spot, i) => (
-                <motion.div key={spot.id} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                  <div className="tour-spot-card" onClick={() => openLightbox(spot)}>
-                    <div className="tour-spot-img-wrapper">
-                      <img src={spot.image} alt={spot.title} className="tour-spot-img" />
-                      <div className="tour-spot-overlay">
-                        <Eye size={28} color="#fff" />
-                        <span style={{ color: '#fff', fontWeight: 600, marginTop: '0.5rem' }}>View Area</span>
+                <motion.div 
+                    key={spot.id} 
+                    className="tour-card-premium"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    onClick={() => openLightbox(spot)}
+                >
+                    <div className="tour-card-image">
+                      <img src={spot.image} alt={spot.title} />
+                      <div className="tour-card-overlay">
+                        <Eye size={24} />
+                        <span>Inspect Area</span>
                       </div>
                     </div>
-                    <div className="tour-spot-body">
-                      <div className="tour-spot-icon">
-                        <spot.icon size={20} color="var(--primary-color)" />
-                      </div>
-                      <div>
-                        <h3 style={{ color: 'var(--text-primary)', fontSize: '1.05rem', marginBottom: '0.4rem' }}>{spot.title}</h3>
-                        <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.6 }}>{spot.desc}</p>
-                      </div>
+                    <div className="tour-card-content">
+                       <div className="icon-wrapper">
+                         <spot.icon size={20} />
+                       </div>
+                       <h4>{spot.title}</h4>
+                       <p>{spot.desc}</p>
                     </div>
-                  </div>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Visit Info */}
+        {/* Planning Your Visit */}
         <section className="section">
           <div className="container">
-            <div className="visit-info-grid">
-              <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                <h2 style={{ marginBottom: '1.5rem' }}>Plan Your Visit</h2>
-                <div className="visit-detail-row">
-                  <Clock size={22} color="var(--primary-color)" />
-                  <div>
-                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Clinic Hours</h4>
-                    <p style={{ color: 'var(--text-secondary)' }}>Mon - Sat : 9:00 AM - 09:00 PM</p>
-                  </div>
-                </div>
-                <div className="visit-detail-row">
-                  <MapPin size={22} color="var(--primary-color)" />
-                  <div>
-                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Location</h4>
-                    <p style={{ color: 'var(--text-secondary)' }}>#38/238, Angappa Naicken Street, Mannady, Landmark: Near Eidgah Mosque., Chennai, Tamil Nadu 600001</p>
-                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 600, fontSize: '0.9rem' }}>Get Directions →</a>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                <div className="map-embed">
+            <div className="visit-info-grid-premium">
+              <div className="visit-details-premium">
+                 <span className="section-subtitle">Contact info</span>
+                 <h2>Plan Your Visit</h2>
+                 
+                 <div className="visit-item-premium">
+                    <div className="icon-box"><Clock size={20} /></div>
+                    <div className="text-box">
+                       <h4>Clinic Hours</h4>
+                       <p>Mon - Sat : 9:00 AM - 09:00 PM</p>
+                    </div>
+                 </div>
+
+                 <div className="visit-item-premium">
+                    <div className="icon-box"><MapPin size={20} /></div>
+                    <div className="text-box">
+                       <h4>Location</h4>
+                       <p>#38/238, Angappa Naicken Street, Mannady, Chennai</p>
+                       <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Get Directions →</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div className="visit-map-premium">
                   <iframe
-                    title="Acharya Dental Location"
+                    title="Smile Bright Dental Location"
                     src="https://maps.google.com/maps?q=13.0985869,80.2912231&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                    width="100%" height="300" style={{ border: 0, borderRadius: '12px' }} allowFullScreen loading="lazy"
+                    width="100%" height="450" style={{ border: 0, borderRadius: '24px' }} allowFullScreen loading="lazy"
                   />
-                </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Lightbox */}
-        {lightbox && (
-          <motion.div className="lightbox-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={closeLightbox}>
-            <motion.div className="lightbox-inner" style={{ maxWidth: '800px' }} initial={{ scale: 0.85 }} animate={{ scale: 1 }} onClick={e => e.stopPropagation()}>
-              <button className="lightbox-close" onClick={closeLightbox}><X size={22} /></button>
-              <img src={lightbox.image} alt={lightbox.title} style={{ width: '100%', borderRadius: '10px' }} />
-              <h3 style={{ marginTop: '1rem', color: 'var(--text-primary)' }}>{lightbox.title}</h3>
-              <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.9rem' }}>{lightbox.desc}</p>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '1rem' }}>
-                <button className="control-btn" onClick={navPrev}><ChevronLeft /></button>
-                <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', alignSelf: 'center' }}>{current + 1} / {tourSpots.length}</span>
-                <button className="control-btn" onClick={navNext}><ChevronRight /></button>
-              </div>
+        <AnimatePresence>
+            {lightbox && (
+            <motion.div 
+                className="lightbox-overlay-premium" 
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }} 
+                exit={{ opacity: 0 }} 
+                onClick={closeLightbox}
+            >
+                <motion.div 
+                    className="lightbox-content-premium" 
+                    initial={{ scale: 0.9, y: 20 }} 
+                    animate={{ scale: 1, y: 0 }} 
+                    exit={{ scale: 0.9, y: 20 }}
+                    onClick={e => e.stopPropagation()}
+                >
+                    <button className="lightbox-close" onClick={closeLightbox}><X size={24} /></button>
+                    <img src={lightbox.image} alt={lightbox.title} />
+                    <div className="lightbox-info">
+                        <h3>{lightbox.title}</h3>
+                        <p>{lightbox.desc}</p>
+                        <div className="lightbox-nav">
+                            <button className="nav-btn" onClick={navPrev}><ChevronLeft size={20} /></button>
+                            <span>{current + 1} / {tourSpots.length}</span>
+                            <button className="nav-btn" onClick={navNext}><ChevronRight size={20} /></button>
+                        </div>
+                    </div>
+                </motion.div>
             </motion.div>
-          </motion.div>
-        )}
+            )}
+        </AnimatePresence>
 
       </main>
       <Footer />
-    </>
+    </motion.div>
   );
 };
 

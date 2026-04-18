@@ -1,21 +1,13 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useParams, Link } from 'react-router-dom';
 import {
   CheckCircle2, ArrowRight, ChevronDown, ChevronUp,
-  Phone, CalendarDays, Star, Shield
+  Phone, CalendarDays, Star, Shield, Clock, MapPin
 } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { getServiceBySlug, getRelatedServices, servicesData } from '../data/servicesData';
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i = 0) => ({
-    opacity: 1, y: 0,
-    transition: { duration: 0.6, delay: i * 0.1, ease: 'easeOut' },
-  }),
-};
+import { getServiceBySlug, getRelatedServices } from '../data/servicesData';
 
 const ServicePage = () => {
   const { slug } = useParams();
@@ -24,51 +16,60 @@ const ServicePage = () => {
 
   if (!service) {
     return (
-      <>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Header />
-        <main style={{ paddingTop: '120px', textAlign: 'center', padding: '10rem 2rem' }}>
-          <h2>Service not found</h2>
-          <Link to="/" className="btn btn-primary" style={{ marginTop: '2rem' }}>Go Home</Link>
+        <main className="section flex flex-col items-center justify-center min-vh-80 text-center">
+          <div className="container">
+            <h2>Service not found</h2>
+            <Link to="/" className="btn btn-primary mt-8">Go Home</Link>
+          </div>
         </main>
         <Footer />
-      </>
+      </motion.div>
     );
   }
 
   const related = getRelatedServices(service.relatedServices);
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Header />
-      <main style={{ paddingTop: '80px' }}>
+      <main className="service-page-main">
 
         {/* ── Hero Banner ─────────────────────────────────────── */}
-        <section className="service-page-hero" style={{ '--service-color': service.color }}>
+        <section className="service-page-hero">
           <div
             className="service-hero-img-bg"
             style={{ backgroundImage: `url(${service.heroImage})` }}
           />
           <div className="service-hero-overlay" />
-          <div className="container service-hero-inner">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-              <nav className="service-breadcrumb">
+          <div className="container relative z-10">
+            <motion.div 
+              className="service-hero-inner"
+              initial={{ opacity: 0, y: 30 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.7 }}
+            >
+              <nav className="service-breadcrumb light">
                 <Link to="/">Home</Link>
-                <span>/</span>
-                <span>Services</span>
-                <span>/</span>
+                <ArrowRight size={12} />
+                <Link to="/">Services</Link>
+                <ArrowRight size={12} />
                 <span>{service.title}</span>
               </nav>
-              <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '0.5rem' }}>
-                {service.subtitle}
-              </span>
-              <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}>{service.title}</h1>
+              <h1 className="section-title light" style={{ textAlign: 'left', margin: '0' }}>{service.title}</h1>
               <p className="service-hero-tagline">{service.tagline}</p>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '2rem' }}>
-                <button className="btn btn-primary">
+              <div className="hero-actions" style={{ marginTop: '2.5rem' }}>
+                <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <CalendarDays size={18} /> Book Appointment
-                </button>
+                </a>
                 <a href="tel:+919444408087" className="btn btn-ghost-white">
-                  <Phone size={18} /> +91 94444 08087
+                  <Phone size={18} /> Call Specialist
                 </a>
               </div>
             </motion.div>
@@ -77,75 +78,51 @@ const ServicePage = () => {
 
         {/* ── Overview ─────────────────────────────────────────── */}
         <section className="section">
-          <div className="container service-overview-grid">
-            <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <span className="section-subtitle">Overview</span>
-              <h2>What is {service.title}?</h2>
-              {service.overview.split('\n\n').map((para, i) => (
-                <p key={i} style={{ color: 'var(--text-secondary)', lineHeight: 1.85, marginBottom: '1.25rem' }}>{para}</p>
-              ))}
-            </motion.div>
-
-            {/* Benefits sidebar */}
-            <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <div className="service-benefits-card" style={{ borderTop: `4px solid ${service.color}` }}>
-                <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Key Benefits</h3>
-                <ul className="service-benefits-list">
-                  {service.benefits.map((b, i) => (
-                    <li key={i} className="service-benefit-item">
-                      <CheckCircle2 size={18} color={service.color} style={{ flexShrink: 0, marginTop: 2 }} />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="service-cta-box" style={{ background: `${service.color}15`, borderColor: `${service.color}30` }}>
-                  <Phone size={20} color={service.color} />
-                  <div>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.25rem' }}>Call us on <br/>
-                    <a href="tel:+919444408087" style={{ color: service.color, fontWeight: 600 }}>+91 94444 08087</a></p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-
-        {/* ── Why Choose Us ────────────────────────────────────── */}
-        <section className="section service-why-section" style={{ '--service-color': service.color }}>
           <div className="container">
-            <div className="service-why-grid">
-              <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)' }}>Our Advantage</span>
-                <h2 style={{ color: '#fff' }}>Why Choose Acharya Dental for {service.title}?</h2>
-                <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: 1.8, marginTop: '1rem' }}>
-                  We combine deep clinical expertise with the latest technology to deliver outstanding outcomes for every patient.
-                </p>
-                <ul className="why-us-list">
-                  {service.whyUs.map((w, i) => (
-                    <li key={i} className="why-us-item">
-                      <Shield size={18} color="#FFD700" style={{ flexShrink: 0 }} />
-                      <span style={{ color: 'rgba(255,255,255,0.9)' }}>{w}</span>
-                    </li>
+            <div className="service-overview-grid-premium">
+              <motion.div 
+                className="service-main-content"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="section-subtitle">The Treatment</span>
+                <h2>What is {service.title}?</h2>
+                <div className="service-description-text">
+                  {service.overview.split('\n\n').map((para, i) => (
+                    <p key={i}>{para}</p>
                   ))}
-                </ul>
-                <button className="btn btn-primary" style={{ marginTop: '2rem' }}>
-                  <CalendarDays size={18} /> Book a Free Consultation
-                </button>
+                </div>
               </motion.div>
-              <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                <div className="service-trust-grid">
-                  {[
-                    { value: '20+', label: 'Years of Excellence' },
-                    { value: '25K+', label: 'Happy Patients' },
-                    { value: '5,000+', label: 'Implants Placed' },
-                    { value: '18+', label: 'Awards Won' },
-                  ].map((stat, i) => (
-                    <div key={i} className="service-trust-stat">
-                      <h3 style={{ color: '#fff', fontSize: '2.5rem', fontWeight: 800 }}>{stat.value}</h3>
-                      <p style={{ color: 'rgba(255,255,255,0.8)' }}>{stat.label}</p>
+
+              {/* Benefits sidebar */}
+              <motion.div 
+                className="service-sidebar"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                <div className="service-benefits-card-premium">
+                  <h3>Key Benefits</h3>
+                  <ul className="service-benefits-list-premium">
+                    {service.benefits.map((b, i) => (
+                      <li key={i}>
+                        <CheckCircle2 size={18} className="text-primary" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="service-sidebar-cta">
+                    <div className="icon-box">
+                      <Phone size={24} />
                     </div>
-                  ))}
+                    <div className="text-box">
+                      <p>Have Questions?</p>
+                      <a href="tel:+919444408087">+91 94444 08087</a>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             </div>
@@ -153,27 +130,43 @@ const ServicePage = () => {
         </section>
 
         {/* ── FAQs ─────────────────────────────────────────────── */}
-        <section className="section">
-          <div className="container" style={{ maxWidth: '800px' }}>
-            <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <span className="section-subtitle">Questions Answered</span>
-              <h2>Frequently Asked Questions</h2>
+        <section className="section section-alt">
+          <div className="container" style={{ maxWidth: '900px' }}>
+            <motion.div 
+                className="section-header" 
+                style={{ textAlign: 'center', justifyContent: 'center' }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+            >
+              <div>
+                <span className="section-subtitle">Common Questions</span>
+                <h2 className="section-title">Everything you need to know</h2>
+              </div>
             </motion.div>
-            <div className="faq-list">
+            <div className="faq-list-premium">
               {service.faqs.map((faq, i) => (
-                <motion.div key={i} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                  <div className={`faq-item ${openFaq === i ? 'open' : ''}`} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
-                    <div className="faq-question">
-                      <span>{faq.q}</span>
-                      {openFaq === i ? <ChevronUp size={20} color="var(--primary-color)" /> : <ChevronDown size={20} />}
+                <div key={i} className={`faq-item-premium ${openFaq === i ? 'open' : ''}`} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+                  <div className="faq-question-premium">
+                    <span>{faq.q}</span>
+                    <div className="faq-icon-wrapper">
+                        {openFaq === i ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                     </div>
+                  </div>
+                  <AnimatePresence>
                     {openFaq === i && (
-                      <motion.div className="faq-answer" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ duration: 0.3 }}>
+                      <motion.div 
+                        className="faq-answer-premium" 
+                        initial={{ opacity: 0, height: 0 }} 
+                        animate={{ opacity: 1, height: 'auto' }} 
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
                         <p>{faq.a}</p>
                       </motion.div>
                     )}
-                  </div>
-                </motion.div>
+                  </AnimatePresence>
+                </div>
               ))}
             </div>
           </div>
@@ -181,25 +174,34 @@ const ServicePage = () => {
 
         {/* ── Related Services ─────────────────────────────────── */}
         {related.length > 0 && (
-          <section className="section section-alt">
+          <section className="section">
             <div className="container">
-              <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                <span className="section-subtitle">Explore More</span>
-                <h2>Related Services</h2>
-              </motion.div>
-              <div className="related-services-grid">
+              <div className="section-header">
+                <div>
+                  <span className="section-subtitle">Explore More</span>
+                  <h2 className="section-title">Related Treatments</h2>
+                </div>
+              </div>
+              <div className="related-services-grid-premium">
                 {related.map((rel, i) => (
-                  <motion.div key={i} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                    <Link to={`/services/${rel.slug}`} className="related-service-card">
-                      <div className="related-service-img-wrapper">
-                        <img src={rel.heroImage} alt={rel.title} className="related-service-img" />
-                        <div className="related-service-overlay" style={{ background: `${rel.color}CC` }}>
-                          <ArrowRight size={28} color="#fff" />
+                  <motion.div 
+                    key={i} 
+                    className="related-service-card-premium"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <Link to={`/services/${rel.slug}`}>
+                      <div className="related-img-wrapper">
+                        <img src={rel.heroImage} alt={rel.title} />
+                        <div className="related-overlay">
+                          <ArrowRight size={24} />
                         </div>
                       </div>
-                      <div className="related-service-body">
-                        <h4 style={{ color: 'var(--text-primary)', marginBottom: '0.3rem' }}>{rel.title}</h4>
-                        <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>{rel.subtitle}</p>
+                      <div className="related-content">
+                        <h4>{rel.title}</h4>
+                        <p>{rel.subtitle}</p>
                       </div>
                     </Link>
                   </motion.div>
@@ -210,20 +212,22 @@ const ServicePage = () => {
         )}
 
         {/* ── Appointment CTA ──────────────────────────────────── */}
-        <section className="service-appointment-cta">
-          <div className="container" style={{ textAlign: 'center' }}>
-            <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-              <Star size={40} color="#FFD700" style={{ margin: '0 auto 1rem' }} />
-              <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Ready for a Healthier, Brighter Smile?</h2>
-              <p style={{ color: 'rgba(255,255,255,0.85)', maxWidth: '600px', margin: '0 auto 2rem', fontSize: '1.1rem' }}>
-                Book your consultation at Acharya Dental today. Our specialists will create a personalised treatment plan just for you.
+        <section className="section section-cta-premium">
+          <div className="container text-center">
+            <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="cta-card-premium"
+            >
+              <Star size={48} className="text-secondary" style={{ margin: '0 auto 1.5rem' }} />
+              <h2>Ready for a Healthy, Brighter Smile?</h2>
+              <p className="hero-description">
+                Book your consultation at Smile Bright Dental today. Our specialists will create a personalised treatment plan just for you.
               </p>
-              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <button className="btn btn-primary" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
+              <div className="hero-actions" style={{ justifyContent: 'center' }}>
+                <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">
                   <CalendarDays size={20} /> Book Appointment
-                </button>
-                <a href="tel:+919444408087" className="btn btn-ghost-white" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
-                  <Phone size={20} /> +91 94444 08087
                 </a>
               </div>
             </motion.div>
@@ -232,8 +236,7 @@ const ServicePage = () => {
 
       </main>
       <Footer />
-    </>
+    </motion.div>
   );
 };
-
 export default ServicePage;

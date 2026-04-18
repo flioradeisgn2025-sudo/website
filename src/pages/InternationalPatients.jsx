@@ -50,16 +50,16 @@ const InternationalPatients = () => (
             <div className="intl-hero-countries">
               {countries.slice(0, 6).map(c => <span key={c} className="intl-country-chip">{c}</span>)}
             </div>
-            <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.8)' }}>Welcome, International Patients</span>
-            <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.5rem)', maxWidth: '700px' }}>
+            <span className="section-subtitle light">Welcome, International Patients</span>
+            <h1 className="section-title light" style={{ textAlign: 'left', margin: '1rem 0', maxWidth: '700px' }}>
               World-Class Dental Care in Chennai — For Patients Worldwide
             </h1>
-            <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', maxWidth: '580px', marginTop: '1rem', lineHeight: 1.7 }}>
-              Acharya Dental welcomes patients from across the globe. Receive the same world-class treatment at a fraction of the cost, with personalised support every step of the way.
+            <p className="hero-description light" style={{ maxWidth: '580px', lineHeight: 1.7 }}>
+              Smile Bright Dental welcomes patients from across the globe. Receive the same world-class treatment at a fraction of the cost, with personalised support every step of the way.
             </p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
               <button className="btn btn-primary"><CalendarDays size={18} /> Book Consultation</button>
-              <a href="mailto:international@acharyadental.com" className="btn btn-ghost-white"><Mail size={18} /> Email Us</a>
+              <a href="mailto:ayeshasubhan1408@gmail.com" className="btn btn-ghost-white"><Mail size={18} /> Email Us</a>
             </div>
           </motion.div>
         </div>
@@ -118,7 +118,7 @@ const InternationalPatients = () => (
                 <thead>
                   <tr>
                     <th>Treatment</th>
-                    <th className="highlight-col">India (Acharya Dental)</th>
+                    <th className="highlight-col">India (Smile Bright Dental)</th>
                     <th>UK</th>
                     <th>USA</th>
                   </tr>
@@ -163,14 +163,14 @@ const InternationalPatients = () => (
               <div className="intl-contact-box glass-card" style={{ background: 'rgba(255,255,255,0.12)', borderColor: 'rgba(255,255,255,0.2)' }}>
                 <h3 style={{ color: '#fff', marginBottom: '1.5rem' }}>International Patient Enquiry</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                  <a href="mailto:international@acharyadental.com" className="contact-row" style={{ color: 'rgba(255,255,255,0.85)' }}>
-                    <Mail size={18} color="#FFD700" /><span>international@acharyadental.com</span>
+                  <a href="mailto:ayeshasubhan1408@gmail.com" className="contact-row" style={{ color: 'rgba(255,255,255,0.85)' }}>
+                    <Mail size={18} color="#FFD700" /><span>ayeshasubhan1408@gmail.com</span>
                   </a>
                   <a href="https://wa.me/919876543210" className="contact-row" style={{ color: 'rgba(255,255,255,0.85)' }}>
                     <Phone size={18} color="#4CAF50" /><span>WhatsApp: +91 98765 43210</span>
                   </a>
                   <div className="contact-row" style={{ color: 'rgba(255,255,255,0.85)', cursor: 'default' }}>
-                    <MapPin size={18} color="#FF6B6B" /><span>Acharya Dental, MG Road, Chennai 560001</span>
+                    <MapPin size={18} color="#FF6B6B" /><span>Smile Bright Dental, MG Road, Chennai 560001</span>
                   </div>
                 </div>
                 <button className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>

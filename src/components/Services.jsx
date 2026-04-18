@@ -1,50 +1,50 @@
 import React from 'react';
-import { Smile, AlignCenter, Zap, SunMedium, ShieldCheck, Baby, ArrowRight } from 'lucide-react';
+import { Smile, AlignCenter, Zap, SunMedium, ShieldCheck, Baby, ArrowRight, Activity, Heart, Sparkles, Microscope } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const services = [
     {
-        icon: <Smile size={32} />,
+        icon: <Sparkles size={28} />,
         title: 'Teeth Replacement',
         description: 'Restore your smile with premium dental implants and full-arch restorations that look, feel, and function like natural teeth.',
         slug: 'teeth-replacement',
     },
     {
-        icon: <AlignCenter size={32} />,
+        icon: <AlignCenter size={28} />,
         title: 'Teeth Alignment',
         description: 'Straighten your smile comfortably with Invisalign clear aligners or traditional braces, tailored to your lifestyle.',
         slug: 'teeth-alignment',
     },
     {
-        icon: <Zap size={32} />,
+        icon: <Zap size={28} />,
         title: 'Laser Dentistry',
-        description: 'Minimally invasive laser treatments for gum reshaping, cavity care, and more — with near-zero discomfort and faster healing.',
+        description: 'Minimally invasive laser treatments for gum reshaping, cavity care, and more with near-zero discomfort.',
         slug: 'laser-dentistry',
     },
     {
-        icon: <SunMedium size={32} />,
+        icon: <SunMedium size={28} />,
         title: 'Teeth Whitening',
         description: 'Achieve up to 8–10 shades whiter teeth in a single professional in-chair whitening session.',
         slug: 'teeth-whitening',
     },
     {
-        icon: <ShieldCheck size={32} />,
+        icon: <ShieldCheck size={28} />,
         title: 'Preventive Dentistry',
-        description: 'Protect your smile with comprehensive check-ups, professional cleaning, fluoride treatments, and personalised care plans.',
+        description: 'Protect your smile with comprehensive check-ups, professional cleaning, and personalised care plans.',
         slug: 'preventive-dentistry',
     },
     {
-        icon: <Baby size={32} />,
-        title: 'Paediatric Dentistry',
-        description: 'Gentle, fun, and fear-free dental care for children of all ages in our purpose-designed child-friendly environment.',
-        slug: 'paediatric-dentistry',
-    },
+        icon: <Activity size={28} />,
+        title: 'Pain Management',
+        description: 'Advanced techniques and sedation dentistry to ensure your treatments are completely comfortable and stress-free.',
+        slug: 'pain-management',
+    }
 ];
 
 const Services = () => {
     return (
-        <section id="services" className="section section-alt services-section">
+        <section id="services" className="section services-section">
             <div className="container">
 
                 <motion.div
@@ -55,13 +55,13 @@ const Services = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <div>
-                        <span className="section-subtitle">Our Departments</span>
-                        <h2 className="section-title">Comprehensive Medical Services</h2>
+                        <span className="section-subtitle">Our Expertise</span>
+                        <h2 className="section-title">Premium Dental Solutions</h2>
                     </div>
-                    <button className="btn btn-secondary view-all-btn">
-                        View All Services
+                    <Link to="/services/teeth-cleaning" className="btn btn-secondary desktop-nav">
+                        Explore All Services
                         <ArrowRight size={18} />
-                    </button>
+                    </Link>
                 </motion.div>
 
                 <motion.div
@@ -73,7 +73,7 @@ const Services = () => {
                         hidden: { opacity: 0 },
                         visible: {
                             opacity: 1,
-                            transition: { staggerChildren: 0.15 }
+                            transition: { staggerChildren: 0.1 }
                         }
                     }}
                 >
@@ -92,11 +92,18 @@ const Services = () => {
                             <h3>{service.title}</h3>
                             <p>{service.description}</p>
                             <Link to={`/services/${service.slug}`} className="service-link">
-                                Learn more <ArrowRight size={16} />
+                                Discover More <ArrowRight size={18} />
                             </Link>
                         </motion.div>
                     ))}
                 </motion.div>
+
+                <div className="mobile-nav-actions" style={{ marginTop: '3rem', textAlign: 'center' }}>
+                     <Link to="/services/teeth-cleaning" className="btn btn-secondary w-full" style={{ display: 'inline-flex' }}>
+                        View All Services
+                        <ArrowRight size={18} />
+                    </Link>
+                </div>
 
             </div>
         </section>

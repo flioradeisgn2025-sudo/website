@@ -46,7 +46,7 @@ const DoctorProfile = () => {
                         >
                             <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.9)' }}>Lead Specialist</span>
                             <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 4.5vw, 4rem)', fontWeight: 800 }}>
-                                Dr. Ponni Valavan, MDS (OMFS)
+                                Dr. Ayesha Subhan, BDS, MBA
                             </h1>
                             <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.4rem', marginTop: '0.75rem', fontWeight: 500 }}>
                                 BDS MDS (Endodontist)
@@ -68,7 +68,7 @@ const DoctorProfile = () => {
                                 <div className="doctor-photo-card glass-card" style={{ padding: '0', overflow: 'hidden' }}>
                                     <img
                                         src={`${baseUrl}dr_ponni_valavan.png`}
-                                        alt="Dr. Ponni Valavan, MDS (OMFS)"
+                                        alt="Dr. Ayesha Subhan, BDS, MBA"
                                         className="doctor-profile-photo"
                                         style={{ width: '100%', height: 'auto', display: 'block' }}
                                     />
@@ -82,9 +82,9 @@ const DoctorProfile = () => {
                                             <Mail size={18} color="var(--primary-color)" />
                                             <span>ayeshasubhan1408@gmail.com</span>
                                         </a>
-                                        <button className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>
+                                        <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>
                                             Book Appointment
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -95,10 +95,10 @@ const DoctorProfile = () => {
                                     <span className="section-subtitle">Excellence in Endodontics</span>
                                     <h2 style={{ marginBottom: '1.5rem', fontSize: '2.4rem' }}>Commitment to Precision and Patient Comfort</h2>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem', fontSize: '1.1rem' }}>
-                                        Dr. Ponni Valavan, MDS (OMFS) is a distinguished specialist in Endodontics, renowned for his gentle approach and technical mastery in corrective dental procedures. With over 15 years of clinical experience, he has pioneered painless root canal technologies in Chennai, transforming the patient experience through microscopic precision and laser-assisted treatments.
+                                        Dr. Ayesha Subhan, BDS, MBA is a distinguished specialist in Endodontics, renowned for her gentle approach and technical mastery in corrective dental procedures. With over 15 years of clinical experience, she has pioneered painless root canal technologies in Chennai, transforming the patient experience through microscopic precision and laser-assisted treatments.
                                     </p>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2.5rem', fontSize: '1.1rem' }}>
-                                        A firm believer in biological tooth preservation, Dr. Ponni Valavan, MDS (OMFS) employs advanced diagnostic imaging and minimally invasive techniques to ensure the longevity of natural teeth. His dedication to clinical excellence and patient-first philosophy has made his a trusted name in complex dental rehabilitations.
+                                        A firm believer in biological tooth preservation, Dr. Ayesha Subhan, BDS, MBA employs advanced diagnostic imaging and minimally invasive techniques to ensure the longevity of natural teeth. Her dedication to clinical excellence and patient-first philosophy has made her a trusted name in complex dental rehabilitations.
                                     </p>
                                 </motion.div>
 
@@ -163,7 +163,7 @@ const DoctorProfile = () => {
                             <div className="info-block-title" style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
                                 <BookOpen size={32} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
                                 <h2>Professional Contributions</h2>
-                                <p style={{ maxWidth: '600px', margin: '1rem auto 0' }}>Dr. Ponni Valavan, MDS (OMFS) is active in clinical research and has published several papers on modern endodontic practices.</p>
+                                <p style={{ maxWidth: '600px', margin: '1rem auto 0' }}>Dr. Ayesha Subhan, BDS, MBA is active in clinical research and has published several papers on modern endodontic practices.</p>
                             </div>
                         </motion.div>
                         <div className="publications-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>

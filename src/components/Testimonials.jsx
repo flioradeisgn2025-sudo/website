@@ -4,19 +4,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
     {
-        text: "Dr. Ponni Valavan, MDS (OMFS) performed my treatment and the results are absolutely life-changing. I am so glad I chose this clinic. The whole process was far less painful than I feared. The team at Smile Bright Dental is truly exceptional.",
-        name: "Priya Sharma",
-        role: "Patient — Dental Care, Chennai"
+        text: "Dr. Ayesha Subhan, BDS, MBA performed my treatment and the results are absolutely life-changing. I am so glad I chose this clinic. The whole process was far less painful than I feared. The team at Smile Bright Dental is truly exceptional.",
+        name: "Deepa Sundaram",
+        role: "Patient"
     },
     {
-        text: "Dr. Ponni Valavan, MDS (OMFS) is a true expert. He rebuilt my entire smile after years of neglect. His patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.",
-        name: "Ananya Reddy",
-        role: "Patient — Smile Makeover, Hyderabad"
+        text: "Dr. Ayesha Subhan, BDS, MBA is a true expert. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.",
+        name: "Meenakshi Krishnan",
+        role: "Patient"
     },
     {
         text: "I needed treatment and was terrified. The laser procedure at Smile Bright Dental was completely painless — no cuts, no stitches. I was back to work the same evening! Absolutely incredible experience.",
-        name: "Mohammed Ashraf",
-        role: "Patient — Laser Care, Chennai"
+        name: "Karthik Velu",
+        role: "Patient"
     }
 ];
 

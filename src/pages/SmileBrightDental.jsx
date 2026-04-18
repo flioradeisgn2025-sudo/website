@@ -4,64 +4,28 @@ import { Award, BookOpen, Star, Stethoscope, Phone, Mail, MapPin, CheckCircle2, 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: (i = 0) => ({
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.6, delay: i * 0.1, ease: 'easeOut' },
-    }),
-};
-
-const facilities = [
-    'State-of-the-art diagnostic imaging',
-    'Advanced sterilization protocols',
-    'In-house dental laboratory',
-    'Comfortable, anxiety-free environment',
-];
-
-const expertise = [
-    'Comprehensive Dental Care',
-    'Specialized Implantology',
-    'Laser & Preventive Care',
-    'Cosmetic Smile Makeovers',
-    '24/7 Support for Emergencies',
-    'Patient-Centric Approach',
-];
-
-const milestones = [
-    { year: '2007', event: 'Founded Smile Bright Dental Clinic' },
-    { year: '2012', event: 'Recognized as Top Clinic in Chennai' },
-    { year: '2016', event: 'Pioneered Advanced Implant Technology' },
-    { year: '2018', event: 'Introduced Laser Dentistry to the clinic' },
-    { year: '2021', event: 'Awarded Best Patient Experience' },
-    { year: '2023', event: 'Surpassed 25,000 successful treatments' },
-];
-
 const SmileBrightDental = () => {
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+        >
             <Header />
-            <main style={{ paddingTop: '80px' }}>
+            <main className="about-page-main">
 
                 {/* Hero Banner */}
-                <section className="doctor-profile-hero">
-                    <div className="doctor-hero-overlay" />
-                    <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                <section className="page-hero">
+                    <div className="container relative z-10">
                         <motion.div
-                            className="doctor-hero-content"
-                            initial="hidden"
-                            animate="visible"
-                            variants={fadeUp}
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7 }}
                         >
-                            <span className="section-subtitle">About Us</span>
-                            <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
-                                Smile Bright Dental
-                            </h1>
-                            <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', marginTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
-
-                            </p>
-                            <div className="doctor-badges">
+                            <span className="section-subtitle light">Our Legacy</span>
+                            <h1 className="section-title light">Smile Bright Dental</h1>
+                            <div className="doctor-badges" style={{ justifyContent: 'center', marginTop: '1.5rem' }}>
                                 <span className="doctor-badge-chip"><Star size={14} /> Top Rated</span>
                                 <span className="doctor-badge-chip"><Award size={14} /> Award Winning</span>
                                 <span className="doctor-badge-chip"><Stethoscope size={14} /> 25,000+ Happy Smiles</span>
@@ -70,12 +34,16 @@ const SmileBrightDental = () => {
                     </div>
                 </section>
 
-                {/* Profile Section */}
+                {/* Story Section */}
                 <section className="section">
                     <div className="container">
-                        <div className="doctor-profile-grid">
+                        <div className="service-overview-grid-premium">
                             {/* Left – Photo Card */}
-                            <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+                            <motion.div 
+                                initial={{ opacity: 0, x: -30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                            >
                                 <div className="doctor-photo-card glass-card">
                                     <img
                                         src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -83,7 +51,7 @@ const SmileBrightDental = () => {
                                         className="doctor-profile-photo"
                                     />
                                     <div className="doctor-contact-info">
-                                        <h3 style={{ marginBottom: '1.25rem' }}>Visit Our Clinic</h3>
+                                        <h3>Visit Our Clinic</h3>
                                         <a href="tel:+919444408087" className="contact-row">
                                             <Phone size={18} />
                                             <span>+91 94444 08087</span>
@@ -93,116 +61,74 @@ const SmileBrightDental = () => {
                                             <span>ayeshasubhan1408@gmail.com</span>
                                         </a>
                                         <div className="contact-row">
-                                            <MapPin size={18} color="var(--primary-color)" />
-                                            <span>Smile Bright Dental Clinic, Chennai</span>
+                                            <MapPin size={18} />
+                                            <span>Mannady, Chennai</span>
                                         </div>
-                                        <button className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>
+                                        <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary w-full" style={{ marginTop: '1.5rem' }}>
                                             Book Appointment
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </motion.div>
 
                             {/* Right – Bio */}
-                            <div>
-                                <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                                    <span className="section-subtitle">Our Mission</span>
-                                    <h2 style={{ marginBottom: '1rem' }}>Exceptional Dental Care with a Human Touch</h2>
-                                    <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                                        At Smile Bright Dental, we believe a healthy, confident smile can transform lives. For nearly two decades, our multi-specialty clinic has stood as a beacon of dental excellence in Chennai, offering a comprehensive suite of advanced treatments delivered with unmatched precision and care.
-                                    </p>
-                                    <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2rem' }}>
-                                        Our lead specialist, Dr. Ponni Valavan, MDS (OMFS), brings together global expertise and the latest in dental technology to ensure every patient experiences painless, effective, and lasting results. From preventative care to complex endodontic treatments and full-mouth rehabilitations, our patient-first approach guarantees a comfortable and reassuring journey toward optimal oral health.
-                                    </p>
-                                </motion.div>
+                            <motion.div 
+                                initial={{ opacity: 0, x: 30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                            >
+                                <span className="section-subtitle">Our Mission</span>
+                                <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>Exceptional Dental Care with a Human Touch</h2>
+                                <p className="hero-description" style={{ textAlign: 'left', fontSize: '1.05rem', color: 'var(--text-secondary)' }}>
+                                    At Smile Bright Dental, we believe a healthy, confident smile can transform lives. For nearly two decades, our multi-specialty clinic has stood as a beacon of dental excellence in Chennai.
+                                </p>
+                                <p className="hero-description" style={{ textAlign: 'left', fontSize: '1.05rem', color: 'var(--text-secondary)', marginTop: '1rem' }}>
+                                    Our lead specialist, Dr. Ayesha Subhan, BDS, MBA, brings together global expertise and the latest in dental technology to ensure every patient experiences painless, effective, and lasting results.
+                                </p>
 
-                                {/* Facilities */}
-                                <motion.div custom={2} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                                    <div className="info-block">
-                                        <div className="info-block-title">
-                                            <ShieldCheck size={22} color="var(--primary-color)" />
-                                            <h3>Why Choose Us?</h3>
-                                        </div>
-                                        <ul className="qualification-list">
-                                            {facilities.map((q, i) => (
-                                                <li key={i} className="qualification-item">
-                                                    <CheckCircle2 size={16} color="var(--primary-color)" />
-                                                    <span>{q}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </motion.div>
-
-                                {/* Core Values */}
-                                <motion.div custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                                    <div className="info-block" style={{ marginTop: '1.5rem' }}>
-                                        <div className="info-block-title">
-                                            <Star size={22} color="var(--primary-color)" />
-                                            <h3>Our Approach</h3>
-                                        </div>
-                                        <div className="expertise-tags">
-                                            {expertise.map((e, i) => (
-                                                <span key={i} className="expertise-tag">{e}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </div>
+                                <div className="info-block-premium" style={{ marginTop: '2.5rem' }}>
+                                   <div className="info-header">
+                                       <ShieldCheck size={20} />
+                                       <h4>Why Choose Us?</h4>
+                                   </div>
+                                   <ul className="info-list-premium">
+                                       <li><CheckCircle2 size={16} /> State-of-the-art diagnostic imaging</li>
+                                       <li><CheckCircle2 size={16} /> Advanced sterilization protocols</li>
+                                       <li><CheckCircle2 size={16} /> In-house dental laboratory</li>
+                                       <li><CheckCircle2 size={16} /> Comfort-first patient approach</li>
+                                   </ul>
+                                </div>
+                            </motion.div>
                         </div>
                     </div>
                 </section>
 
-                {/* Clinic Milestones */}
+                {/* Excellence Grid */}
                 <section className="section section-alt">
                     <div className="container">
-                        <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                            <span className="section-subtitle">A Legacy Built on Trust</span>
-                            <h2>Our Journey</h2>
-                        </motion.div>
-                        <div className="timeline">
-                            {milestones.map((m, i) => (
-                                <motion.div
-                                    key={i}
-                                    className={`timeline-item ${i % 2 === 0 ? 'left' : 'right'}`}
-                                    custom={i}
-                                    initial="hidden"
-                                    whileInView="visible"
-                                    viewport={{ once: true }}
-                                    variants={fadeUp}
-                                >
-                                    <div className="timeline-dot" />
-                                    <div className="timeline-content glass-card">
-                                        <span className="timeline-year">{m.year}</span>
-                                        <p>{m.event}</p>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Publications */}
-                <section className="section">
-                    <div className="container">
-                        <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                            <div className="info-block-title" style={{ marginBottom: '2rem' }}>
-                                <BookOpen size={26} color="var(--primary-color)" />
-                                <h2>Clinical Excellence & Research</h2>
+                        <div className="section-header" style={{ textAlign: 'center', justifyContent: 'center' }}>
+                            <div>
+                                <span className="section-subtitle">Clinical Excellence</span>
+                                <h2 className="section-title">Research & Innovation</h2>
                             </div>
-                        </motion.div>
+                        </div>
                         <div className="publications-grid">
                             {[
                                 { title: 'Innovations in Sedation Dentistry', journal: 'Smile Bright Internal Review, 2022' },
                                 { title: 'Painless Implantology Best Practices', journal: 'Dental Excellence Symposium, 2023' },
                                 { title: 'Digital Smile Makeovers Handbook', journal: 'Cosmetic Dentistry Quarterly, 2024' },
                             ].map((pub, i) => (
-                                <motion.div key={i} custom={i + 1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                                    <div className="publication-card glass-card">
-                                        <BookOpen size={24} color="var(--primary-color)" style={{ marginBottom: '0.75rem' }} />
-                                        <h4 style={{ marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{pub.title}</h4>
-                                        <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{pub.journal}</p>
-                                    </div>
+                                <motion.div 
+                                    key={i} 
+                                    className="publication-card glass-card"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: i * 0.1 }}
+                                >
+                                    <BookOpen size={24} className="text-primary" style={{ marginBottom: '1rem' }} />
+                                    <h4>{pub.title}</h4>
+                                    <p>{pub.journal}</p>
                                 </motion.div>
                             ))}
                         </div>
@@ -211,7 +137,7 @@ const SmileBrightDental = () => {
 
             </main>
             <Footer />
-        </>
+        </motion.div>
     );
 };
 

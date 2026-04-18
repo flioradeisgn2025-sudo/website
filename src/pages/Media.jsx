@@ -15,9 +15,9 @@ const fadeUp = {
 
 const pressCoverage = [
     { outlet: 'The Hindu', date: 'Jan 2026', headline: "Smile Bright Dental Clinic \u2013 Chennai's Top Dental Destination", type: 'print' },
-    { outlet: 'Times of India', date: 'Dec 2025', headline: 'Dr. Ponni Valavan, MDS (OMFS) Recognized for Excellence in Endodontics', type: 'print' },
+    { outlet: 'Times of India', date: 'Dec 2025', headline: 'Dr. Ayesha Subhan, BDS, MBA Recognized for Excellence in Endodontics', type: 'print' },
     { outlet: 'Deccan Herald', date: 'Oct 2025', headline: 'Advanced Laser Dentistry Now Available at Smile Bright Clinic', type: 'print' },
-    { outlet: 'News9 Kannada', date: 'Sep 2025', headline: 'TV Interview: Dr. Ponni Valavan, MDS (OMFS) on Modern Endodontic Care', type: 'tv' },
+    { outlet: 'News9 Kannada', date: 'Sep 2025', headline: 'TV Interview: Dr. Ayesha Subhan, BDS, MBA on Modern Endodontic Care', type: 'tv' },
     { outlet: 'Vijay Karnataka', date: 'Aug 2025', headline: 'Free Dental Camp Organized by Smile Bright for School Children', type: 'print' },
     { outlet: 'NDTV Chennai', date: 'Jul 2025', headline: 'Feature: How Smile Bright Clinic is Changing Lives', type: 'tv' },
 ];
@@ -46,19 +46,18 @@ const Media = () => {
         : galleryImages.filter(g => g.category === selectedCat);
 
     return (
-        <>
+        <div className="media-page-main">
             <Header />
-            <main style={{ paddingTop: '80px' }}>
+            <main>
 
                 {/* Page Hero */}
-                <section className="page-hero-banner" style={{ background: 'linear-gradient(135deg, #1a1040 0%, #7B6CF6 100%)' }}>
-                    <div className="page-hero-overlay" />
-                    <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                <section className="page-hero">
+                    <div className="container">
                         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-                            <span className="section-subtitle">In The News &amp; Gallery</span>
-                            <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Media Centre</h1>
-                            <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', marginTop: '0.75rem' }}>
-                                Press coverage, photo gallery, and media resources from Smile Bright Dental Clinic.
+                            <span className="section-subtitle light">In The News &amp; Gallery</span>
+                            <h1 className="section-title light" style={{ marginBottom: '1rem' }}>Media Centre</h1>
+                            <p className="hero-description light">
+                                Press coverage, official photo gallery, and latest media resources from Smile Bright Dental.
                             </p>
                         </motion.div>
                     </div>
@@ -68,16 +67,42 @@ const Media = () => {
                     <div className="container">
 
                         {/* Tab Switcher */}
-                        <div className="media-tabs">
+                        <div className="media-tabs" style={{ marginBottom: '3rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
                             <button
                                 className={`media-tab-btn ${activeTab === 'gallery' ? 'active' : ''}`}
                                 onClick={() => setActiveTab('gallery')}
+                                style={{ 
+                                    padding: '0.75rem 2rem', 
+                                    borderRadius: '100px', 
+                                    border: activeTab === 'gallery' ? 'none' : '2px solid var(--border-color)',
+                                    background: activeTab === 'gallery' ? 'var(--primary-color)' : 'transparent',
+                                    color: activeTab === 'gallery' ? 'white' : 'var(--text-secondary)',
+                                    fontWeight: 600,
+                                    cursor: 'pointer',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '0.6rem',
+                                    transition: 'all 0.3s ease'
+                                }}
                             >
                                 <Image size={18} /> Photo Gallery
                             </button>
                             <button
                                 className={`media-tab-btn ${activeTab === 'press' ? 'active' : ''}`}
                                 onClick={() => setActiveTab('press')}
+                                style={{ 
+                                    padding: '0.75rem 2rem', 
+                                    borderRadius: '100px', 
+                                    border: activeTab === 'press' ? 'none' : '2px solid var(--border-color)',
+                                    background: activeTab === 'press' ? 'var(--primary-color)' : 'transparent',
+                                    color: activeTab === 'press' ? 'white' : 'var(--text-secondary)',
+                                    fontWeight: 600,
+                                    cursor: 'pointer',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '0.6rem',
+                                    transition: 'all 0.3s ease'
+                                }}
                             >
                                 <Newspaper size={18} /> Press Coverage
                             </button>
@@ -87,33 +112,59 @@ const Media = () => {
                         {activeTab === 'gallery' && (
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
                                 {/* Category filter */}
-                                <div className="category-filters" style={{ marginBottom: '2.5rem' }}>
+                                <div className="category-filters" style={{ marginBottom: '3rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                                     {galleryCats.map(cat => (
                                         <button
                                             key={cat}
                                             className={`cat-btn ${selectedCat === cat ? 'active' : ''}`}
                                             onClick={() => setSelectedCat(cat)}
+                                            style={{
+                                                padding: '0.5rem 1.25rem',
+                                                borderRadius: '50px',
+                                                border: '1px solid var(--border-color)',
+                                                background: selectedCat === cat ? 'var(--accent-soft)' : 'white',
+                                                color: selectedCat === cat ? 'var(--primary-color)' : 'var(--text-secondary)',
+                                                fontWeight: 600,
+                                                cursor: 'pointer',
+                                                fontSize: '0.9rem',
+                                                transition: 'all 0.2s ease'
+                                            }}
                                         >
                                             {cat}
                                         </button>
                                     ))}
                                 </div>
 
-                                <div className="gallery-masonry">
+                                <div className="gallery-masonry" style={{ columns: '3 300px', gap: '2rem' }}>
                                     {filteredGallery.map((img, i) => (
                                         <motion.div
                                             key={img.id}
-                                            className="gallery-item"
+                                            className="gallery-item glass-card"
                                             custom={i}
                                             initial="hidden"
                                             whileInView="visible"
                                             viewport={{ once: true }}
                                             variants={fadeUp}
                                             onClick={() => setLightbox(img)}
+                                            style={{ marginBottom: '2rem', overflow: 'hidden', cursor: 'zoom-in', transition: 'transform 0.3s ease' }}
                                         >
-                                            <img src={img.url} alt={img.caption} className="gallery-img" />
-                                            <div className="gallery-overlay">
-                                                <span className="gallery-caption">{img.caption}</span>
+                                            <div style={{ position: 'relative', overflow: 'hidden' }}>
+                                                <img src={img.url} alt={img.caption} className="gallery-img" style={{ width: '100%', display: 'block', transition: 'transform 0.5s ease' }} />
+                                                <div className="gallery-overlay" style={{ 
+                                                    position: 'absolute', 
+                                                    inset: 0, 
+                                                    background: 'rgba(133, 0, 185, 0.4)', 
+                                                    opacity: 0, 
+                                                    display: 'flex', 
+                                                    alignItems: 'center', 
+                                                    justifyContent: 'center', 
+                                                    transition: 'opacity 0.3s ease' 
+                                                }}>
+                                                    <Play size={32} color="white" />
+                                                </div>
+                                            </div>
+                                            <div style={{ padding: '1.25rem', textAlign: 'center' }}>
+                                                <span className="gallery-caption" style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem' }}>{img.caption}</span>
                                             </div>
                                         </motion.div>
                                     ))}
@@ -124,28 +175,30 @@ const Media = () => {
                         {/* Press Tab */}
                         {activeTab === 'press' && (
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
-                                <div className="press-grid">
+                                <div className="press-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem' }}>
                                     {pressCoverage.map((item, i) => (
                                         <motion.div key={i} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                                            <div className="press-card glass-card">
-                                                <div className="press-card-header">
-                                                    {item.type === 'tv' ? (
-                                                        <Tv2 size={24} color="var(--primary-color)" />
-                                                    ) : (
-                                                        <Newspaper size={24} color="var(--primary-color)" />
-                                                    )}
-                                                    <span className="press-type-tag">{item.type === 'tv' ? 'Television' : 'Print'}</span>
-                                                </div>
-                                                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.1rem', margin: '1rem 0 0.5rem' }}>
-                                                    {item.headline}
-                                                </h3>
-                                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
-                                                    <div>
-                                                        <p style={{ fontWeight: 700, color: 'var(--primary-color)' }}>{item.outlet}</p>
-                                                        <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{item.date}</p>
+                                            <div className="info-block-premium" style={{ height: '100%' }}>
+                                                <div className="info-header" style={{ justifyContent: 'space-between' }}>
+                                                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                                        {item.type === 'tv' ? (
+                                                            <Tv2 size={24} />
+                                                        ) : (
+                                                            <Newspaper size={24} />
+                                                        )}
+                                                        <h4>{item.outlet}</h4>
                                                     </div>
-                                                    <a href="#" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
-                                                        <ExternalLink size={15} /> View
+                                                    <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--secondary-color)', background: 'var(--accent-soft)', padding: '0.25rem 0.75rem', borderRadius: '50px' }}>
+                                                        {item.type}
+                                                    </span>
+                                                </div>
+                                                <p style={{ color: 'var(--text-primary)', fontSize: '1.1rem', fontWeight: 600, margin: '1rem 0' }}>
+                                                    {item.headline}
+                                                </p>
+                                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color)' }}>
+                                                    <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{item.date}</p>
+                                                    <a href="#" className="btn btn-secondary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem', border: 'none', background: 'var(--primary-color)', color: 'white' }}>
+                                                        <ExternalLink size={16} /> Read Full
                                                     </a>
                                                 </div>
                                             </div>
@@ -161,24 +214,27 @@ const Media = () => {
                 <AnimatePresence>
                     {lightbox && (
                         <motion.div
-                            className="lightbox-overlay"
+                            className="lightbox-overlay-premium"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={() => setLightbox(null)}
                         >
                             <motion.div
-                                className="lightbox-inner"
-                                initial={{ scale: 0.8, opacity: 0 }}
+                                className="lightbox-content-premium"
+                                initial={{ scale: 0.9, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
-                                exit={{ scale: 0.8, opacity: 0 }}
+                                exit={{ scale: 0.9, opacity: 0 }}
                                 onClick={e => e.stopPropagation()}
                             >
                                 <button className="lightbox-close" onClick={() => setLightbox(null)}>
                                     <X size={24} />
                                 </button>
-                                <img src={lightbox.url} alt={lightbox.caption} style={{ width: '100%', borderRadius: '12px' }} />
-                                <p style={{ marginTop: '1rem', textAlign: 'center', color: 'var(--text-secondary)' }}>{lightbox.caption}</p>
+                                <img src={lightbox.url} alt={lightbox.caption} style={{ width: '100%', display: 'block' }} />
+                                <div className="lightbox-info" style={{ background: 'white', padding: '2rem', textAlign: 'center' }}>
+                                    <h3 style={{ color: 'var(--primary-color)', marginBottom: '0.5rem' }}>{lightbox.category}</h3>
+                                    <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem' }}>{lightbox.caption}</p>
+                                </div>
                             </motion.div>
                         </motion.div>
                     )}
@@ -186,7 +242,7 @@ const Media = () => {
 
             </main>
             <Footer />
-        </>
+        </div>
     );
 };
 
