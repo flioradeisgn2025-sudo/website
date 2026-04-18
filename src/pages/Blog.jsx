@@ -102,9 +102,9 @@ const Blog = () => {
                     <div className="page-hero-overlay" />
                     <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-                            <span className="section-subtitle">Knowledge Hub</span>
-                            <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Smile Bright Blog</h1>
-                            <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', marginTop: '0.75rem', maxWidth: '550px' }}>
+                            <span className="section-subtitle light">Knowledge Hub</span>
+                            <h1 className="section-title light" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Smile Bright Blog</h1>
+                            <p className="hero-description light" style={{ margin: '0.75rem auto 0', maxWidth: '550px' }}>
                                 Expert dental advice, tips, and insights from the Smile Bright team.
                             </p>
                         </motion.div>

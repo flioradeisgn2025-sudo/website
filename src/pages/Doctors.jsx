@@ -44,10 +44,11 @@ const Doctors = () => {
                initial={{ opacity: 0, y: 20 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.2, duration: 0.6 }}
+               style={{ textAlign: 'center' }}
             >
-              <span className="section-subtitle">Our Team</span>
-              <h1 className="section-title">Meet Our Dental Specialists</h1>
-              <p className="hero-description" style={{ margin: '0 auto' }}>
+              <span className="section-subtitle light">Our Team</span>
+              <h1 className="section-title light">Meet Our Dental Specialists</h1>
+              <p className="hero-description light" style={{ margin: '0 auto' }}>
                 Our team of world-class specialists is dedicated to providing you 
                 with precision care and life-changing smile transformations.
               </p>

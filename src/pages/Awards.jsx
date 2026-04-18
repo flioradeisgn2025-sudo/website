@@ -90,11 +90,11 @@ const Awards = () => {
                     <div className="page-hero-overlay" />
                     <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-                            <span className="section-subtitle">Recognition &amp; Excellence</span>
-                            <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>
+                            <span className="section-subtitle light">Recognition &amp; Excellence</span>
+                            <h1 className="section-title light" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>
                                 Awards &amp; Accreditations
                             </h1>
-                            <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', marginTop: '0.75rem', maxWidth: '600px' }}>
+                            <p className="hero-description light" style={{ margin: '0.75rem auto 0', maxWidth: '600px' }}>
                                 Smile Bright Dental Clinic has been recognized by national and international bodies for its commitment to excellence in patient care and dental innovation.
                             </p>
                         </motion.div>

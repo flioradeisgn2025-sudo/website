@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HeartPulse, Menu, X, ChevronDown } from 'lucide-react';
+import { HeartPulse, Menu, X, ChevronDown, Info, Star, MapPin, User } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 const Header = () => {
@@ -118,22 +118,32 @@ const Header = () => {
                 {[
                   {
                     title: 'About Us',
+                    icon: <Info size={22} className="text-secondary" />,
                     items: [
                       { label: 'Doctors', link: '/about/doctors' },
-                      { label: 'Smile Bright Dental', link: '/about/smile-bright-dental' }
+                      { label: 'Smile Bright Dental', link: '/about/smile-bright-dental' },
+                      { label: 'Media Center', link: '/about/media' }
                     ]
                   },
                   {
                     title: 'Services',
+                    icon: <HeartPulse size={22} className="text-secondary" />,
                     items: [
                       { label: 'Teeth Replacement', link: '/services/teeth-replacement' },
                       { label: 'Teeth Alignment', link: '/services/teeth-alignment' },
-                      { label: 'Teeth Cleaning', link: '/services/teeth-cleaning' }
+                      { label: 'Pain Management', link: '/services/pain-management' },
+                      { label: 'Preventive Dentistry', link: '/services/preventive-dentistry' },
+                      { label: 'Laser Dentistry', link: '/services/laser-dentistry' },
+                      { label: 'Sedation Dentistry', link: '/services/sedation-dentistry' },
+                      { label: 'Paediatric Dentistry', link: '/services/paediatric-dentistry' },
+                      { label: 'Teeth Cleaning', link: '/services/teeth-cleaning' },
+                      { label: 'Teeth Whitening', link: '/services/teeth-whitening' },
+                      { label: 'Oral Cancer Screening', link: '/services/oral-cancer-screening' }
                     ]
                   },
-                  { label: 'Testimonials', link: '/testimonials' },
-                  { label: 'Take a Tour', link: '/take-a-tour' },
-                  { label: 'Contact Us', link: '/contact' }
+                  { label: 'Testimonials', link: '/testimonials', icon: <Star size={22} className="text-secondary" /> },
+                  { label: 'Take a Tour', link: '/take-a-tour', icon: <MapPin size={22} className="text-secondary" /> },
+                  { label: 'Contact Us', link: '/contact', icon: <User size={22} className="text-secondary" /> }
                 ].map((item, idx) => (
                   <motion.div
                     key={idx}
@@ -143,7 +153,10 @@ const Header = () => {
                   >
                     {item.items ? (
                       <div className="mobile-dropdown">
-                        <span className="mobile-nav-label">{item.title}</span>
+                        <span className="mobile-nav-label">
+                          {item.icon}
+                          {item.title}
+                        </span>
                         <div className="mobile-dropdown-content">
                           {item.items.map((sub, sIdx) => (
                             <Link
@@ -163,6 +176,7 @@ const Header = () => {
                         className="mobile-nav-link"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
+                        {item.icon}
                         {item.label}
                       </Link>
                     )}
