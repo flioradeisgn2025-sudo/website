@@ -5228,8 +5228,8 @@ p, h1, h2, h3, h4, li, span, a {
 
   /* Hero-ph: tighter still */
   .hero-ph-body {
-    padding-top: 5rem;
-    padding-bottom: 9rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem; /* Reduced since bar is no longer overlapping */
     text-align: center;
   }
   .hero-ph-title {
@@ -5252,9 +5252,18 @@ p, h1, h2, h3, h4, li, span, a {
   .hero-ph-actions {
     justify-content: center;
   }
+  .hero-ph-bottom-bar {
+    position: relative;
+    bottom: auto;
+    z-index: 5;
+  }
   .hero-ph-bottom-inner {
-    padding: 1.25rem 1rem;
-    gap: 1rem;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 1.75rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
   }
   .hero-ph-bottom-stat h4 { font-size: 1.5rem; }
   .hero-ph-bottom-stat p { font-size: 0.7rem; }
