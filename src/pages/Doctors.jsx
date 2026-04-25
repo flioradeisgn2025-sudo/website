@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const doctors = [
   {
     id: 1,
@@ -107,6 +108,8 @@ const Doctors = () => {
             </motion.div>
           </div>
         </section>
+
+
       </main>
       <Footer />
     </motion.div>

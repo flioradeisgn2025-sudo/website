@@ -4,6 +4,7 @@ import { Star, Quote, ChevronLeft, ChevronRight, Play, MapPin, ThumbsUp } from '
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1, ease: 'easeOut' } }),
@@ -237,6 +238,8 @@ const TestimonialsPage = () => {
             </motion.div>
           </div>
         </section>
+
+
 
       </main>
       <Footer />

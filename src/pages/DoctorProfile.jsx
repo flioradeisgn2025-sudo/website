@@ -4,6 +4,7 @@ import { Award, BookOpen, Star, GraduationCap, Phone, Mail, MapPin, CheckCircle2
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: (i = 0) => ({
@@ -183,6 +184,8 @@ const DoctorProfile = () => {
                         </div>
                     </div>
                 </section>
+
+
 
             </main>
             <Footer />

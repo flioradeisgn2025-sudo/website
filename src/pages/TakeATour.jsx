@@ -4,6 +4,7 @@ import { Play, X, ChevronLeft, ChevronRight, MapPin, Clock, Eye, Sparkles, Layer
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const tourSpots = [
   {
     id: 1, icon: Layers,
@@ -181,6 +182,8 @@ const TakeATour = () => {
             </div>
           </div>
         </section>
+
+
 
         {/* Lightbox */}
         <AnimatePresence>

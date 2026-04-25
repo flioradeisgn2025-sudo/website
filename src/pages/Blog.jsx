@@ -4,6 +4,7 @@ import { Calendar, Clock, Tag, ArrowRight, Search } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: (i = 0) => ({
@@ -195,6 +196,8 @@ const Blog = () => {
                         )}
                     </div>
                 </section>
+
+
             </main>
             <Footer />
         </>

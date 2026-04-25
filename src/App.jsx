@@ -13,7 +13,6 @@ import DoctorProfile from './pages/DoctorProfile';
 import DoctorsPage from './pages/Doctors';
 import DoctorsSection from './components/Doctors';
 import BeforeAfter from './components/BeforeAfter';
-import ConsultationCTA from './components/ConsultationCTA';
 import SmileBrightDental from './pages/SmileBrightDental';
 import Media from './pages/Media';
 
@@ -40,7 +39,6 @@ function HomePage() {
         <Stats />
         <DoctorsSection />
         <BeforeAfter />
-        <ConsultationCTA />
         <ContactSection />
         <Testimonials />
       </main>

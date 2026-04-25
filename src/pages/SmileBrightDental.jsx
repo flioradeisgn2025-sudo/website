@@ -4,6 +4,7 @@ import { Award, BookOpen, Star, Stethoscope, Phone, Mail, MapPin, CheckCircle2, 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const SmileBrightDental = () => {
     return (
         <motion.div
@@ -134,6 +135,8 @@ const SmileBrightDental = () => {
                         </div>
                     </div>
                 </section>
+
+
 
             </main>
             <Footer />

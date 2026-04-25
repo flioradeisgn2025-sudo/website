@@ -4,6 +4,7 @@ import { X, ExternalLink, Tv2, Newspaper, Image, Play } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: (i = 0) => ({
@@ -239,6 +240,8 @@ const Media = () => {
                         </motion.div>
                     )}
                 </AnimatePresence>
+
+
 
             </main>
             <Footer />
