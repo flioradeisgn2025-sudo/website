@@ -19,7 +19,7 @@ const posts = [
     {
         id: 1,
         title: '10 Signs You Need to See a Dentist Immediately',
-        excerpt: 'Knowing when to seek urgent dental care can prevent minor issues from becoming serious emergencies. Here are the signs you should never ignore.',
+        excerpt: 'Some symptoms can wait until your next check-up. Some really cannot. Here\'s how to tell the difference before a small problem becomes an expensive one.',
         image: 'https://images.unsplash.com/photo-1588776814546-1ffea99e7b71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         date: 'March 5, 2026',
         readTime: '5 min read',
@@ -29,7 +29,7 @@ const posts = [
     {
         id: 2,
         title: 'Dental Implants vs Dentures: Which Is Right for You?',
-        excerpt: 'Both implants and dentures can restore a beautiful smile, but they differ significantly in cost, maintenance, and long-term outcomes.',
+        excerpt: 'Both can replace missing teeth — but they\'re different propositions on cost, comfort, and how long they last. A straight comparison without the marketing.',
         image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         date: 'Feb 28, 2026',
         readTime: '7 min read',
@@ -39,7 +39,7 @@ const posts = [
     {
         id: 3,
         title: 'The Complete Guide to Teeth Whitening in 2026',
-        excerpt: 'From professional laser whitening to at-home kits, we break down every option so you can make the best choice for your smile.',
+        excerpt: 'Laser, LED, take-home trays, supermarket strips — what each one actually does, what it costs, and where the trade-offs sit.',
         image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         date: 'Feb 18, 2026',
         readTime: '6 min read',
@@ -49,7 +49,7 @@ const posts = [
     {
         id: 4,
         title: 'Why Your Child\'s First Dental Visit Matters',
-        excerpt: 'Starting dental care early sets the foundation for a lifetime of healthy teeth. Here\'s everything a parent needs to know.',
+        excerpt: 'How a child\'s first appointment goes shapes whether they grow up dreading the dentist or not. A short guide for parents.',
         image: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         date: 'Feb 10, 2026',
         readTime: '4 min read',
@@ -59,7 +59,7 @@ const posts = [
     {
         id: 5,
         title: 'Foods That Naturally Strengthen Your Enamel',
-        excerpt: 'Diet plays a crucial role in dental health. Discover the top foods that actively protect and even rebuild your tooth enamel.',
+        excerpt: 'What you eat does more for your teeth than most toothpastes. The everyday foods that actually help — and a few that don\'t, despite what\'s on the label.',
         image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         date: 'Jan 30, 2026',
         readTime: '5 min read',
@@ -69,7 +69,7 @@ const posts = [
     {
         id: 6,
         title: 'How Laser Dentistry Is Changing Patient Care',
-        excerpt: 'Laser technology offers faster healing, less discomfort, and greater precision. Find out why it\'s the future of dental treatment.',
+        excerpt: 'Where the laser earns its keep, where it doesn\'t, and what this means for the next time you need work done — from someone who uses one daily.',
         image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         date: 'Jan 22, 2026',
         readTime: '6 min read',
@@ -103,9 +103,9 @@ const Blog = () => {
                     <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
                             <span className="section-subtitle light">Knowledge Hub</span>
-                            <h1 className="section-title light" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Smile Bright Blog</h1>
+                            <h1 className="section-title light" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>The Smile Bright blog</h1>
                             <p className="hero-description light" style={{ margin: '0.75rem auto 0', maxWidth: '550px' }}>
-                                Expert dental advice, tips, and insights from the Smile Bright team.
+                                Plain-language pieces from our team — what to do, what not to worry about, and the things patients ask us most often.
                             </p>
                         </motion.div>
                     </div>

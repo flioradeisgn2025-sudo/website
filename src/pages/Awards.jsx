@@ -20,7 +20,7 @@ const awards = [
         org: 'Healthcare Excellence Awards',
         year: '2025',
         color: '#FFD700',
-        description: 'Recognized as the top dental clinic in Chennai for outstanding patient outcomes, advanced technology, and clinical excellence.',
+        description: 'Picked as the top dental clinic in Chennai for patient outcomes, the kit we use, and consistency of care.',
     },
     {
         icon: Medal,
@@ -28,7 +28,7 @@ const awards = [
         org: 'Indian Dental Association – Karnataka Chapter',
         year: '2024',
         color: '#C0C0C0',
-        description: 'Awarded to Dr. Ayesha Subhan, BDS, MBA for pioneering contributions to the field of endodontics and patient-centric care.',
+        description: 'Awarded to Dr. Ayesha for early adoption of microscopic endodontics and her work mentoring younger dentists in the technique.',
     },
     {
         icon: Star,
@@ -36,7 +36,7 @@ const awards = [
         org: 'International Congress of Oral Implantologists',
         year: '2024',
         color: '#CD7F32',
-        description: 'Recognized for exceptional skill and a track record of thousands of successful dental procedures.',
+        description: 'For thousands of successful implant cases — including a number of complex revisions referred from other practices.',
     },
     {
         icon: ShieldCheck,
@@ -44,7 +44,7 @@ const awards = [
         org: 'Joint Commission International',
         year: '2023',
         color: '#4CAF50',
-        description: 'Smile Bright Dental Clinic achieved JCI accreditation, affirming its commitment to the highest international standards of patient safety and quality.',
+        description: 'JCI accreditation — an international audit of patient safety, sterilisation, and clinical quality. Renewed every three years.',
     },
     {
         icon: Award,
@@ -52,7 +52,7 @@ const awards = [
         org: 'All India Dental Congress',
         year: '2023',
         color: '#9C27B0',
-        description: 'Awarded for introducing and advancing laser-assisted dental procedures in Karnataka, significantly improving patient comfort and recovery.',
+        description: 'For bringing laser-assisted procedures into routine practice — quieter recovery, less bleeding, fewer painkillers afterwards.',
     },
     {
         icon: Users,
@@ -60,7 +60,7 @@ const awards = [
         org: 'Chennai Urban District Health Authority',
         year: '2022',
         color: '#2196F3',
-        description: 'Recognized for conducting free dental camps that served 3,000+ underprivileged patients across Chennai district.',
+        description: 'For free dental camps run across the year — over 3,000 patients seen, mostly children and low-income adults.',
     },
 ];
 
@@ -95,7 +95,7 @@ const Awards = () => {
                                 Awards &amp; Accreditations
                             </h1>
                             <p className="hero-description light" style={{ margin: '0.75rem auto 0', maxWidth: '600px' }}>
-                                Smile Bright Dental Clinic has been recognized by national and international bodies for its commitment to excellence in patient care and dental innovation.
+                                A few of the nicer letters and plaques we've received over the years from professional bodies and patient associations. We're prouder of the patients who keep coming back, but these are nice too.
                             </p>
                         </motion.div>
                     </div>
@@ -120,7 +120,7 @@ const Awards = () => {
                     <div className="container">
                         <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                             <span className="section-subtitle">Our Honours</span>
-                            <h2>Awards &amp; Recognitions</h2>
+                            <h2>Things we've been recognised for.</h2>
                         </motion.div>
                         <div className="awards-grid">
                             {awards.map((award, i) => (
@@ -145,7 +145,7 @@ const Awards = () => {
                     <div className="container">
                         <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                             <span className="section-subtitle">Quality Assurance</span>
-                            <h2>Certifications &amp; Accreditations</h2>
+                            <h2>Certifications and accreditations.</h2>
                         </motion.div>
                         <div className="certifications-list">
                             {certifications.map((cert, i) => (

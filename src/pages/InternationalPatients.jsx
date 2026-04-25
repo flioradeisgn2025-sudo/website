@@ -12,21 +12,21 @@ const fadeUp = {
 const countries = ['UAE', 'UK', 'USA', 'Singapore', 'Australia', 'Canada', 'Saudi Arabia', 'Kuwait', 'Bahrain', 'Germany', 'Malaysia', 'New Zealand'];
 
 const services = [
-  { icon: CalendarDays, title: 'Pre-Arrival Consultation', desc: 'Virtual video consultations with our specialists before you travel, so your treatment plan is ready when you arrive.' },
-  { icon: Plane, title: 'Airport Pickup Assistance', desc: 'We coordinate comfortable airport transfers and help you settle into Chennai before your appointment.' },
-  { icon: HeartPulse, title: 'Priority Treatment Scheduling', desc: 'International patients receive priority scheduling to maximise your time in Chennai.' },
-  { icon: Globe, title: 'Hotel & Accommodation', desc: 'Partnered hotels near our clinic offer discounted stays for international patients and their families.' },
-  { icon: Shield, title: 'Comprehensive After-Care', desc: 'Detailed treatment records, X-rays, and digital files provided for follow-up care at your home dentist.' },
-  { icon: Mail, title: 'Dedicated International Coordinator', desc: 'A dedicated English-speaking patient coordinator handles all your queries before, during, and after your visit.' },
+  { icon: CalendarDays, title: 'Video consult before you fly', desc: 'A 30-minute video call with the specialist before you travel, so your plan is ready before you board the plane.' },
+  { icon: Plane, title: 'Airport pickup', desc: 'We arrange a transfer from the airport and help you settle in before your first appointment.' },
+  { icon: HeartPulse, title: 'Priority scheduling', desc: 'Treatment is sequenced to fit your time in Chennai — fewer trips back to the chair, more breathing room.' },
+  { icon: Globe, title: 'Hotel partners nearby', desc: 'Partnered hotels within walking distance, with discounted rates for our patients and their families.' },
+  { icon: Shield, title: 'Records you can take home', desc: 'Full treatment notes, X-rays, and digital files in a format your home dentist can pick up from.' },
+  { icon: Mail, title: 'A coordinator on WhatsApp', desc: 'One English-speaking point of contact for everything — before, during, and after the visit.' },
 ];
 
 const whyChennai = [
-  'World-class dental expertise at a fraction of Western costs',
-  'No waiting lists — treatment within days of arrival',
-  'Shorter travel times for South & South-East Asian patients',
-  'Rich culture, cuisine, and tourism opportunities',
-  'English widely spoken — easy to navigate',
-  'Leading IT hub with excellent modern infrastructure',
+  'Specialist dental work at a fraction of UK or US prices',
+  'No waiting lists — treatment usually starts within days of arrival',
+  'Shorter flights for patients from South and South-East Asia',
+  'Plenty to do between appointments — food, temples, the coast',
+  'English widely spoken; menus, signs, and taxis are no trouble',
+  'Modern infrastructure — the IT capital of South India',
 ];
 
 const treatments = [
@@ -52,10 +52,10 @@ const InternationalPatients = () => (
             </div>
             <span className="section-subtitle light">Welcome, International Patients</span>
             <h1 className="section-title light" style={{ textAlign: 'left', margin: '1rem 0', maxWidth: '700px' }}>
-              World-Class Dental Care in Chennai — For Patients Worldwide
+              Coming to Chennai for treatment? We've got you covered.
             </h1>
             <p className="hero-description light" style={{ maxWidth: '580px', lineHeight: 1.7 }}>
-              Smile Bright Dental welcomes patients from across the globe. Receive the same world-class treatment at a fraction of the cost, with personalised support every step of the way.
+              Patients fly in from a dozen countries every year — usually because the same treatment costs a fraction of what it would at home. We sort out the logistics so you can focus on the visit itself.
             </p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
               <button className="btn btn-primary"><CalendarDays size={18} /> Book Consultation</button>
@@ -81,9 +81,9 @@ const InternationalPatients = () => (
         <div className="container">
           <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <span className="section-subtitle">How We Help</span>
-            <h2>International Patient Services</h2>
+            <h2>What we look after for you.</h2>
             <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
-              We have designed a seamless end-to-end experience so you can focus entirely on your treatment and recovery.
+              The bits that make travelling for treatment less stressful — pre-arrival, during the visit, and the follow-up after you fly home.
             </p>
           </motion.div>
           <div className="intl-services-grid">
@@ -107,9 +107,9 @@ const InternationalPatients = () => (
         <div className="container">
           <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <span className="section-subtitle">Save up to 80%</span>
-            <h2>Cost Comparison</h2>
+            <h2>What it costs, side by side.</h2>
             <p style={{ color: 'var(--text-secondary)', maxWidth: '550px', margin: '0 auto' }}>
-              Exceptional quality at a fraction of the price — including your travel and accommodation.
+              Honest comparison — even after you factor in flights and a hotel, the math usually still works out.
             </p>
           </motion.div>
           <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
@@ -149,7 +149,7 @@ const InternationalPatients = () => (
           <div className="intl-why-grid">
             <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
               <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)' }}>Why Choose Chennai</span>
-              <h2 style={{ color: '#fff' }}>India's Silicon Valley — Your Perfect Dental Destination</h2>
+              <h2 style={{ color: '#fff' }}>Why Chennai works as a dental destination.</h2>
               <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
                 {whyChennai.map((w, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>

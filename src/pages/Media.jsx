@@ -23,15 +23,15 @@ const pressCoverage = [
 ];
 
 const galleryImages = [
-    { id: 1, url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'State-of-the-Art Treatment Rooms', category: 'Clinic' },
-    { id: 2, url: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Advanced Digital X-Ray Suite', category: 'Clinic' },
-    { id: 3, url: 'https://images.unsplash.com/photo-1651677375045-d0399a3bc028?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Dr. Vijailakshmi – Patient Consultation', category: 'Team' },
-    { id: 4, url: 'https://images.unsplash.com/photo-1588776814546-1ffea99e7b71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Community Dental Camp 2025', category: 'Events' },
-    { id: 5, url: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Laser Dentistry Procedure', category: 'Clinic' },
-    { id: 6, url: 'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Team at Annual Dental Conference 2025', category: 'Events' },
-    { id: 7, url: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Paediatric Dentistry Wing', category: 'Clinic' },
-    { id: 8, url: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Happy Patients – Post Treatment', category: 'Patients' },
-    { id: 9, url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Free Health Camp – School Visit', category: 'Events' },
+    { id: 1, url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Treatment rooms', category: 'Clinic' },
+    { id: 2, url: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Digital X-ray suite', category: 'Clinic' },
+    { id: 3, url: 'https://images.unsplash.com/photo-1651677375045-d0399a3bc028?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Dr. Vijailakshmi with a patient', category: 'Team' },
+    { id: 4, url: 'https://images.unsplash.com/photo-1588776814546-1ffea99e7b71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Community dental camp, 2025', category: 'Events' },
+    { id: 5, url: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'A laser procedure in progress', category: 'Clinic' },
+    { id: 6, url: 'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'The team at the annual dental conference', category: 'Events' },
+    { id: 7, url: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Paediatric area', category: 'Clinic' },
+    { id: 8, url: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Patients after treatment', category: 'Patients' },
+    { id: 9, url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'School visit — free health camp', category: 'Events' },
 ];
 
 const galleryCats = ['All', 'Clinic', 'Team', 'Events', 'Patients'];
@@ -55,9 +55,9 @@ const Media = () => {
                     <div className="container">
                         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
                             <span className="section-subtitle light">In The News &amp; Gallery</span>
-                            <h1 className="section-title light" style={{ marginBottom: '1rem' }}>Media Centre</h1>
+                            <h1 className="section-title light" style={{ marginBottom: '1rem' }}>Press &amp; gallery</h1>
                             <p className="hero-description light">
-                                Press coverage, official photo gallery, and latest media resources from Smile Bright Dental.
+                                A collection of press write-ups, photos around the clinic, and the occasional camp we've run in the community.
                             </p>
                         </motion.div>
                     </div>

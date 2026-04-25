@@ -33,18 +33,18 @@ const ContactSection = () => {
           {/* Form */}
           <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <span className="section-subtitle">Send a Message</span>
-            <h2 style={{ marginBottom: '2rem' }}>Book an Appointment</h2>
+            <h2 style={{ marginBottom: '2rem' }}>Book a slot, or just ask.</h2>
 
             {submitted ? (
               <motion.div className="form-success-card glass-card" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}>
                 <CheckCircle2 size={56} color="#4CAF50" />
-                <h3 style={{ color: 'var(--text-primary)', margin: '1rem 0 0.5rem' }}>Message Received!</h3>
+                <h3 style={{ color: 'var(--text-primary)', margin: '1rem 0 0.5rem' }}>Got it.</h3>
                 <p style={{ color: 'var(--text-secondary)', textAlign: 'center' }}>
-                  Thank you, {form.name}! Our team will contact you within 4 hours to confirm your appointment.
-                  <br/><br/>If WhatsApp did not open, <a href={`https://wa.me/919444408087?text=${encodeURIComponent('Hi, ' + form.name + ' here. I submitted the form on the website.')}`} target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary-color)', fontWeight: 'bold', textDecoration: 'underline'}}>click here to message us directly</a>.
+                  Thanks {form.name} — someone from the team will be in touch within four hours to confirm a time that works.
+                  <br/><br/>If WhatsApp didn't open automatically, <a href={`https://wa.me/919444408087?text=${encodeURIComponent('Hi, ' + form.name + ' here. I submitted the form on the website.')}`} target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary-color)', fontWeight: 'bold', textDecoration: 'underline'}}>tap here to message us directly</a>.
                 </p>
                 <button className="btn btn-primary" style={{ marginTop: '1.5rem' }} onClick={() => setSubmitted(false)}>
-                  Send Another
+                  Send another
                 </button>
               </motion.div>
             ) : (
@@ -72,7 +72,7 @@ const ContactSection = () => {
                 </div>
                 <div className="form-group">
                   <label className="form-label">Message</label>
-                  <textarea className="form-input form-textarea" name="message" value={form.message} onChange={handleChange} placeholder="Tell us about your dental concern or preferred appointment time..." rows={4} />
+                  <textarea className="form-input form-textarea" name="message" value={form.message} onChange={handleChange} placeholder="What's the issue, or when works for you to come in?" rows={4} />
                 </div>
                 <button className="btn btn-primary w-full" type="submit">
                   <Send size={18} /> Send Message
@@ -84,7 +84,7 @@ const ContactSection = () => {
           {/* Map */}
           <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <span className="section-subtitle">Find Us</span>
-            <h2 style={{ marginBottom: '1.5rem' }}>Our Location</h2>
+            <h2 style={{ marginBottom: '1.5rem' }}>Where we are.</h2>
             <div className="map-embed" style={{ marginBottom: '1.5rem' }}>
               <iframe
                 title="Smile Bright Dental Location"
@@ -93,7 +93,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="nearby-landmarks glass-card" style={{ padding: '1.5rem' }}>
-              <h4 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>Nearby Landmarks</h4>
+              <h4 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>Getting here</h4>
               {[
                 ['Trinity Metro Station', '200m walk'],
                 ['MG Road Commercial Street', '0.3 km'],

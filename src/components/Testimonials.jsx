@@ -4,17 +4,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
     {
-        text: "Dr. Ayesha Subhan, BDS, MBA performed my treatment and the results are absolutely life-changing. I am so glad I chose this clinic. The whole process was far less painful than I feared. The team at Smile Bright Dental is truly exceptional.",
+        text: "Dr. Ayesha walked me through every step before she started. The treatment was nothing close to as painful as I'd built it up in my head, and I actually like my smile now — first time in years I can say that.",
         name: "Deepa Sundaram",
         role: "Patient"
     },
     {
-        text: "Dr. Ayesha Subhan, BDS, MBA is a true expert. She rebuilt my entire smile after years of neglect. Her patience, attention to detail, and genuine care for my wellbeing made all the difference. I get compliments on my smile every single day now.",
+        text: "I'd put off seeing a dentist for almost a decade. Dr. Ayesha didn't lecture me — she just got on with it. Took several visits to rebuild things properly, and the difference is hard to put into words. People keep asking what I've done.",
         name: "Meenakshi Krishnan",
         role: "Patient"
     },
     {
-        text: "I needed treatment and was terrified. The laser procedure at Smile Bright Dental was completely painless — no cuts, no stitches. I was back to work the same evening! Absolutely incredible experience.",
+        text: "I came in dreading the treatment. They used a laser instead of a scalpel, no stitches, and I was eating dinner that evening like nothing had happened. I keep telling my friends about this place.",
         name: "Karthik Velu",
         role: "Patient"
     }
@@ -47,7 +47,7 @@ const Testimonials = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <span className="section-subtitle">Real Patient Stories</span>
-                        <h2>What Our Patients Say About Us</h2>
+                        <h2>In their own words.</h2>
                         <div className="testimonial-controls">
                             <button onClick={prevTestimonial} className="control-btn"><ChevronLeft /></button>
                             <button onClick={nextTestimonial} className="control-btn"><ChevronRight /></button>

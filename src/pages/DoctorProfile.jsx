@@ -17,14 +17,14 @@ const education = [
     'MDS (Endodontics) — Gold Medalist',
     'BDS — Top Honours Graduate',
     'Certified in Laser Endodontics',
-    'Microscopic Root Canal Procedures Specialist',
+    'Trained in Microscopic Root Canal Procedures',
 ];
 
 const highlights = [
-    'Specialist in Painless Root Canal Treatments',
-    'Pioneering Microscopic Endodontics in Chennai',
-    'Over 15 Years of Clinical Excellence',
-    'Recognized as Top Endodontist in the Region',
+    'Root canals done with magnification — slower, more precise, far less re-treatment',
+    'One of the early adopters of microscopic endodontics in Chennai',
+    '15+ years in clinical practice',
+    'Regularly referred to by other dentists for difficult cases',
 ];
 
 const DoctorProfile = () => {
@@ -92,13 +92,13 @@ const DoctorProfile = () => {
                             {/* Right – Bio */}
                             <div className="doctor-bio-content">
                                 <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                                    <span className="section-subtitle">Excellence in Endodontics</span>
-                                    <h2 style={{ marginBottom: '1.5rem', fontSize: '2.4rem' }}>Commitment to Precision and Patient Comfort</h2>
+                                    <span className="section-subtitle">Endodontics</span>
+                                    <h2 style={{ marginBottom: '1.5rem', fontSize: '2.4rem' }}>The dentist other dentists send their tough cases to.</h2>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem', fontSize: '1.1rem' }}>
-                                        Dr. Ayesha Subhan, BDS, MBA is a distinguished specialist in Endodontics, renowned for her gentle approach and technical mastery in corrective dental procedures. With over 15 years of clinical experience, she has pioneered painless root canal technologies in Chennai, transforming the patient experience through microscopic precision and laser-assisted treatments.
+                                        Dr. Ayesha Subhan trained as an endodontist — root canals, retreatments, the kind of work that needs patience and a microscope. Fifteen years in, she still does most procedures under magnification because that's where the success rate lives. She also brought laser-assisted endodontics to the practice early, which is part of why the recovery here tends to be quieter than people expect.
                                     </p>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2.5rem', fontSize: '1.1rem' }}>
-                                        A firm believer in biological tooth preservation, Dr. Ayesha Subhan, BDS, MBA employs advanced diagnostic imaging and minimally invasive techniques to ensure the longevity of natural teeth. Her dedication to clinical excellence and patient-first philosophy has made her a trusted name in complex dental rehabilitations.
+                                        Her instinct is to save the natural tooth wherever it's possible — which sometimes means a slower, more careful plan rather than the fastest one. If you've been told a tooth needs to come out, it's often worth a second look here before you decide.
                                     </p>
                                 </motion.div>
 
@@ -148,9 +148,9 @@ const DoctorProfile = () => {
                     <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                         <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                             <Quote size={48} color="var(--primary-color)" style={{ opacity: 0.2, margin: '0 auto 1.5rem' }} />
-                            <h2 style={{ marginBottom: '1.5rem' }}>My Patient Care Philosophy</h2>
+                            <h2 style={{ marginBottom: '1.5rem' }}>How I think about my work</h2>
                             <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', lineHeight: 1.8, fontStyle: 'italic' }}>
-                                "I believe that every patient deserves a dental experience that is not only clinically superior but also deeply empathetic. My goal is to make every procedure completely painless, ensuring that you leave our clinic with a healthier, more confident smile and a renewed sense of trust in modern dentistry."
+                                "Most people who walk into my chair are nervous about something — pain, cost, the dentist before me who didn't explain things. My job is to take that off their shoulders. Slow down, show them what I'm seeing, and only do what actually needs doing. The rest tends to take care of itself."
                             </p>
                         </motion.div>
                     </div>
@@ -162,8 +162,8 @@ const DoctorProfile = () => {
                         <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
                             <div className="info-block-title" style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
                                 <BookOpen size={32} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
-                                <h2>Professional Contributions</h2>
-                                <p style={{ maxWidth: '600px', margin: '1rem auto 0' }}>Dr. Ayesha Subhan, BDS, MBA is active in clinical research and has published several papers on modern endodontic practices.</p>
+                                <h2>Published work</h2>
+                                <p style={{ maxWidth: '600px', margin: '1rem auto 0' }}>Dr. Ayesha contributes to clinical research on modern endodontic practice. A few of her recent papers:</p>
                             </div>
                         </motion.div>
                         <div className="publications-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>

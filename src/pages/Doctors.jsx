@@ -47,10 +47,11 @@ const Doctors = () => {
                style={{ textAlign: 'center' }}
             >
               <span className="section-subtitle light">Our Team</span>
-              <h1 className="section-title light">Meet Our Dental Specialists</h1>
+              <h1 className="section-title light">The people who'll be looking after you</h1>
               <p className="hero-description light" style={{ margin: '0 auto' }}>
-                Our team of world-class specialists is dedicated to providing you 
-                with precision care and life-changing smile transformations.
+                A small team of specialists — implant, surgical, and endodontic — who together
+                handle most of what walks through our doors. You'll usually see the same
+                doctor from your first consultation through to follow-up.
               </p>
             </motion.div>
           </div>

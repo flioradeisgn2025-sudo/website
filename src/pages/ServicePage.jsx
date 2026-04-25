@@ -87,8 +87,8 @@ const ServicePage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="section-subtitle">The Treatment</span>
-                <h2>What is {service.title}?</h2>
+                <span className="section-subtitle">The treatment</span>
+                <h2>About {service.title}</h2>
                 <div className="service-description-text">
                   {service.overview.split('\n\n').map((para, i) => (
                     <p key={i}>{para}</p>
@@ -140,8 +140,8 @@ const ServicePage = () => {
                 viewport={{ once: true }}
             >
               <div>
-                <span className="section-subtitle">Common Questions</span>
-                <h2 className="section-title">Everything you need to know</h2>
+                <span className="section-subtitle">Common questions</span>
+                <h2 className="section-title">Things people usually ask</h2>
               </div>
             </motion.div>
             <div className="faq-list-premium">
@@ -221,9 +221,9 @@ const ServicePage = () => {
                 className="cta-card-premium"
             >
               <Star size={48} className="text-secondary" style={{ margin: '0 auto 1.5rem' }} />
-              <h2>Ready for a Healthy, Brighter Smile?</h2>
+              <h2>Want to talk it through first?</h2>
               <p className="hero-description">
-                Book your consultation at Smile Bright Dental today. Our specialists will create a personalised treatment plan just for you.
+                Book a consultation. We'll have a proper look, explain what we'd suggest, and put a written quote together — no pressure to decide on the spot.
               </p>
               <div className="hero-actions" style={{ justifyContent: 'center' }}>
                 <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">

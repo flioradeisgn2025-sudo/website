@@ -43,7 +43,7 @@ const Doctors = () => {
                 >
                     <div>
                         <span className="section-subtitle">Meet the Specialists</span>
-                        <h2 className="section-title">Your Expert Dental Team</h2>
+                        <h2 className="section-title">The people behind the chair</h2>
                     </div>
                 </motion.div>
 

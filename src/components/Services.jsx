@@ -7,37 +7,37 @@ const services = [
     {
         icon: <Sparkles size={28} />,
         title: 'Teeth Replacement',
-        description: 'Restore your smile with premium dental implants and full-arch restorations that look, feel, and function like natural teeth.',
+        description: 'Single-tooth implants, bridges, and full-arch restorations — placed under guided 3D imaging so they sit and chew like the originals.',
         slug: 'teeth-replacement',
     },
     {
         icon: <AlignCenter size={28} />,
         title: 'Teeth Alignment',
-        description: 'Straighten your smile comfortably with Invisalign clear aligners or traditional braces, tailored to your lifestyle.',
+        description: 'Invisalign clear aligners or traditional braces. We talk through which suits your bite, your routine, and your budget before anything is fitted.',
         slug: 'teeth-alignment',
     },
     {
         icon: <Zap size={28} />,
         title: 'Laser Dentistry',
-        description: 'Minimally invasive laser treatments for gum reshaping, cavity care, and more with near-zero discomfort.',
+        description: 'Lasers for gum reshaping, certain cavity work, and soft-tissue procedures — usually without injections or stitches.',
         slug: 'laser-dentistry',
     },
     {
         icon: <SunMedium size={28} />,
         title: 'Teeth Whitening',
-        description: 'Achieve up to 8–10 shades whiter teeth in a single professional in-chair whitening session.',
+        description: 'Eight to ten shades whiter in a single chair-side session, without the sensitivity that often comes with strip kits.',
         slug: 'teeth-whitening',
     },
     {
         icon: <ShieldCheck size={28} />,
         title: 'Preventive Dentistry',
-        description: 'Protect your smile with comprehensive check-ups, professional cleaning, and personalised care plans.',
+        description: 'Six-monthly check-ups, professional cleaning, and a home-care plan built around how you actually brush and floss.',
         slug: 'preventive-dentistry',
     },
     {
         icon: <Activity size={28} />,
         title: 'Pain Management',
-        description: 'Advanced techniques and sedation dentistry to ensure your treatments are completely comfortable and stress-free.',
+        description: 'Topical numbing, computer-controlled injections, and sedation when you need it — for anyone who finds the chair stressful.',
         slug: 'pain-management',
     }
 ];
@@ -55,8 +55,8 @@ const Services = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <div>
-                        <span className="section-subtitle">Our Expertise</span>
-                        <h2 className="section-title">Premium Dental Solutions</h2>
+                        <span className="section-subtitle">What we do</span>
+                        <h2 className="section-title">Treatments we offer</h2>
                     </div>
                     <Link to="/services/teeth-cleaning" className="btn btn-secondary desktop-nav">
                         Explore All Services

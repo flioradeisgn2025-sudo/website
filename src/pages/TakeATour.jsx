@@ -7,20 +7,20 @@ import Footer from '../components/Footer';
 const tourSpots = [
   {
     id: 1, icon: Layers,
-    title: 'Welcome Lobby & Reception',
-    desc: 'Step into our calming, premium lobby designed to put every patient at ease from the moment you arrive. Modern check-in, cosy seating, and a friendly team await you.',
+    title: 'Reception',
+    desc: 'A small lobby, comfortable chairs, and someone who actually looks up when you walk in. Most paperwork is digital so there\'s less of it.',
     image: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 2, icon: Eye,
     title: 'Consultation Rooms',
-    desc: 'Spacious, private, and fully equipped consultation rooms where Dr. Ayesha Subhan, BDS, MBA reviews your case, takes X-rays, and crafts your personalised treatment plan.',
+    desc: 'Private rooms where Dr. Ayesha goes through your case, looks at X-rays with you on the screen, and writes up the plan. No rushing.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 3, icon: Sparkles,
     title: 'Treatment Suites',
-    desc: 'Our state-of-the-art treatment chairs feature intraoral cameras, overhead LED lights, and entertainment screens so you stay relaxed and informed throughout your procedure.',
+    desc: 'Modern chairs with intraoral cameras, overhead LED lighting, and screens for the long appointments. Most patients say the second visit feels easier than the first.',
     image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
   },
 ];
@@ -49,10 +49,10 @@ const TakeATour = () => {
           <div className="container relative z-10">
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
               <span className="section-subtitle light">Explore Our Clinic</span>
-              <h1 className="section-title light">Take a Virtual Tour</h1>
+              <h1 className="section-title light">A look around before you visit.</h1>
               <p className="hero-description light">
-                Experience the world-class hygiene and comfort of Smile Bright Dental 
-                from the comfort of your home.
+                A quick walkthrough of the clinic — the chairs, the lab, the paediatric area —
+                so the place is familiar before you ever set foot in it.
               </p>
               <div className="hero-info-pills">
                 <div className="hero-info-pill">

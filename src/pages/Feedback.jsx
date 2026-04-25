@@ -46,12 +46,12 @@ const StarRating = ({ value, onChange, label }) => (
 );
 
 const recentFeedback = [
-  { name: 'Priya M.', rating: 5, treatment: 'Dental Implants', text: 'Absolutely flawless experience from start to finish. Highly recommend Dr. Varun!', date: 'Mar 2026' },
-  { name: 'Karan R.', rating: 5, treatment: 'Invisalign', text: 'The team was patient, explained everything clearly, and the results are beyond expectations.', date: 'Feb 2026' },
-  { name: 'Sunita P.', rating: 4, treatment: 'Teeth Whitening', text: 'Very professional clinic. The whitening results were dramatic. Staff very friendly.', date: 'Feb 2026' },
-  { name: 'Anil K.', rating: 5, treatment: 'Root Canal', text: 'I was scared of root canals but this was completely painless. Dr. Vijailakshmi is exceptional.', date: 'Jan 2026' },
-  { name: 'Meera J.', rating: 5, treatment: "Children's Dentistry", text: "My daughter loved visiting the clinic! The kids' zone and gentle team made it fun.", date: 'Jan 2026' },
-  { name: 'Rohit D.', rating: 5, treatment: 'Teeth Cleaning', text: 'Thorough, painless cleaning and excellent advice on oral hygiene. Will definitely be back!', date: 'Dec 2025' },
+  { name: 'Priya M.', rating: 5, treatment: 'Dental Implants', text: "Walked in nervous, walked out with a treatment plan I actually understood. The follow-ups have been just as good.", date: 'Mar 2026' },
+  { name: 'Karan R.', rating: 5, treatment: 'Invisalign', text: "Took the time to explain why Invisalign suited my case better than braces. End result is exactly what they showed me on the digital preview.", date: 'Feb 2026' },
+  { name: 'Sunita P.', rating: 4, treatment: 'Teeth Whitening', text: "Whitening result was a bigger jump than I expected — about six shades. Dropped a star only because the appointment ran late.", date: 'Feb 2026' },
+  { name: 'Anil K.', rating: 5, treatment: 'Root Canal', text: "Years of dreading a root canal and it turned out to be the easiest dental visit I've had. Genuinely.", date: 'Jan 2026' },
+  { name: 'Meera J.', rating: 5, treatment: "Children's Dentistry", text: "My daughter asks when she's coming back. That has never happened with any dentist before.", date: 'Jan 2026' },
+  { name: 'Rohit D.', rating: 5, treatment: 'Teeth Cleaning', text: "Most thorough cleaning I've had. The hygienist actually showed me where I was missing while flossing.", date: 'Dec 2025' },
 ];
 
 const Feedback = () => {
@@ -78,9 +78,9 @@ const Feedback = () => {
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <span className="section-subtitle">Your Opinion Matters</span>
-              <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>Share Your Feedback</h1>
+              <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>Tell us how we did.</h1>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', marginTop: '0.75rem', maxWidth: '560px' }}>
-                We continuously improve through your insights. Take 2 minutes to help us serve you better.
+                Two minutes of your time genuinely helps us. We read every response, and the things we get told off about are the things we actually fix.
               </p>
             </motion.div>
           </div>
@@ -133,11 +133,11 @@ const Feedback = () => {
               {submitted ? (
                 <motion.div key="success" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="form-success-card glass-card" style={{ textAlign: 'center', padding: '4rem 2rem' }}>
                   <Heart size={60} fill="#7B6CF6" color="#7B6CF6" />
-                  <h2 style={{ color: 'var(--text-primary)', margin: '1.5rem 0 0.75rem' }}>Thank You, {form.name || 'Patient'}!</h2>
+                  <h2 style={{ color: 'var(--text-primary)', margin: '1.5rem 0 0.75rem' }}>Thanks, {form.name || 'and take care'}.</h2>
                   <p style={{ color: 'var(--text-secondary)', maxWidth: '440px', margin: '0 auto 2rem', lineHeight: 1.8 }}>
-                    Your feedback has been received. It truly helps us continue improving and delivering the best possible dental care.
+                    We've got your feedback. The team will see it this week — if you flagged anything specific, someone will be in touch.
                   </p>
-                  <button className="btn btn-primary" onClick={() => setSubmitted(false)}>Submit Another Review</button>
+                  <button className="btn btn-primary" onClick={() => setSubmitted(false)}>Send another</button>
                 </motion.div>
               ) : (
                 <motion.form key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="feedback-form glass-card" onSubmit={handleSubmit}>
@@ -220,7 +220,7 @@ const Feedback = () => {
           <div className="container">
             <motion.div className="section-title" custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
               <span className="section-subtitle">Latest Feedback</span>
-              <h2>What Patients Recently Said</h2>
+              <h2>What patients have said this month.</h2>
             </motion.div>
             <div className="testi-grid">
               {recentFeedback.map((r, i) => (

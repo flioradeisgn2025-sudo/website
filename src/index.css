@@ -4157,8 +4157,8 @@ h3 {
 .hero-ph-title {
   font-size: clamp(2.8rem, 5vw, 4.2rem);
   font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
   color: #ffffff;
   margin-bottom: 2.5rem;
 }
@@ -4167,19 +4167,19 @@ h3 {
 .hero-ph-desc-row {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.75rem;
   margin-bottom: 3rem;
 }
 
 .hero-ph-brand-col {
   flex-shrink: 0;
-  padding-top: 0.2rem;
+  padding-top: 0.15rem;
 }
 
 .hero-ph-brand-name {
   color: #fff;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
   position: relative;
   letter-spacing: 0.5px;
 }
@@ -4196,10 +4196,10 @@ h3 {
 
 .hero-ph-desc {
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.75;
   margin: 0;
-  max-width: 440px;
+  max-width: 480px;
 }
 
 /* CTA buttons */

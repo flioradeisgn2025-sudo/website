@@ -33,7 +33,7 @@ const Hero = () => {
                         </div>
 
                         <p className="hero-ph-desc">
-                            Our team of experienced doctors and healthcare professionals are committed to providing quality dental and personalised attention to our patients.
+                            A specialist dental team in Chennai, looking after every patient with the kind of care we'd want for our own families — implants, alignment, laser dentistry, and the routine work that keeps a smile in shape.
                         </p>
                     </div>
 
@@ -64,7 +64,7 @@ const Hero = () => {
                     </div>
                     <div className="hero-ph-float-text">
                         <span className="hero-ph-float-num">2,000+</span>
-                        <span className="hero-ph-float-label">Patient Recover</span>
+                        <span className="hero-ph-float-label">Happy Smiles</span>
                     </div>
                     <div className="hero-ph-float-check">
                         <Check size={14} strokeWidth={3} />

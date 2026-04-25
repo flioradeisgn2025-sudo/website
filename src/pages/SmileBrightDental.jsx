@@ -77,25 +77,25 @@ const SmileBrightDental = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <span className="section-subtitle">Our Mission</span>
-                                <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>Exceptional Dental Care with a Human Touch</h2>
+                                <span className="section-subtitle">About the practice</span>
+                                <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>A small clinic that grew up alongside its patients.</h2>
                                 <p className="hero-description" style={{ textAlign: 'left', fontSize: '1.05rem', color: 'var(--text-secondary)' }}>
-                                    At Smile Bright Dental, we believe a healthy, confident smile can transform lives. For nearly two decades, our multi-specialty clinic has stood as a beacon of dental excellence in Chennai.
+                                    Smile Bright Dental started out almost twenty years ago as a single-chair practice in Mannady. Most of our patients still come from word-of-mouth — children of patients we saw a decade ago, neighbours, the family across the street. We've grown the team and the equipment, but the way we work hasn't really changed.
                                 </p>
                                 <p className="hero-description" style={{ textAlign: 'left', fontSize: '1.05rem', color: 'var(--text-secondary)', marginTop: '1rem' }}>
-                                    Our lead specialist, Dr. Ayesha Subhan, BDS, MBA, brings together global expertise and the latest in dental technology to ensure every patient experiences painless, effective, and lasting results.
+                                    Dr. Ayesha Subhan leads the practice. She trained as an endodontist and brought a quieter, more conservative style of dentistry to the chair: keep the natural tooth where you can, take time to explain the plan, and never rush a procedure that benefits from being slow.
                                 </p>
 
                                 <div className="info-block-premium" style={{ marginTop: '2.5rem' }}>
                                    <div className="info-header">
                                        <ShieldCheck size={20} />
-                                       <h4>Why Choose Us?</h4>
+                                       <h4>What you'll find here</h4>
                                    </div>
                                    <ul className="info-list-premium">
-                                       <li><CheckCircle2 size={16} /> State-of-the-art diagnostic imaging</li>
-                                       <li><CheckCircle2 size={16} /> Advanced sterilization protocols</li>
-                                       <li><CheckCircle2 size={16} /> In-house dental laboratory</li>
-                                       <li><CheckCircle2 size={16} /> Comfort-first patient approach</li>
+                                       <li><CheckCircle2 size={16} /> Digital imaging and 3D CBCT for implant planning</li>
+                                       <li><CheckCircle2 size={16} /> Autoclave sterilisation, single-use where it matters</li>
+                                       <li><CheckCircle2 size={16} /> An on-site lab — same-day crowns when possible</li>
+                                       <li><CheckCircle2 size={16} /> Sedation options for anyone who finds the chair stressful</li>
                                    </ul>
                                 </div>
                             </motion.div>
@@ -108,8 +108,8 @@ const SmileBrightDental = () => {
                     <div className="container">
                         <div className="section-header" style={{ textAlign: 'center', justifyContent: 'center' }}>
                             <div>
-                                <span className="section-subtitle">Clinical Excellence</span>
-                                <h2 className="section-title">Research & Innovation</h2>
+                                <span className="section-subtitle">In print</span>
+                                <h2 className="section-title">Papers, talks, and clinical writing</h2>
                             </div>
                         </div>
                         <div className="publications-grid">

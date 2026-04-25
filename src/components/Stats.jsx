@@ -15,18 +15,18 @@ const Stats = () => {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                     <span className="section-subtitle">A Tradition of Care</span>
-                    <h2>Dedicated to Excellence in Modern Dentistry.</h2>
+                    <h2>A decade of careful, modern dentistry in Chennai.</h2>
                     <p>
-                        For over a decade, Smile Bright Dental has been at the
-                        forefront of dental innovation, delivering painless, precision care and
-                        life-changing smiles with a gentle touch.
+                        We opened as a small practice and grew into a multi-specialty clinic, but
+                        the way we work hasn't really changed: take the time, explain what's
+                        happening, and treat each mouth like it's the only one we're seeing today.
                     </p>
                     <div className="stats-list">
                         {[
-                            "Advanced Digital Dental Technology",
-                            "Specialist Endodontic & Implant Care",
-                            "Over 15,000 Successful Procedures",
-                            "Comfort-First Patient Experience"
+                            "CBCT scans, intra-oral cameras, and laser tools we actually use",
+                            "Specialist root canal and implant care under one roof",
+                            "More than 15,000 procedures behind us",
+                            "Sedation and topical numbing for anyone who needs it"
                         ].map((item, i) => (
                             <motion.li 
                                 key={i}
@@ -51,8 +51,8 @@ const Stats = () => {
                 >
                     <div className="stats-card-header">
                         <span className="section-subtitle">Our Impact</span>
-                        <h3>Trusted by Thousands of Patients</h3>
-                        <p>Our numbers reflect years of dedication, precision, and patient-first dental care delivered with compassion across Chennai.</p>
+                        <h3>A decade of work, in numbers</h3>
+                        <p>What we've quietly built up over the years — patients we've seen, treatments we've completed, and trust we've worked hard to earn.</p>
                     </div>
                     
                     <motion.div

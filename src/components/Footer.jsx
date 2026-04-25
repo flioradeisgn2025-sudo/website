@@ -14,9 +14,9 @@ const Footer = () => {
                             <img src={`${baseUrl}logo.png`} alt="Smile Bright Logo" style={{ height: '60px', filter: 'brightness(0) invert(1)' }} />
                         </a>
                         <p className="footer-desc">
-                            Smile Bright Dental is Chennai's premier dental clinic,
-                            delivering pain-free, precision dental care and life-changing smiles
-                            for over 20 years.
+                            Looking after Chennai's smiles for more than two decades — implants,
+                            alignment, laser dentistry, and the everyday work that keeps a mouth
+                            healthy. Specialist care without the rush.
                         </p>
                         <div className="social-links">
                             <a href="#"><Facebook size={20} /></a>
