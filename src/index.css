@@ -5228,8 +5228,29 @@ p, h1, h2, h3, h4, li, span, a {
 
   /* Hero-ph: tighter still */
   .hero-ph-body {
-    padding-top: 6rem;
-    padding-bottom: 11rem;
+    padding-top: 5rem;
+    padding-bottom: 9rem;
+    text-align: center;
+  }
+  .hero-ph-title {
+    font-size: clamp(1.8rem, 8vw, 2.4rem) !important;
+    margin-bottom: 1.5rem;
+  }
+  .hero-ph-desc-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .hero-ph-brand-col {
+    padding-top: 0;
+  }
+  .hero-ph-desc {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+  .hero-ph-actions {
+    justify-content: center;
   }
   .hero-ph-bottom-inner {
     padding: 1.25rem 1rem;
@@ -5284,14 +5305,14 @@ p, h1, h2, h3, h4, li, span, a {
   }
 
   /* Buttons stack and go full-width in CTA rows */
-  .hero-actions,
-  .hero-ctas {
+  .hero-ph-actions {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
   }
-  .hero-actions .btn,
-  .hero-ctas .btn {
+  .hero-ph-actions .btn {
     width: 100%;
     justify-content: center;
   }
@@ -5317,10 +5338,34 @@ p, h1, h2, h3, h4, li, span, a {
     font-size: clamp(1.6rem, 7vw, 2rem) !important;
   }
 
-  /* Hero-ph float badge: hide on very small if it overlaps */
+  /* Hero-ph float badge: reposition to avoid overlap */
   .hero-ph-float-badge {
-    top: 4.5rem;
+    top: auto;
+    bottom: 25%;
+    right: 1rem;
+    transform: none;
+    padding: 0.4rem 0.6rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
+  .hero-ph-float-avatars img {
+    width: 28px;
+    height: 28px;
+    margin-left: -8px;
+  }
+  .hero-ph-float-num { font-size: 0.9rem; }
+  .hero-ph-float-label { font-size: 0.65rem; }
+  .hero-ph-float-check { width: 20px; height: 20px; margin-left: 0.25rem; }
+  
+  .hero-ph-bottom-inner {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .hero-ph-bottom-stat {
+    width: 100%;
+  }
+  .hero-ph-bottom-stat h4 { font-size: 1.8rem; margin-bottom: 0.1rem; }
+  .hero-ph-bottom-stat p { font-size: 0.8rem; }
 
   /* Testimonials carousel controls inline */
   .testi-navigation-premium .testi-dots {

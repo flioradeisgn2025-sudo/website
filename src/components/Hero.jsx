@@ -50,26 +50,7 @@ const Hero = () => {
                     </div>
                 </motion.div>
 
-                {/* Floating badge */}
-                <motion.div
-                    className="hero-ph-float-badge"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.7, delay: 0.4 }}
-                >
-                    <div className="hero-ph-float-avatars">
-                        <img src={`${baseUrl}dr_ayesha_subhan.png`} alt="" />
-                        <img src={`${baseUrl}dr_ponni_valavan.png`} alt="" />
-                        <img src={`${baseUrl}dr-sasha.png`} alt="" />
-                    </div>
-                    <div className="hero-ph-float-text">
-                        <span className="hero-ph-float-num">2,000+</span>
-                        <span className="hero-ph-float-label">Happy Smiles</span>
-                    </div>
-                    <div className="hero-ph-float-check">
-                        <Check size={14} strokeWidth={3} />
-                    </div>
-                </motion.div>
+
             </div>
 
             {/* Bottom Glass Stats Bar */}
