@@ -4127,7 +4127,7 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right center; 
+  object-position: 65% 45%; /* Shift chair slightly right */
   display: block;
 }
 
@@ -4137,8 +4137,9 @@ h3 {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(26, 11, 46, 0.75) 0%,   /* Semi-solid on far left for contrast */
-    rgba(26, 11, 46, 0.3) 40%,   /* Rapidly fade to show the clean wall */
+    rgba(26, 11, 46, 0.98) 0%,   /* Near-solid deep purple fill for text area */
+    rgba(26, 11, 46, 0.9) 30%,   /* Maintain fill */
+    rgba(26, 11, 46, 0.2) 60%,   /* Gradually reveal chair */
     transparent 100%
   );
 }
