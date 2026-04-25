@@ -354,21 +354,27 @@ h3 {
   line-height: 0;
 }
 
+/* Logo: visual size is larger than its layout slot — negative margin-block
+   keeps the navbar height pegged to the original slot height while the
+   rendered image grows beyond it (extends a few px above/below the header). */
 .logo-img {
-  height: 100px;
+  height: 132px;
+  margin-block: -16px;        /* shrinks layout slot back to 100px */
   width: auto;
   object-fit: contain;
   display: block;
-  transition: height var(--transition-normal);
+  transition: height var(--transition-normal), margin-block var(--transition-normal);
 }
 
 .header.scrolled .logo-img {
-  height: 72px;
+  height: 96px;
+  margin-block: -12px;        /* slot ≈ 72px */
 }
 
 @media (max-width: 1200px) {
   .logo-img {
-    height: 88px;
+    height: 116px;
+    margin-block: -14px;      /* slot ≈ 88px */
   }
 }
 
@@ -380,10 +386,12 @@ h3 {
     padding: 0.3rem 0;
   }
   .logo-img {
-    height: 76px;
+    height: 100px;
+    margin-block: -12px;      /* slot ≈ 76px */
   }
   .header.scrolled .logo-img {
-    height: 65px;
+    height: 86px;
+    margin-block: -10.5px;    /* slot ≈ 65px */
   }
 }
 
