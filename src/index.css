@@ -4424,9 +4424,10 @@ h3 {
 
 /* ============================================================== */
 /* HERO MOBILE — body fills first viewport, stats bar below fold   */
-/* The body section takes 100svh (smallest visible viewport) so    */
-/* only the title/brand/desc/CTAs show on first load. The stats    */
-/* bar sits in normal flow below it — only visible after scroll.   */
+/* Body section takes 100svh (smallest visible viewport) so only   */
+/* the title/brand/desc/CTAs show on first load. Stats bar sits    */
+/* in normal flow below it — only visible after scrolling.         */
+/* Background image spans the whole hero (body + stats bar).       */
 /* No flex-centring (which clipped the title above the fold).      */
 /* ============================================================== */
 @media (max-width: 992px) {
@@ -4434,37 +4435,51 @@ h3 {
     display: block !important;
     min-height: auto !important;
     height: auto !important;
+    overflow: visible !important;
   }
 
-  .hero-ph-body {
+  /* High-specificity selector defeats every other rule on this element */
+  section.hero-ph .hero-ph-body,
+  .hero-ph .hero-ph-body {
     display: block !important;
     align-items: initial !important;
     justify-content: initial !important;
     flex: initial !important;
     min-height: 100vh;
-    min-height: 100svh;       /* smallest viewport — accounts for URL bar */
-    padding-top: 7rem;
-    padding-bottom: 2.5rem;
+    min-height: 100svh;
+    padding-top: 9rem !important;     /* generous clearance for the fixed header */
+    padding-bottom: 3rem !important;
     box-sizing: border-box;
   }
 
-  /* Background image only spans the body, not the stats bar below */
-  .hero-ph-bg {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    height: 100svh;
-    bottom: auto !important;
-    inset: auto !important;
+  /* Title: small enough to fit on two lines without overflow */
+  .hero-ph .hero-ph-title {
+    font-size: 1.7rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1.25rem !important;
+    white-space: normal !important;
+    text-wrap: balance;
+    color: #fff;
   }
 
-  /* Stats bar leaves the absolute positioning, sits in normal flow */
+  /* Stats bar drops out of absolute positioning, sits in normal flow
+     so it appears BELOW the 100svh body (i.e. below the fold) */
   .hero-ph-bottom-bar {
     position: relative !important;
+    top: auto !important;
     bottom: auto !important;
-    background: linear-gradient(180deg, #1b2b44 0%, #12192b 100%);
+    left: auto !important;
+    right: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  section.hero-ph .hero-ph-body,
+  .hero-ph .hero-ph-body {
+    padding-top: 8rem !important;
+  }
+  .hero-ph .hero-ph-title {
+    font-size: 1.5rem !important;
   }
 }
 
