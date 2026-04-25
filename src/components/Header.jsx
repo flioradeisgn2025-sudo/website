@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HeartPulse, Menu, X, ChevronDown, Info, Star, MapPin, User } from 'lucide-react';
+import { HeartPulse, Menu, X, ChevronDown, Info, Star, MapPin, User, Home } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 const Header = () => {
@@ -31,6 +31,9 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="desktop-nav">
+          <div className="nav-item">
+            <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
+          </div>
           <div className="nav-item has-dropdown">
             <a href="#" className={`nav-link ${isAboutActive ? 'active' : ''}`} onClick={(e) => e.preventDefault()}>
               About Us <ChevronDown size={14} style={{ display: 'inline', marginLeft: '2px' }} />
@@ -116,6 +119,7 @@ const Header = () => {
 
               <nav className="mobile-menu-items">
                 {[
+                  { label: 'Home', link: '/', icon: <Home size={22} className="text-secondary" /> },
                   {
                     title: 'About Us',
                     icon: <Info size={22} className="text-secondary" />,
