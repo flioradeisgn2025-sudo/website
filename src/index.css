@@ -5258,15 +5258,24 @@ p, h1, h2, h3, h4, li, span, a {
     z-index: 5;
   }
   .hero-ph-bottom-inner {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 2.5rem;
     border-radius: 0;
-    border-left: none;
-    border-right: none;
   }
-  .hero-ph-bottom-stat h4 { font-size: 1.5rem; }
-  .hero-ph-bottom-stat p { font-size: 0.7rem; }
+  .hero-ph-bottom-stat {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-ph-bottom-stat h4 { 
+    font-size: 2.2rem; 
+    margin-bottom: 0.25rem; 
+  }
+  .hero-ph-bottom-stat p { 
+    font-size: 0.9rem; 
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
 
   /* Star rating row: stacks label above stars on small */
   .star-rating-group {
@@ -5366,14 +5375,11 @@ p, h1, h2, h3, h4, li, span, a {
   .hero-ph-float-check { width: 20px; height: 20px; margin-left: 0.25rem; }
   
   .hero-ph-bottom-inner {
-    padding: 1rem;
+    padding: 2.5rem 1rem;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.75rem;
   }
-  .hero-ph-bottom-stat {
-    width: 100%;
-  }
-  .hero-ph-bottom-stat h4 { font-size: 1.8rem; margin-bottom: 0.1rem; }
+  .hero-ph-bottom-stat h4 { font-size: 1.8rem; }
   .hero-ph-bottom-stat p { font-size: 0.8rem; }
 
   /* Testimonials carousel controls inline */
