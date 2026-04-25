@@ -1,7 +1,14 @@
 import React from 'react';
-import { Smile, AlignCenter, Zap, SunMedium, ShieldCheck, Baby, ArrowRight, Activity, Heart, Sparkles, Microscope } from 'lucide-react';
+import { Smile, AlignCenter, Zap, SunMedium, ShieldCheck, Baby, ArrowRight, Activity, Heart, Sparkles, Microscope, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
+const features = [
+    'Specialist team — surgical, endodontic, and orthodontic',
+    'CBCT imaging, in-house lab, modern sterilisation',
+    'Painless protocols and sedation options',
+    'Same-day emergency dental care',
+];
 
 const services = [
     {
@@ -43,9 +50,41 @@ const services = [
 ];
 
 const Services = () => {
+    const baseUrl = import.meta.env.BASE_URL;
     return (
         <section id="services" className="section services-section">
             <div className="container">
+
+                {/* Quality Services intro — image + features list */}
+                <motion.div
+                    className="services-intro"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-100px' }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <div className="services-intro-image">
+                        <img src={`${baseUrl}hero.png`} alt="Smile Bright clinical team" />
+                    </div>
+                    <div className="services-intro-text">
+                        <span className="section-subtitle">Our services</span>
+                        <h2>High-quality dentistry, designed around you.</h2>
+                        <p>
+                            We use the same set of tools and protocols other practices wish they had,
+                            and pair it with the kind of patience that makes the chair feel less clinical.
+                        </p>
+                        <ul className="services-intro-features">
+                            {features.map((f, i) => (
+                                <li key={i}>
+                                    <CheckCircle2 size={18} /> <span>{f}</span>
+                                </li>
+                            ))}
+                        </ul>
+                        <Link to="/about/smile-bright-dental" className="btn btn-primary services-intro-cta">
+                            Read more <ArrowRight size={18} />
+                        </Link>
+                    </div>
+                </motion.div>
 
                 <motion.div
                     className="section-header"

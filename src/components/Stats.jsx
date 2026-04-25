@@ -1,93 +1,56 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2 } from 'lucide-react';
+
+const stats = [
+    { metric: '10+', text: 'Years of Excellence', sub: 'Trusted in Chennai' },
+    { metric: '15K+', text: 'Happy Patients', sub: 'Highly Rated' },
+    { metric: '2,000+', text: 'Implants Placed', sub: 'Specialist Approved' },
+];
 
 const Stats = () => {
     return (
-        <section className="section stats-section">
-            <div className="container stats-container relative z-10">
-
+        <section className="section stats-welcome">
+            <div className="container">
                 <motion.div
-                    className="stats-text"
-                    initial={{ opacity: 0, y: 30 }}
+                    className="welcome-header"
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, margin: '-100px' }}
+                    transition={{ duration: 0.6 }}
                 >
-                    <span className="section-subtitle">A Tradition of Care</span>
-                    <h2>A decade of careful, modern dentistry in Chennai.</h2>
+                    <span className="section-subtitle">Welcome to</span>
+                    <h2>The Smile Bright Dental Clinic</h2>
                     <p>
-                        We opened as a small practice and grew into a multi-specialty clinic, but
-                        the way we work hasn't really changed: take the time, explain what's
-                        happening, and treat each mouth like it's the only one we're seeing today.
+                        A small clinic in Mannady that grew up alongside its patients —
+                        looking after Chennai's smiles for more than two decades.
                     </p>
-                    <div className="stats-list">
-                        {[
-                            "CBCT scans, intra-oral cameras, and laser tools we actually use",
-                            "Specialist root canal and implant care under one roof",
-                            "More than 15,000 procedures behind us",
-                            "Sedation and topical numbing for anyone who needs it"
-                        ].map((item, i) => (
-                            <motion.li 
-                                key={i}
-                                initial={{ opacity: 0, x: -10 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 0.3 + i * 0.1 }}
-                            >
-                                <CheckCircle2 size={20} className="text-secondary" />
-                                {item}
-                            </motion.li>
-                        ))}
-                    </div>
                 </motion.div>
 
                 <motion.div
-                    className="stats-card"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                    className="welcome-stats-grid"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: '-100px' }}
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
+                    }}
                 >
-                    <div className="stats-card-header">
-                        <span className="section-subtitle">Our Impact</span>
-                        <h3>A decade of work, in numbers</h3>
-                        <p>What we've quietly built up over the years — patients we've seen, treatments we've completed, and trust we've worked hard to earn.</p>
-                    </div>
-                    
-                    <motion.div
-                        className="stats-grid"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={{
-                            hidden: { opacity: 0 },
-                            visible: {
-                                opacity: 1,
-                                transition: { staggerChildren: 0.15 }
-                            }
-                        }}
-                    >
-                        {[
-                            { metric: "10+", text: "Years of Excellence" },
-                            { metric: "2,000+", text: "Implants Placed" },
-                            { metric: "15k+", text: "Happy Patients" },
-                        ].map((stat, index) => (
-                            <motion.div
-                                key={index}
-                                className="stat-box"
-                                variants={{
-                                    hidden: { opacity: 0, y: 20 },
-                                    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
-                                }}
-                            >
-                                <h3>{stat.metric}</h3>
-                                <p>{stat.text}</p>
-                            </motion.div>
-                        ))}
-                    </motion.div>
+                    {stats.map((s, i) => (
+                        <motion.div
+                            key={i}
+                            className="welcome-stat-card"
+                            variants={{
+                                hidden: { opacity: 0, y: 30 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+                            }}
+                        >
+                            <h3>{s.metric}</h3>
+                            <p className="stat-text">{s.text}</p>
+                            <span className="stat-sub">{s.sub}</span>
+                        </motion.div>
+                    ))}
                 </motion.div>
-
             </div>
         </section>
     );
