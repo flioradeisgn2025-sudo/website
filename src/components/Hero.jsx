@@ -1,33 +1,44 @@
 import React from 'react';
-import { ArrowRight, Smile, CalendarDays, Star, Phone } from 'lucide-react';
+import { ArrowRight, Phone, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-    return (
-        <section className="hero">
-            <div className="container hero-container">
+    const baseUrl = import.meta.env.BASE_URL;
 
+    return (
+        <section className="hero-ph">
+
+            {/* Full-bleed background image */}
+            <div className="hero-ph-bg">
+                <img src={`${baseUrl}hero.png`} alt="Dental care" className="hero-ph-bg-img" />
+                {/* Gradient overlay */}
+                <div className="hero-ph-bg-overlay" />
+            </div>
+
+            {/* Main content */}
+            <div className="hero-ph-body container">
                 <motion.div
-                    className="hero-content"
-                    initial={{ opacity: 0, x: -50 }}
+                    className="hero-ph-left-content"
+                    initial={{ opacity: 0, x: -40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <div className="hero-badge">
-                        <Smile size={16} />
-                        <span>Excellence in Dental Care</span>
-                    </div>
-                    <h1>
-                        Beautiful Smiles,<br />
-                        <span className="text-secondary">Exceptional</span> Dental Care.
+                    <h1 className="hero-ph-title">
+                        Compassionate care,<br />exceptional results.
                     </h1>
-                    <p className="hero-description">
-                        Welcome to Smile Bright Dental. We combine cutting-edge dental
-                        technology with specialist expertise to deliver painless, precision care
-                        and life-changing smiles.
-                    </p>
 
-                    <div className="hero-ctas">
+                    <div className="hero-ph-desc-row">
+                        <div className="hero-ph-brand-col">
+                            <span className="hero-ph-brand-name">Smile Bright</span>
+                        </div>
+
+                        <p className="hero-ph-desc">
+                            Our team of experienced doctors and healthcare professionals are committed to providing quality dental and personalised attention to our patients.
+                        </p>
+                    </div>
+
+                    {/* Buttons — unchanged */}
+                    <div className="hero-ph-actions">
                         <button className="btn btn-primary" onClick={() => window.location.href = 'https://wa.me/919444408087'}>
                             Book an Appointment
                             <ArrowRight size={20} />
@@ -37,50 +48,48 @@ const Hero = () => {
                             Contact Us
                         </a>
                     </div>
-
-                    <div className="hero-stats">
-                        <div className="stat-item">
-                            <h4>10+</h4>
-                            <p>Years of Excellence</p>
-                        </div>
-                        <div className="stat-separator"></div>
-                        <div className="stat-item">
-                            <h4>2,000+</h4>
-                            <p>Implants Placed</p>
-                        </div>
-                        <div className="stat-separator"></div>
-                        <div className="stat-item">
-                            <h4>15k+</h4>
-                            <p>Happy Patients</p>
-                        </div>
-                    </div>
                 </motion.div>
 
+                {/* Floating badge */}
                 <motion.div
-                    className="hero-image-wrapper"
+                    className="hero-ph-float-badge"
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                    transition={{ duration: 0.7, delay: 0.4 }}
                 >
-                    <div className="hero-image-decor"></div>
-                    <img
-                        src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                        alt="Dental specialist treating a patient"
-                        className="hero-image"
-                    />
-                    {/* Floating glass card element */}
-                    <div className="floating-card glass-card">
-                        <div className="card-icon-wrapper pulse-anim">
-                            <Star size={24} color="var(--secondary-color)" fill="var(--secondary-color)" />
-                        </div>
-                        <div className="card-text">
-                            <span className="bold">Top Rated</span>
-                            <span>Dental Clinic in Chennai</span>
-                        </div>
+                    <div className="hero-ph-float-avatars">
+                        <img src={`${baseUrl}dr_ayesha_subhan.png`} alt="" />
+                        <img src={`${baseUrl}dr_ponni_valavan.png`} alt="" />
+                        <img src={`${baseUrl}dr-sasha.png`} alt="" />
+                    </div>
+                    <div className="hero-ph-float-text">
+                        <span className="hero-ph-float-num">2,000+</span>
+                        <span className="hero-ph-float-label">Patient Recover</span>
+                    </div>
+                    <div className="hero-ph-float-check">
+                        <Check size={14} strokeWidth={3} />
                     </div>
                 </motion.div>
-
             </div>
+
+            {/* Bottom Glass Stats Bar */}
+            <div className="hero-ph-bottom-bar">
+                <div className="container hero-ph-bottom-inner">
+                    <div className="hero-ph-bottom-stat">
+                        <h4>10+</h4>
+                        <p>Years of experience</p>
+                    </div>
+                    <div className="hero-ph-bottom-stat">
+                        <h4>98%</h4>
+                        <p>Patient satisfaction rating</p>
+                    </div>
+                    <div className="hero-ph-bottom-stat">
+                        <h4>2000+</h4>
+                        <p>Patients served annually</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
     );
 };
