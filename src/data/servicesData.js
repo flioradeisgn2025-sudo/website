@@ -121,9 +121,9 @@ We use topical numbing gel before any injection, computer-controlled injection (
       { q: 'I genuinely cannot handle needles. Can you still treat me?', a: 'Yes. We use topical numbing first so you usually don\'t feel the needle at all, and for some procedures we can use needle-free options. Tell us at the consultation and we\'ll work around it.' },
       { q: 'Is nitrous oxide safe?', a: 'Yes — it\'s been used in dentistry for decades. It\'s breathed in through a small mask, makes you feel relaxed but still aware, and wears off within minutes once we take the mask off. You can drive home.' },
       { q: 'And IV sedation?', a: 'Also safe for healthy adults. It\'s done by a trained specialist with continuous monitoring of your pulse and oxygen. You\'ll need someone to take you home afterwards.' },
-      { q: 'My child is terrified. What do you do?', a: 'A lot. We have a paediatric approach: tell-show-do, distraction, topical gels, sometimes nitrous oxide. Most children leave more curious than scared.' },
+      { q: 'My child is terrified. What do you do?', a: 'A lot. We have a pediatric approach: tell-show-do, distraction, topical gels, sometimes nitrous oxide. Most children leave more curious than scared.' },
     ],
-    relatedServices: ['sedation-dentistry', 'laser-dentistry', 'paediatric-dentistry'],
+    relatedServices: ['sedation-dentistry', 'laser-dentistry', 'pediatric-dentistry'],
   },
 
   {
@@ -164,7 +164,7 @@ We also pick up things you wouldn't notice yet — early decay, a gum line that'
       { q: 'Do sealants actually work?', a: 'Yes. Properly placed, they prevent the majority of cavities in the back teeth where most childhood decay starts.' },
       { q: 'Are dental X-rays safe?', a: 'The digital ones we use are very low dose — about a tenth of older film X-rays, and a fraction of what you get on a flight. We only take them when they\'ll change a decision.' },
     ],
-    relatedServices: ['teeth-cleaning', 'oral-cancer-screening', 'paediatric-dentistry'],
+    relatedServices: ['teeth-cleaning', 'oral-cancer-screening', 'pediatric-dentistry'],
   },
 
   {
@@ -223,7 +223,7 @@ There are three levels: nitrous oxide (a small mask, light relaxation), oral sed
       'Several procedures done in a single sitting instead of many',
       'Little or no memory of the appointment with deeper sedation',
       'Helpful for a strong gag reflex',
-      'Paediatric protocols for children with severe anxiety',
+      'Pediatric protocols for children with severe anxiety',
       'Well-established protocols, continuously monitored',
     ],
     procedure: [
@@ -244,19 +244,19 @@ There are three levels: nitrous oxide (a small mask, light relaxation), oral sed
       { q: 'What\'s the difference between nitrous oxide and IV sedation?', a: 'Nitrous oxide is light — you stay awake, just relaxed, and it wears off in minutes. IV sedation is deeper. You\'re in a twilight state and usually don\'t remember the appointment afterwards.' },
       { q: 'Will I be unconscious?', a: 'Not under general anaesthesia, no. Even with IV sedation you\'re in twilight — responsive but very relaxed. Most people doze.' },
       { q: 'Is it safe?', a: 'Yes, when done by a trained specialist with monitoring. We track vital signs the whole time.' },
-      { q: 'Can my child have sedation?', a: 'Nitrous oxide is regularly used for children and is safe. For deeper sedation in children we have specific paediatric protocols.' },
+      { q: 'Can my child have sedation?', a: 'Nitrous oxide is regularly used for children and is safe. For deeper sedation in children we have specific pediatric protocols.' },
     ],
-    relatedServices: ['pain-management', 'laser-dentistry', 'paediatric-dentistry'],
+    relatedServices: ['pain-management', 'laser-dentistry', 'pediatric-dentistry'],
   },
 
   {
-    slug: 'paediatric-dentistry',
-    title: 'Paediatric Dentistry',
+    slug: 'pediatric-dentistry',
+    title: 'Pediatric Dentistry',
     subtitle: "Caring for Your Child's Smile",
     tagline: "The dental visit your child won't dread coming back to.",
-    heroImage: '/website/services/paediatric_dentistry.png',
+    heroImage: '/website/services/pediatric_dentistry.png',
     color: '#F59E0B',
-    overview: `How a child's first few dental visits go shapes how they feel about the dentist for the rest of their lives. We take that seriously. Our paediatric area has games, TV, and people who genuinely like working with kids — which sounds obvious, but isn't always the case in dental practice.
+    overview: `How a child's first few dental visits go shapes how they feel about the dentist for the rest of their lives. We take that seriously. Our pediatric area has games, TV, and people who genuinely like working with kids — which sounds obvious, but isn't always the case in dental practice.
 
 We see children from the first tooth through to their teens: routine check-ups, fluoride, sealants, early orthodontic checks, and the occasional filling. Our default is the gentlest technique that does the job, often without an injection.`,
     benefits: [
@@ -275,7 +275,7 @@ We see children from the first tooth through to their teens: routine check-ups, 
       { step: '05', title: 'Talking to the parent', desc: 'How brushing is going at home, what to watch for, what to ignore. Then a sticker for the child and you\'re both out of there.' },
     ],
     whyUs: [
-      'A paediatric area designed for children — games, screens, the lot',
+      'A pediatric area designed for children — games, screens, the lot',
       'Team trained in child behaviour management',
       'Needle-free options for many treatments',
       'Sealant programme for school-age kids',

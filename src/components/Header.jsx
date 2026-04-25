@@ -52,7 +52,7 @@ const Header = () => {
               <Link to="/services/preventive-dentistry" className="dropdown-item">Preventive Dentistry</Link>
               <Link to="/services/laser-dentistry" className="dropdown-item">Laser Dentistry</Link>
               <Link to="/services/sedation-dentistry" className="dropdown-item">Sedation Dentistry</Link>
-              <Link to="/services/paediatric-dentistry" className="dropdown-item">Paediatric Dentistry</Link>
+              <Link to="/services/pediatric-dentistry" className="dropdown-item">Pediatric Dentistry</Link>
               <Link to="/services/teeth-cleaning" className="dropdown-item">Teeth Cleaning</Link>
               <Link to="/services/teeth-whitening" className="dropdown-item">Teeth Whitening</Link>
               <Link to="/services/oral-cancer-screening" className="dropdown-item">Oral Cancer Screening</Link>
@@ -135,7 +135,7 @@ const Header = () => {
                       { label: 'Preventive Dentistry', link: '/services/preventive-dentistry' },
                       { label: 'Laser Dentistry', link: '/services/laser-dentistry' },
                       { label: 'Sedation Dentistry', link: '/services/sedation-dentistry' },
-                      { label: 'Paediatric Dentistry', link: '/services/paediatric-dentistry' },
+                      { label: 'Pediatric Dentistry', link: '/services/pediatric-dentistry' },
                       { label: 'Teeth Cleaning', link: '/services/teeth-cleaning' },
                       { label: 'Teeth Whitening', link: '/services/teeth-whitening' },
                       { label: 'Oral Cancer Screening', link: '/services/oral-cancer-screening' }

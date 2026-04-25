@@ -29,7 +29,7 @@ const galleryImages = [
     { id: 4, url: 'https://images.unsplash.com/photo-1588776814546-1ffea99e7b71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Community dental camp, 2025', category: 'Events' },
     { id: 5, url: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'A laser procedure in progress', category: 'Clinic' },
     { id: 6, url: 'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'The team at the annual dental conference', category: 'Events' },
-    { id: 7, url: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Paediatric area', category: 'Clinic' },
+    { id: 7, url: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Pediatric area', category: 'Clinic' },
     { id: 8, url: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'Patients after treatment', category: 'Patients' },
     { id: 9, url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80', caption: 'School visit — free health camp', category: 'Events' },
 ];

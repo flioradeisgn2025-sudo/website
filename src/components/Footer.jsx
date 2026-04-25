@@ -43,7 +43,7 @@ const Footer = () => {
                             <li><Link to="/services/teeth-alignment">Teeth Alignment</Link></li>
                             <li><Link to="/services/laser-dentistry">Laser Dentistry</Link></li>
                             <li><Link to="/services/teeth-whitening">Teeth Whitening</Link></li>
-                            <li><Link to="/services/paediatric-dentistry">Paediatric Dentistry</Link></li>
+                            <li><Link to="/services/pediatric-dentistry">Pediatric Dentistry</Link></li>
                         </ul>
                     </div>
 

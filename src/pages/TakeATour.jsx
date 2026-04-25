@@ -51,7 +51,7 @@ const TakeATour = () => {
               <span className="section-subtitle light">Explore Our Clinic</span>
               <h1 className="section-title light">A look around before you visit.</h1>
               <p className="hero-description light">
-                A quick walkthrough of the clinic — the chairs, the lab, the paediatric area —
+                A quick walkthrough of the clinic — the chairs, the lab, the pediatric area —
                 so the place is familiar before you ever set foot in it.
               </p>
               <div className="hero-info-pills">
