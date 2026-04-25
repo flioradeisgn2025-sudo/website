@@ -4122,23 +4122,23 @@ h3 {
   z-index: 0;
 }
 
+/* Clean, right-aligned image position */
 .hero-ph-bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 100% center; /* Push image completely to right edge */
+  object-position: right center; 
   display: block;
 }
 
-/* Updated premium purple gradient overlay - expanded left side fill */
+/* Subtle gradient to blend text with the new spacious background */
 .hero-ph-bg-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(26, 11, 46, 1) 0%,      /* Solid deep purple *///
-    rgba(26, 11, 46, 0.95) 45%,  /* Solid till almost middle */
-    rgba(26, 11, 46, 0.4) 75%,   /* Fade into image */
+    rgba(26, 11, 46, 0.75) 0%,   /* Semi-solid on far left for contrast */
+    rgba(26, 11, 46, 0.3) 40%,   /* Rapidly fade to show the clean wall */
     transparent 100%
   );
 }
