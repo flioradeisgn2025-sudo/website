@@ -4452,11 +4452,11 @@ h3 {
     box-sizing: border-box;
   }
 
-  /* Title: small enough to fit on two lines without overflow */
+  /* Title — bold and prominent on phones */
   .hero-ph .hero-ph-title {
-    font-size: 1.7rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 1.25rem !important;
+    font-size: 2.2rem !important;
+    line-height: 1.18 !important;
+    margin-bottom: 1.5rem !important;
     white-space: normal !important;
     text-wrap: balance;
     color: #fff;
@@ -4479,7 +4479,7 @@ h3 {
     padding-top: 8rem !important;
   }
   .hero-ph .hero-ph-title {
-    font-size: 1.5rem !important;
+    font-size: 1.95rem !important;
   }
 }
 
