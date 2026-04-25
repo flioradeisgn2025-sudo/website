@@ -4126,19 +4126,19 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 85% 50%; /* Center the doctor vertically within the viewport */
+  object-position: 100% center; /* Push image completely to right edge */
   display: block;
 }
 
-/* Softer gradient that matches reference */
+/* Updated premium purple gradient overlay - expanded left side fill */
 .hero-ph-bg-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(27, 43, 68, 0.95) 0%,
-    rgba(27, 43, 68, 0.85) 35%,
-    rgba(27, 43, 68, 0.35) 60%,
+    rgba(26, 11, 46, 1) 0%,      /* Solid deep purple *///
+    rgba(26, 11, 46, 0.95) 45%,  /* Solid till almost middle */
+    rgba(26, 11, 46, 0.4) 75%,   /* Fade into image */
     transparent 100%
   );
 }
