@@ -90,7 +90,7 @@ We do a digital scan and show you a preview of what your teeth will look like at
     title: 'Pain Management',
     subtitle: 'Comfortable, Pain-Free Dental Care',
     tagline: 'For people who put off the dentist because of what it might feel like.',
-    heroImage: '/website/services/pain_management.png',
+    heroImage: '/website/services/pain_management.webp',
     color: '#43a047',
     overview: `Most adults who avoid the dentist for years don't avoid it because of cost — they avoid it because of one bad experience, usually as a child. We work with a lot of patients in this position. The first appointment isn't about treatment; it's about figuring out what makes you tense and how we can take that off the table.
 
@@ -254,7 +254,7 @@ There are three levels: nitrous oxide (a small mask, light relaxation), oral sed
     title: 'Pediatric Dentistry',
     subtitle: "Caring for Your Child's Smile",
     tagline: "The dental visit your child won't dread coming back to.",
-    heroImage: '/website/services/pediatric_dentistry.png',
+    heroImage: '/website/services/pediatric_dentistry.webp',
     color: '#F59E0B',
     overview: `How a child's first few dental visits go shapes how they feel about the dentist for the rest of their lives. We take that seriously. Our pediatric area has games, TV, and people who genuinely like working with kids — which sounds obvious, but isn't always the case in dental practice.
 
