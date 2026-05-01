@@ -5280,6 +5280,30 @@ h3 {
   justify-content: center;
 }
 
+.testimonial-quote-card {
+  background: #ffffff;
+  border: 1px solid #ece4ff;
+  border-radius: 20px;
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 3.5rem);
+  box-shadow: 0 18px 48px rgba(76, 29, 149, 0.10);
+  position: relative;
+}
+
+.testimonial-quote-card .testimonial-quote-text {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.7;
+  color: #2a2a2a;
+  font-style: italic;
+}
+
+.testimonial-quote-card .testimonial-quote-author h4 {
+  margin-bottom: 0.15rem;
+}
+
+@media (max-width: 600px) {
+  .testimonial-quote-card { padding: 1.75rem 1.25rem; border-radius: 16px; }
+}
+
 .testimonial-photo-card {
   border-radius: 28px;
   overflow: hidden;

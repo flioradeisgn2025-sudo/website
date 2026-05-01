@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -36,6 +36,14 @@ const Testimonials = () => {
         setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
     };
 
+    useEffect(() => {
+        const id = setInterval(() => {
+            setDirection(1);
+            setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
+        }, 3000);
+        return () => clearInterval(id);
+    }, []);
+
     const t = testimonials[current];
 
     return (
@@ -53,7 +61,7 @@ const Testimonials = () => {
                 </motion.div>
 
                 <div className="testimonials-block-grid testimonials-block-grid--no-photo">
-                    <div className="testimonial-quote-side">
+                    <div className="testimonial-quote-side testimonial-quote-card">
                         <Quote className="testimonial-quote-icon" size={48} />
                         <AnimatePresence mode="wait">
                             <motion.div
