@@ -19,7 +19,7 @@ const doctors = [
         link: '/about/doctors',
     },
     {
-        name: 'Dr Sasha Helene',
+        name: 'Dr. Sastami Davidraja',
         specialty: 'BDS, MDS (Endodontist)',
         designation: 'Root Canal Specialist',
         image: 'dr-sasha.png',

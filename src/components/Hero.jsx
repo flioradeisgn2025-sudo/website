@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Phone, Check } from 'lucide-react';
+import { ArrowRight, Phone, Check, Award, Smile, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -24,18 +24,12 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <h1 className="hero-ph-title">
-                        Compassionate care,<br />exceptional results.
+                        Smile Bright<br />Dental Clinic
                     </h1>
 
-                    <div className="hero-ph-desc-row">
-                        <div className="hero-ph-brand-col">
-                            <span className="hero-ph-brand-name">Smile Bright</span>
-                        </div>
-
-                        <p className="hero-ph-desc">
-                            A specialist dental team in Chennai, looking after every patient with the kind of care we'd want for our own families — implants, alignment, laser dentistry, and the routine work that keeps a smile in shape.
-                        </p>
-                    </div>
+                    <p className="hero-ph-desc">
+                        A specialist dental team in Chennai, looking after every patient with the kind of care we'd want for our own families — implants, alignment, laser dentistry, and the routine work that keeps a smile in shape.
+                    </p>
 
                     {/* Buttons — unchanged */}
                     <div className="hero-ph-actions">
@@ -57,14 +51,17 @@ const Hero = () => {
             <div className="hero-ph-bottom-bar">
                 <div className="container hero-ph-bottom-inner">
                     <div className="hero-ph-bottom-stat">
+                        <span className="hero-ph-stat-icon"><Award size={26} /></span>
                         <h4>10+</h4>
                         <p>Years of experience</p>
                     </div>
                     <div className="hero-ph-bottom-stat">
+                        <span className="hero-ph-stat-icon"><Smile size={26} /></span>
                         <h4>98%</h4>
                         <p>Patient satisfaction rating</p>
                     </div>
                     <div className="hero-ph-bottom-stat">
+                        <span className="hero-ph-stat-icon"><Users size={26} /></span>
                         <h4>2000+</h4>
                         <p>Patients served annually</p>
                     </div>

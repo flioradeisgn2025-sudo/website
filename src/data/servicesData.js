@@ -49,7 +49,7 @@ Whether you've lost a tooth to decay, an injury, or gum disease, Dr. Ayesha will
     title: 'Teeth Alignment',
     subtitle: 'Braces & Invisalign',
     tagline: 'Straighter teeth, on a timeline that fits your life.',
-    heroImage: '/website/services/teeth_alignment.png',
+    heroImage: '/website/services/teeth_alignment.jpg',
     color: '#1e88e5',
     overview: `Crowded, gapped, or twisted teeth aren't only a confidence issue — they make brushing harder, wear unevenly, and can throw your bite off over time. We fit metal braces, ceramic braces, lingual braces (behind the teeth), and Invisalign clear aligners. Which one is right for you usually comes down to two things: how much movement is needed, and how visible you're willing for the treatment to be.
 
@@ -131,7 +131,7 @@ We use topical numbing gel before any injection, computer-controlled injection (
     title: 'Preventive Dentistry',
     subtitle: 'Protect Your Smile Before Problems Start',
     tagline: 'The cheapest dental work is the work you avoid needing.',
-    heroImage: '/website/services/preventive_dentistry.png',
+    heroImage: '/website/services/preventive_dentistry.jpeg',
     color: '#00897b',
     overview: `Most of the painful, expensive dental work people end up with — root canals, extractions, large fillings — could have been a small cleaning two years earlier. Preventive dentistry is the slow, unglamorous part of practice that makes the rest of your life easier. Six-monthly check-ups, a professional clean, an oral cancer screen, fluoride for the kids, sealants on the back teeth that always end up with cavities.
 
@@ -213,7 +213,7 @@ Dr. Ayesha is a certified laser practitioner. Where the laser is the right tool,
     title: 'Sedation Dentistry',
     subtitle: 'Relax through it. Wake up with the work done.',
     tagline: 'For people whose teeth have suffered because the dentist scares them more than the pain.',
-    heroImage: '/website/services/sedation_dentistry.png',
+    heroImage: '/website/services/sedation_dentistry.webp',
     color: '#3949ab',
     overview: `Dental anxiety isn't rare. We see plenty of patients who haven't sat in a chair in five, ten, fifteen years — and most of them are embarrassed about it, which doesn't help. Sedation dentistry exists for exactly this. It lets us do the work you need without you having to white-knuckle through it.
 
@@ -377,7 +377,7 @@ Two options here: in-chair whitening (60–90 minutes, biggest jump in shade in 
     title: 'Oral Cancer Screening',
     subtitle: 'Early Detection Saves Lives',
     tagline: 'Five minutes. Painless. Genuinely worth doing.',
-    heroImage: '/website/services/preventive_dentistry.png',
+    heroImage: '/website/services/preventive_dentistry.jpeg',
     color: '#7B6CF6',
     overview: `Oral cancer is one of the most common cancers in India, largely because of how widespread tobacco and pan use are. The reassuring part: caught early, the survival rate is high. Caught late, it isn't. That's why we screen every patient at every routine check-up — it costs you no extra time and isn't an extra fee.
 

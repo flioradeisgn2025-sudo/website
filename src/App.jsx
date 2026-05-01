@@ -57,7 +57,7 @@ function AnimatedRoutes() {
       '/about/doctors': 'Our Specialists | Smile Bright Dental',
       '/about/smile-bright-dental': 'Clinical Excellence | Smile Bright Dental',
       '/about/media': 'Media & Gallery | Smile Bright Dental',
-      '/about/dr-sasha-helene': 'Dr. Sasha Helene | Smile Bright Dental',
+      '/about/dr-sasha-helene': 'Dr. Sastami Davidraja | Smile Bright Dental',
       '/testimonials': 'Patient Stories | Smile Bright Dental',
       '/take-a-tour': 'Virtual Tour | Smile Bright Dental',
       '/contact': 'Contact Us | Smile Bright Dental',
