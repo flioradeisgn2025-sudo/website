@@ -5940,3 +5940,147 @@ p, h1, h2, h3, h4, li, span, a {
     padding: 5rem 0 2rem;
   }
 }
+
+/* ==================================================================
+   MOBILE HERO — mirrors desktop pattern (full-bleed image + dark
+   overlay + white text overlay + stats), sized down for phones.
+   Scoped to <=768px. Desktop and tablet are untouched.
+   ================================================================== */
+@media (max-width: 768px) {
+  .hero-ph {
+    position: relative !important;
+    display: block !important;
+    background: transparent !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Full-bleed image + gradient overlay (same as desktop) */
+  .hero-ph-bg {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .hero-ph-bg-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+  .hero-ph-bg-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(27, 16, 64, 0.92) 0%,
+      rgba(76, 29, 149, 0.78) 55%,
+      rgba(76, 29, 149, 0.55) 100%
+    ) !important;
+  }
+
+  /* Content body sits on top of the image */
+  section.hero-ph .hero-ph-body,
+  .hero-ph .hero-ph-body {
+    position: relative !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 80px) !important;
+    min-height: calc(100svh - 80px) !important;
+    padding: 6.5rem 1.25rem 9rem !important;
+    box-sizing: border-box;
+  }
+  .hero-ph-left-content {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+
+  .hero-ph .hero-ph-title {
+    font-size: 2rem !important;
+    line-height: 1.18 !important;
+    color: #ffffff !important;
+    margin-bottom: 1rem !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    white-space: normal !important;
+    text-wrap: balance;
+  }
+  .hero-ph-desc {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin: 0 0 1.5rem !important;
+  }
+
+  /* Buttons: stacked, full-width pills, matching desktop colors */
+  .hero-ph-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.65rem !important;
+    margin: 0 !important;
+  }
+  .hero-ph-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.85rem 1.25rem !important;
+    border-radius: 999px !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Stats bar pinned to the bottom of the hero, glass over image */
+  .hero-ph-bottom-bar {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    top: auto !important;
+    z-index: 2 !important;
+    padding: 0 0.75rem 0.75rem !important;
+    background: transparent !important;
+  }
+  .hero-ph-bottom-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    padding: 0.75rem !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 14px !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+  }
+  .hero-ph-bottom-stat {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    padding: 0.25rem !important;
+    text-align: center;
+  }
+  .hero-ph-bottom-stat::after { display: none !important; }
+  .hero-ph-bottom-stat h4 {
+    font-size: 1.15rem !important;
+    color: #ffffff !important;
+    margin: 0 0 0.15rem !important;
+  }
+  .hero-ph-bottom-stat p {
+    font-size: 0.65rem !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    margin: 0 !important;
+    line-height: 1.25;
+  }
+
+  .hero-ph-float-badge { display: none !important; }
+}
+
+@media (max-width: 380px) {
+  .hero-ph .hero-ph-title { font-size: 1.7rem !important; }
+  .hero-ph-desc { font-size: 0.88rem !important; }
+  .hero-ph-bottom-stat h4 { font-size: 1rem !important; }
+  .hero-ph-bottom-stat p { font-size: 0.6rem !important; }
+}
+
