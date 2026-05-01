@@ -5950,8 +5950,9 @@ p, h1, h2, h3, h4, li, span, a {
   .hero-ph {
     position: relative !important;
     display: block !important;
-    background: transparent !important;
-    min-height: auto !important;
+    background: #2a1660 !important;
+    min-height: 100vh !important;
+    min-height: 100svh !important;
     padding: 0 !important;
     overflow: hidden !important;
   }
@@ -5970,7 +5971,7 @@ p, h1, h2, h3, h4, li, span, a {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    object-position: 70% center !important;
+    object-position: center center !important;
   }
   .hero-ph-bg-overlay {
     background: linear-gradient(
@@ -5988,11 +5989,11 @@ p, h1, h2, h3, h4, li, span, a {
     z-index: 2 !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
+    justify-content: flex-end !important;
     align-items: stretch !important;
     min-height: 100vh !important;
     min-height: 100svh !important;
-    padding: 5rem 1.25rem 8rem !important;
+    padding: 5rem 1.25rem 10rem !important;
     box-sizing: border-box;
   }
   .hero-ph-left-content {
