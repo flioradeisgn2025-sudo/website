@@ -66,10 +66,10 @@ const Testimonials = () => {
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={`quote-${current}`}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -20 }}
-                                transition={{ duration: 0.4 }}
+                                initial={{ opacity: 0, x: direction >= 0 ? 60 : -60 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: direction >= 0 ? -60 : 60 }}
+                                transition={{ duration: 0.5, ease: 'easeInOut' }}
                             >
                                 <p className="testimonial-quote-text">"{t.text}"</p>
                                 <div className="testimonial-quote-author">
