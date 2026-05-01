@@ -52,20 +52,7 @@ const Testimonials = () => {
                     <h2>What our patients say.</h2>
                 </motion.div>
 
-                <div className="testimonials-block-grid">
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={`photo-${current}`}
-                            className="testimonial-photo-card"
-                            initial={{ opacity: 0, x: direction > 0 ? -30 : 30 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: direction > 0 ? 30 : -30 }}
-                            transition={{ duration: 0.4 }}
-                        >
-                            <img src={t.photo} alt={t.name} />
-                        </motion.div>
-                    </AnimatePresence>
-
+                <div className="testimonials-block-grid testimonials-block-grid--no-photo">
                     <div className="testimonial-quote-side">
                         <Quote className="testimonial-quote-icon" size={48} />
                         <AnimatePresence mode="wait">

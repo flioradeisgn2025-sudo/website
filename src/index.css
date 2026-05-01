@@ -5266,6 +5266,20 @@ h3 {
   margin: 0 auto;
 }
 
+.testimonials-block-grid--no-photo {
+  grid-template-columns: 1fr;
+  max-width: 820px;
+  text-align: center;
+}
+
+.testimonials-block-grid--no-photo .testimonial-quote-icon {
+  margin: 0 auto;
+}
+
+.testimonials-block-grid--no-photo .testimonial-quote-controls {
+  justify-content: center;
+}
+
 .testimonial-photo-card {
   border-radius: 28px;
   overflow: hidden;
