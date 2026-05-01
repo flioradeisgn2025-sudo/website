@@ -5989,9 +5989,9 @@ p, h1, h2, h3, h4, li, span, a {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - 80px) !important;
-    min-height: calc(100svh - 80px) !important;
-    padding: 6.5rem 1.25rem 9rem !important;
+    min-height: 100vh !important;
+    min-height: 100svh !important;
+    padding: 6rem 1.25rem 9rem !important;
     box-sizing: border-box;
   }
   .hero-ph-left-content {
