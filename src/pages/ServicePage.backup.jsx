@@ -41,63 +41,34 @@ const ServicePage = () => {
       <Header />
       <main className="service-page-main">
 
-        {/* ── Hero Banner (v3 — image-left tall, feature list right) ─── */}
-        <section className="svc-hero-v2 svc-hero-opt2">
-          <div className="container svc-opt2-grid">
-            <motion.div
-              className="svc-opt2-image-col"
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease: 'easeOut' }}
+        {/* ── Hero Banner ─────────────────────────────────────── */}
+        <section className="service-page-hero">
+          <div
+            className="service-hero-img-bg"
+            style={{ backgroundImage: `url(${service.heroImage})` }}
+          />
+          <div className="service-hero-overlay" />
+          <div className="container relative z-10">
+            <motion.div 
+              className="service-hero-inner"
+              initial={{ opacity: 0, y: 30 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.7 }}
             >
-              <div className="svc-opt2-image-frame">
-                <img src={service.heroImage} alt={service.title} />
-              </div>
-              <div className="svc-opt2-image-tag">
-                <span className="svc-opt2-image-tag-num">10<sup>+</sup></span>
-                <span className="svc-opt2-image-tag-label">Years of<br />expertise</span>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="svc-opt2-text-col"
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-            >
-              <nav className="svc-hero-v2-crumbs">
+              <nav className="service-breadcrumb light">
                 <Link to="/">Home</Link>
                 <ArrowRight size={12} />
                 <Link to="/">Services</Link>
                 <ArrowRight size={12} />
                 <span>{service.title}</span>
               </nav>
-
-              <h1 className="svc-opt2-title">
-                {service.title}
-                <span className="svc-opt2-title-bar" />
-              </h1>
-              <p className="svc-opt2-tagline">{service.tagline}</p>
-
-              <ul className="svc-opt2-features">
-                {service.benefits.slice(0, 3).map((b, i) => (
-                  <li key={i}>
-                    <span className="svc-opt2-feature-num">0{i + 1}</span>
-                    <span className="svc-opt2-feature-text">{b}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="svc-hero-v2-actions">
-                <a
-                  href="https://wa.me/919444408087"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="svc-hero-v2-btn svc-hero-v2-btn-primary"
-                >
+              <h1 className="section-title light" style={{ textAlign: 'left', margin: '0' }}>{service.title}</h1>
+              <p className="service-hero-tagline">{service.tagline}</p>
+              <div className="hero-actions" style={{ marginTop: '2.5rem' }}>
+                <a href="https://wa.me/919444408087" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <CalendarDays size={18} /> Book Appointment
                 </a>
-                <a href="tel:+919444408087" className="svc-hero-v2-btn svc-hero-v2-btn-ghost">
+                <a href="tel:+919444408087" className="btn btn-ghost-white">
                   <Phone size={18} /> Call Specialist
                 </a>
               </div>

@@ -213,7 +213,7 @@ Dr. Ayesha is a certified laser practitioner. Where the laser is the right tool,
     title: 'Sedation Dentistry',
     subtitle: 'Relax through it. Wake up with the work done.',
     tagline: 'For people whose teeth have suffered because the dentist scares them more than the pain.',
-    heroImage: '/website/services/sedation_dentistry.webp',
+    heroImage: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1200&q=80',
     color: '#3949ab',
     overview: `Dental anxiety isn't rare. We see plenty of patients who haven't sat in a chair in five, ten, fifteen years — and most of them are embarrassed about it, which doesn't help. Sedation dentistry exists for exactly this. It lets us do the work you need without you having to white-knuckle through it.
 
