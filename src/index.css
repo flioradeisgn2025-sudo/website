@@ -5287,12 +5287,13 @@ h3 {
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 3.5rem);
   box-shadow: 0 18px 48px rgba(76, 29, 149, 0.10);
   position: relative;
-  text-align: left;
+  text-align: center;
   overflow: hidden;
 }
 
 .testimonial-quote-card .testimonial-quote-icon {
-  margin: 0 0 1rem !important;
+  margin: 0 auto 1rem !important;
+  display: block;
 }
 
 .testimonial-quote-card .testimonial-quote-text {
@@ -5300,15 +5301,15 @@ h3 {
   line-height: 1.7;
   color: #2a2a2a;
   font-style: italic;
-  text-align: left;
+  text-align: center;
 }
 
 .testimonial-quote-card .testimonial-quote-author {
-  text-align: left;
+  text-align: center;
 }
 
 .testimonial-quote-card .testimonial-quote-controls {
-  justify-content: flex-start !important;
+  justify-content: center !important;
   margin-top: 1.25rem;
 }
 
