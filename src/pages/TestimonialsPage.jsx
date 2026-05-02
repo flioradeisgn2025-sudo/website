@@ -14,47 +14,38 @@ const allTestimonials = [
   {
     name: 'Deepa Sundaram', location: 'Chennai', rating: 5, treatment: 'Dental Implants',
     text: "I lived with two missing front teeth for almost six years. I'd practically stopped smiling in photos. Dr. Ayesha did the implants over a few months and you genuinely can't tell — even my mother had to ask which ones were the new ones. Honestly the procedure was much easier than I'd built up in my head.",
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Ramesh Krishnan', location: 'Mysore', rating: 5, treatment: 'Invisalign',
     text: "I'm 42 and have had crooked front teeth my whole life. My daughter kept telling me to do something about it. Fourteen months on Invisalign at Smile Bright and the difference is bizarre to look at — I actually catch myself smiling at the mirror. Should have done it years ago.",
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Meenakshi Krishnan', location: 'Hyderabad', rating: 5, treatment: 'Full Mouth Rehabilitation',
     text: "I'd avoided the dentist for almost a decade — I was sure I'd be lectured. Dr. Ayesha didn't say a word about it. We just got on with sorting things out, one visit at a time. Took several months and the result is hard to describe. I get compliments on my teeth from people I've known for years.",
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Karthik Velu', location: 'Chennai', rating: 5, treatment: 'Laser Dentistry',
     text: "I'd put off the gum treatment for over a year — kept reading about the recovery and getting cold feet. They used a laser instead of a scalpel. No stitches, almost no bleeding. I was eating dinner that evening like nothing had happened.",
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Janani Ramesh', location: 'Kochi', rating: 5, treatment: 'Teeth Whitening',
     text: "Every whitening toothpaste I'd ever tried did nothing. One in-chair session and the shade chart said seven shades brighter. The dentist explained why kits don't really work and how to keep the result. Felt like a real conversation, not a sales pitch.",
-    avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Saravanan Chandran', location: 'Pune', rating: 5, treatment: "Children's Dentistry",
     text: "My seven-year-old had had one bad experience and refused to even open his mouth at the next dentist. We tried Smile Bright on a recommendation. He left holding a sticker, asking when we were coming back. Whatever the team did, it worked.",
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Kavitha Rajan', location: 'Trivandrum', rating: 5, treatment: 'Root Canal',
     text: "I came in with the kind of toothache where you can't think straight. Was told it was a root canal and braced for something awful. With the sedation option it was the easiest two hours I've had at any dentist. I went back to work the next morning.",
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&auto=format',
   },
   {
-    name: 'Muruganandam', location: 'Chennai', rating: 5, treatment: 'Smile Makeover',
+    name: 'Muruganandam', location: 'Chennai', rating: 5, rating: 5, treatment: 'Smile Makeover',
     text: "Did veneers and whitening together. The in-house lab meant the crowns were ready quickly and the colour matched the rest of my teeth properly. Two visits and I genuinely look like I've gone back ten years. Worth every rupee.",
-    avatar: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=80&h=80&fit=crop&auto=format',
   },
   {
     name: 'Swathi Balaji', location: 'Surat', rating: 5, treatment: 'Dental Implants',
     text: "I flew down specifically for Dr. Ayesha after a friend recommended her. The follow-up emails, the post-op call to check how I was, the way the implant feels — it all justified the trip. The teeth feel like mine.",
-    avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&h=80&fit=crop&auto=format',
   },
 ];
 
@@ -135,6 +126,7 @@ const TestimonialsPage = () => {
             
             <div className="featured-testi-wrapper">
               <div className="testi-content-area">
+                <button className="control-btn control-btn--side control-btn--prev" onClick={goPrev} aria-label="Previous"><ChevronLeft size={24} /></button>
                 <AnimatePresence mode="wait" initial={false}>
                     <motion.div
                         key={featured}
@@ -150,7 +142,6 @@ const TestimonialsPage = () => {
                         </div>
                         <p className="featured-testi-text-premium">"{t.text}"</p>
                         <div className="testi-author-premium">
-                            <img src={t.avatar} alt={t.name} className="testi-avatar-premium" />
                             <div>
                                 <h4>{t.name}</h4>
                                 <span>{t.treatment} Patient</span>
@@ -158,16 +149,15 @@ const TestimonialsPage = () => {
                         </div>
                     </motion.div>
                 </AnimatePresence>
+                <button className="control-btn control-btn--side control-btn--next" onClick={goNext} aria-label="Next"><ChevronRight size={24} /></button>
               </div>
 
               <div className="testi-navigation-premium">
-                <button className="control-btn" onClick={goPrev}><ChevronLeft size={24} /></button>
                 <div className="testi-dots">
                     {allTestimonials.map((_, i) => (
                         <div key={i} className={`testi-dot ${featured === i ? 'active' : ''}`} onClick={() => setFeatured(i)}></div>
                     ))}
                 </div>
-                <button className="control-btn" onClick={goNext}><ChevronRight size={24} /></button>
               </div>
             </div>
           </div>
@@ -198,7 +188,6 @@ const TestimonialsPage = () => {
                     </div>
                     <p className="review-text-premium">"{t.text}"</p>
                     <div className="review-author-premium">
-                      <img src={t.avatar} alt={t.name} className="review-avatar-premium" />
                       <div>
                         <h4>{t.name}</h4>
                         <span>{t.treatment}</span>

@@ -41,7 +41,6 @@ const Header = () => {
             <div className="dropdown-menu">
               <Link to="/about/doctors" className={`dropdown-item ${isActive('/about/doctors') ? 'active' : ''}`}>Doctors</Link>
               <Link to="/about/smile-bright-dental" className={`dropdown-item ${isActive('/about/smile-bright-dental') ? 'active' : ''}`}>Smile Bright Dental</Link>
-              <Link to="/about/media" className={`dropdown-item ${isActive('/about/media') ? 'active' : ''}`}>Media Center</Link>
             </div>
           </div>
           <div className="nav-item has-dropdown">
@@ -125,8 +124,7 @@ const Header = () => {
                     icon: <Info size={22} className="text-secondary" />,
                     items: [
                       { label: 'Doctors', link: '/about/doctors' },
-                      { label: 'Smile Bright Dental', link: '/about/smile-bright-dental' },
-                      { label: 'Media Center', link: '/about/media' }
+                      { label: 'Smile Bright Dental', link: '/about/smile-bright-dental' }
                     ]
                   },
                   {

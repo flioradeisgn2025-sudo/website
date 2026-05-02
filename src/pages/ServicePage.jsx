@@ -123,6 +123,61 @@ const ServicePage = () => {
                     <p key={i}>{para}</p>
                   ))}
                 </div>
+                {service.procedure && service.procedure.length > 0 && (
+                  <div className="service-process-inline">
+                    <h3>How it works</h3>
+                    <ol className="service-process-list">
+                      {service.procedure.map((p) => (
+                        <li key={p.step}>
+                          <span className="service-process-step">{p.step}</span>
+                          <div>
+                            <h4>{p.title}</h4>
+                            <p>{p.desc}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+                {service.whyUs && service.whyUs.length > 0 && (
+                  <div className="service-whyus-inline">
+                    <h3>Why patients choose us</h3>
+                    <ul className="service-whyus-list">
+                      {service.whyUs.map((w, i) => (
+                        <li key={i}>
+                          <CheckCircle2 size={18} className="text-primary" />
+                          <span>{w}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {service.relatedServices && service.relatedServices.length > 0 && (
+                  <div className="service-related-inline">
+                    <h3>Explore other treatments</h3>
+                    <div className="service-related-grid">
+                      {service.relatedServices
+                        .map((slug) => getServiceBySlug(slug))
+                        .filter(Boolean)
+                        .map((rs) => (
+                          <Link
+                            key={rs.slug}
+                            to={`/services/${rs.slug}`}
+                            className="service-related-card"
+                          >
+                            <div className="service-related-card-text">
+                              <span className="service-related-card-eyebrow">{rs.subtitle}</span>
+                              <h4>{rs.title}</h4>
+                              <p>{rs.tagline}</p>
+                              <span className="service-related-card-cta">
+                                Learn more <ArrowRight size={16} />
+                              </span>
+                            </div>
+                          </Link>
+                        ))}
+                    </div>
+                  </div>
+                )}
               </motion.div>
 
               {/* Benefits sidebar */}

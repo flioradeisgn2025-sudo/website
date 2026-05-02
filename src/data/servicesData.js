@@ -377,7 +377,7 @@ Two options here: in-chair whitening (60–90 minutes, biggest jump in shade in 
     title: 'Oral Cancer Screening',
     subtitle: 'Early Detection Saves Lives',
     tagline: 'Five minutes. Painless. Genuinely worth doing.',
-    heroImage: '/website/services/preventive_dentistry.jpeg',
+    heroImage: '/website/services/oral_cancer_screening.png',
     color: '#7B6CF6',
     overview: `Oral cancer is one of the most common cancers in India, largely because of how widespread tobacco and pan use are. The reassuring part: caught early, the survival rate is high. Caught late, it isn't. That's why we screen every patient at every routine check-up — it costs you no extra time and isn't an extra fee.
 

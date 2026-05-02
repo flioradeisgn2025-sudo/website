@@ -3,10 +3,9 @@ import { ArrowRight, Phone, Star, ShieldCheck, Award } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const HERO_SLIDES = [
-    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80',
-    'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1200&q=80',
-    'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80',
-    'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1200&q=80',
+    '/website/hero_slide_kid.webp',
+    '/website/hero_slide_pain.webp',
+    '/website/hero_slide_purple.png',
 ];
 
 const Hero = () => {
@@ -34,8 +33,8 @@ const Hero = () => {
                     </span>
 
                     <h1 className="hero-v2-title">
-                        Smile Bright<br />
-                        <span className="hero-v2-title-accent">Dental Clinic</span>
+                        <span className="hero-v2-title-accent">Smile Bright</span><br />
+                        Dental Clinic
                     </h1>
 
                     <p className="hero-v2-desc">
