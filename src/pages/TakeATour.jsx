@@ -10,7 +10,7 @@ const tourSpots = [
     id: 1, icon: Layers,
     title: 'Reception',
     desc: 'A small lobby, comfortable chairs, and someone who actually looks up when you walk in. Most paperwork is digital so there\'s less of it.',
-    image: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
+    image: '/website/reception_tour.png',
   },
   {
     id: 2, icon: Eye,
@@ -22,7 +22,7 @@ const tourSpots = [
     id: 3, icon: Sparkles,
     title: 'Treatment Suites',
     desc: 'Modern chairs with intraoral cameras, overhead LED lighting, and screens for the long appointments. Most patients say the second visit feels easier than the first.',
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
+    image: '/website/treatment_suite_tour.jpg',
   },
 ];
 
@@ -124,14 +124,9 @@ const TakeATour = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1 }}
-                    onClick={() => openLightbox(spot)}
                 >
                     <div className="tour-card-image">
                       <img src={spot.image} alt={spot.title} />
-                      <div className="tour-card-overlay">
-                        <Eye size={24} />
-                        <span>Inspect Area</span>
-                      </div>
                     </div>
                     <div className="tour-card-content">
                        <div className="icon-wrapper">
