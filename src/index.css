@@ -5667,6 +5667,26 @@ h3 {
   align-items: stretch;
 }
 
+.ba-images.ba-images-combined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ba-image-wrap-combined {
+  aspect-ratio: 3 / 2;
+  max-height: 460px;
+  width: 100%;
+  max-width: 720px;
+  background: transparent;
+}
+
+.ba-image-wrap-combined img {
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
+}
+
 .ba-image-wrap {
   position: relative;
   border-radius: 16px;
@@ -6386,7 +6406,7 @@ p, h1, h2, h3, h4, li, span, a {
 }
 
 .hero-v2-title {
-    font-size: clamp(40px, 5vw, 64px);
+    font-size: clamp(48px, 6vw, 80px);
     line-height: 1.05;
     font-weight: 800;
     color: #161423;

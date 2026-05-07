@@ -6,6 +6,7 @@ const HERO_SLIDES = [
     '/website/hero_slide_kid.webp',
     '/website/hero_slide_pain.webp',
     '/website/hero_slide_purple.png',
+    '/website/hero_slide_smile.webp',
 ];
 
 const Hero = () => {
