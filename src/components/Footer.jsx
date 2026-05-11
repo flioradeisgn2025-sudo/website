@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="footer-grid">
                     <div className="footer-col brand-col">
                         <a href="#" className="logo">
-                            <img src={`${baseUrl}logo.png`} alt="Smile Bright Logo" style={{ height: '60px', filter: 'brightness(0) invert(1)' }} />
+                            <img src={`${baseUrl}logo.png`} alt="Smile Bright Logo" style={{ height: '100px', filter: 'brightness(0) invert(1)' }} />
                         </a>
                         <p className="footer-desc">
                             Looking after Chennai's smiles for more than two decades — implants,
