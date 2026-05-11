@@ -29,6 +29,8 @@ const tourSpots = [
 const TakeATour = () => {
   const [lightbox, setLightbox] = useState(null);
   const [current, setCurrent] = useState(null);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const baseUrl = import.meta.env.BASE_URL;
 
   const openLightbox = (spot) => { setLightbox(spot); setCurrent(tourSpots.findIndex(s => s.id === spot.id)); };
   const closeLightbox = () => setLightbox(null);
@@ -89,18 +91,27 @@ const TakeATour = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <div className="video-placeholder">
-                    <img 
-                        src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
-                        alt="Clinic Preview" 
+                {isVideoPlaying ? (
+                    <video 
+                        src={`${baseUrl}videos/tour.mp4`} 
+                        autoPlay 
+                        controls 
+                        style={{ width: '100%', borderRadius: '24px', display: 'block' }}
                     />
-                    <div className="video-overlay-premium">
-                        <button className="video-play-button-premium">
-                            <Play size={32} fill="white" />
-                        </button>
-                        <p>Watch full clinic tour</p>
+                ) : (
+                    <div className="video-placeholder">
+                        <img 
+                            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
+                            alt="Clinic Preview" 
+                        />
+                        <div className="video-overlay-premium">
+                            <button className="video-play-button-premium" onClick={() => setIsVideoPlaying(true)}>
+                                <Play size={32} fill="white" />
+                            </button>
+                            <p>Watch full clinic tour</p>
+                        </div>
                     </div>
-                </div>
+                )}
             </motion.div>
           </div>
         </section>
