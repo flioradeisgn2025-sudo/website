@@ -24,6 +24,7 @@ const SPECIALTIES = [
 ];
 
 const SmileBrightDental = () => {
+    const baseUrl = import.meta.env.BASE_URL;
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -64,7 +65,7 @@ const SmileBrightDental = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.7, delay: 0.1 }}
                         >
-                            <img src="/website/dr_ayesha_treatment.png" alt="Dr. Ayesha Subhan Treatment" />
+                            <img src={`${baseUrl}dr_ayesha_treatment.png`} alt="Dr. Ayesha Subhan Treatment" />
                         </motion.div>
                     </div>
                 </section>
@@ -83,7 +84,7 @@ const SmileBrightDental = () => {
                 <section className="sbd2-quote-section">
                     <div className="container sbd2-quote-grid">
                         <div className="sbd2-quote-photo">
-                            <img src="/website/dr_ayesha_treatment.png" alt="Dr. Ayesha Subhan Treatment" />
+                            <img src={`${baseUrl}dr_ayesha_treatment.png`} alt="Dr. Ayesha Subhan Treatment" />
                         </div>
                         <div className="sbd2-quote-content">
                             <Quote className="sbd2-quote-mark" size={48} />
