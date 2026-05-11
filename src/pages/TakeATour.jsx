@@ -96,6 +96,8 @@ const TakeATour = () => {
                         src={`${baseUrl}videos/tour.mp4`} 
                         autoPlay 
                         controls 
+                        controlsList="nodownload"
+                        onContextMenu={(e) => e.preventDefault()}
                         style={{ width: '100%', borderRadius: '24px', display: 'block' }}
                     />
                 ) : (
