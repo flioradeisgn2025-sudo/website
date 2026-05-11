@@ -40,7 +40,7 @@ const allTestimonials = [
     text: "I came in with the kind of toothache where you can't think straight. Was told it was a root canal and braced for something awful. With the sedation option it was the easiest two hours I've had at any dentist. I went back to work the next morning.",
   },
   {
-    name: 'Muruganandam', location: 'Chennai', rating: 5, rating: 5, treatment: 'Smile Makeover',
+    name: 'Muruganandam', location: 'Chennai', rating: 5, treatment: 'Smile Makeover',
     text: "Did veneers and whitening together. The in-house lab meant the crowns were ready quickly and the colour matched the rest of my teeth properly. Two visits and I genuinely look like I've gone back ten years. Worth every rupee.",
   },
   {
