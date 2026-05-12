@@ -32,7 +32,6 @@ const Footer = () => {
                             <li><Link to="/about/smile-bright-dental">Smile Bright Dental</Link></li>
                             <li><Link to="/about/doctors">Our Specialists</Link></li>
                             <li><Link to="/take-a-tour">Take a Tour</Link></li>
-                            <li><Link to="/about/media">Media & Gallery</Link></li>
                             <li><Link to="/testimonials">Patient Testimonials</Link></li>
                             <li><Link to="/contact/feedback">Patient Feedback</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>
