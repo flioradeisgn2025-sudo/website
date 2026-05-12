@@ -49,13 +49,14 @@ const SmileBrightDental = () => {
                                 A clinic built on <em>quiet, careful</em> dentistry.
                             </h1>
                             <p>
-                                Smile Bright Dental has been one street, one chair, and a slowly growing team for nearly two
+                                Smile Bright Dental has been one street, two chairs, and a slowly growing team for nearly two
                                 decades. Most of our patients have been with us for years — and so have most of our staff.
                             </p>
                             <div className="sbd2-hero-meta">
-                                <div><strong>20+</strong><span>years in practice</span></div>
-                                <div><strong>25,000+</strong><span>patients seen</span></div>
-                                <div><strong>4.9★</strong><span>500+ reviews</span></div>
+                                <div><strong>10+</strong><span>Years of experience</span></div>
+                                <div><strong>98%</strong><span>Patient satisfaction</span></div>
+                                <div><strong>2000+</strong><span>Patients served annually</span></div>
+                                <div><strong>10</strong><span>Specialist treatments</span></div>
                             </div>
                         </motion.div>
 
@@ -65,7 +66,7 @@ const SmileBrightDental = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.7, delay: 0.1 }}
                         >
-                            <img src={`${baseUrl}dr_ayesha_treatment.png`} alt="Dr. Ayesha Subhan Treatment" />
+                            <img src={`${baseUrl}dr_ayesha_treatment.png`} alt="Dr Ayesha subhan Treatment" />
                         </motion.div>
                     </div>
                 </section>
@@ -84,7 +85,7 @@ const SmileBrightDental = () => {
                 <section className="sbd2-quote-section">
                     <div className="container sbd2-quote-grid">
                         <div className="sbd2-quote-photo">
-                            <img src={`${baseUrl}dr_ayesha_treatment.png`} alt="Dr. Ayesha Subhan Treatment" />
+                            <img src={`${baseUrl}dr_ayesha_treatment.png`} alt="Dr Ayesha subhan Treatment" />
                         </div>
                         <div className="sbd2-quote-content">
                             <Quote className="sbd2-quote-mark" size={48} />
@@ -93,8 +94,8 @@ const SmileBrightDental = () => {
                                 and explained before we begin. That's the bit patients remember years later.
                             </p>
                             <div className="sbd2-quote-attr">
-                                <h4>Dr. Ayesha Subhan</h4>
-                                <span>BDS, MDS · Endodontist · Founder, Smile Bright Dental</span>
+                                <h4>Dr Ayesha subhan</h4>
+                                <span>BDS ,MBA (Hospital Management), FDS (Aesthetic Dentistry) · Dental Surgeon · Founder, Smile Bright Dental</span>
                             </div>
                         </div>
                     </div>

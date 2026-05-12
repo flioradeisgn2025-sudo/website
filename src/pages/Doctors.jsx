@@ -7,9 +7,9 @@ import Footer from '../components/Footer';
 const doctors = [
   {
     id: 1,
-    name: 'Dr. Ayesha Subhan',
-    specialty: 'BDS, MBA, FDS (Aesthetic Dentistry)',
-    designation: 'Lead Dental Surgeon',
+    name: 'Dr Ayesha subhan',
+    specialty: 'BDS ,MBA (Hospital Management),\nFDS (Aesthetic Dentistry)',
+    designation: 'Dental Surgeon',
     image: 'dr_ayesha_subhan.png',
   },
   {
@@ -98,10 +98,7 @@ const Doctors = () => {
                   <div className="doctor-info-premium">
                     <span className="doctor-designation">{doctor.designation}</span>
                     <h2 className="doctor-name">{doctor.name}</h2>
-                    <p className="doctor-specialty">{doctor.specialty}</p>
-                    <div className="doctor-card-footer">
-                        <span className="doctor-status">Available for Consultation</span>
-                    </div>
+                    <p className="doctor-specialty" style={{ whiteSpace: 'pre-line' }}>{doctor.specialty}</p>
                   </div>
                 </motion.div>
               ))}

@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 
 const doctors = [
     {
-        name: 'Dr. Ayesha Subhan',
-        specialty: 'BDS, MBA, FDS (Aesthetic Dentistry)',
-        designation: 'Lead Dental Surgeon',
+        name: 'Dr Ayesha subhan',
+        specialty: 'BDS ,MBA (Hospital Management),\nFDS (Aesthetic Dentistry)',
+        designation: 'Dental Surgeon',
         image: 'dr_ayesha_subhan.png',
         link: '/about/smile-bright-dental',
     },
@@ -87,7 +87,7 @@ const Doctors = () => {
                             <div className="doctor-info-premium">
                                 <span className="doctor-designation">{doctor.designation}</span>
                                 <h3 className="doctor-name">{doctor.name}</h3>
-                                <p className="doctor-specialty">{doctor.specialty}</p>
+                                <p className="doctor-specialty" style={{ whiteSpace: 'pre-line' }}>{doctor.specialty}</p>
                                 <Link to={doctor.link} className="service-link" style={{ marginTop: '1.25rem', justifyContent: 'center' }}>
                                     View Full Profile <ArrowRight size={16} />
                                 </Link>

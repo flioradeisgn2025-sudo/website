@@ -133,7 +133,7 @@ const Hero = () => {
                     <p>Patients served annually</p>
                 </div>
                 <div className="hero-v2-stat">
-                    <h4>15<span>+</span></h4>
+                    <h4>10</h4>
                     <p>Specialist treatments</p>
                 </div>
             </div>

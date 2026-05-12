@@ -16,9 +16,9 @@ const fadeUp = {
 
 const pressCoverage = [
     { outlet: 'The Hindu', date: 'Jan 2026', headline: "Smile Bright Dental Clinic \u2013 Chennai's Top Dental Destination", type: 'print' },
-    { outlet: 'Times of India', date: 'Dec 2025', headline: 'Dr. Ayesha Subhan, BDS, MBA Recognized for Excellence in Endodontics', type: 'print' },
+    { outlet: 'Times of India', date: 'Dec 2025', headline: 'Dr Ayesha subhan, BDS ,MBA (Hospital Management), FDS (Aesthetic Dentistry) Recognized for Excellence in Dentistry', type: 'print' },
     { outlet: 'Deccan Herald', date: 'Oct 2025', headline: 'Advanced Laser Dentistry Now Available at Smile Bright Clinic', type: 'print' },
-    { outlet: 'News9 Kannada', date: 'Sep 2025', headline: 'TV Interview: Dr. Ayesha Subhan, BDS, MBA on Modern Endodontic Care', type: 'tv' },
+    { outlet: 'News9 Kannada', date: 'Sep 2025', headline: 'TV Interview: Dr Ayesha subhan, BDS ,MBA (Hospital Management), FDS (Aesthetic Dentistry) on Modern Dental Care', type: 'tv' },
     { outlet: 'Vijay Karnataka', date: 'Aug 2025', headline: 'Free Dental Camp Organized by Smile Bright for School Children', type: 'print' },
     { outlet: 'NDTV Chennai', date: 'Jul 2025', headline: 'Feature: How Smile Bright Clinic is Changing Lives', type: 'tv' },
 ];

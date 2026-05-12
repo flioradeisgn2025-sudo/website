@@ -45,12 +45,12 @@ const DoctorProfile = () => {
                             animate="visible"
                             variants={fadeUp}
                         >
-                            <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.9)' }}>Lead Specialist</span>
+                            <span className="section-subtitle" style={{ color: 'rgba(255,255,255,0.9)' }}>Dental Surgeon</span>
                             <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 4.5vw, 4rem)', fontWeight: 800 }}>
-                                Dr. Ayesha Subhan, BDS, MBA
+                                Dr Ayesha subhan
                             </h1>
                             <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.4rem', marginTop: '0.75rem', fontWeight: 500 }}>
-                                BDS MDS (Endodontist)
+                                BDS ,MBA (Hospital Management), FDS (Aesthetic Dentistry)
                             </p>
                             <div className="doctor-badges" style={{ marginTop: '2rem' }}>
                                 <span className="doctor-badge-chip" style={{ background: 'rgba(255,255,255,0.15)', color: '#fff' }}><Star size={14} /> Master Clinician</span>
@@ -69,7 +69,7 @@ const DoctorProfile = () => {
                                 <div className="doctor-photo-card glass-card" style={{ padding: '0', overflow: 'hidden' }}>
                                     <img
                                         src={`${baseUrl}dr_ponni_valavan.png`}
-                                        alt="Dr. Ayesha Subhan, BDS, MBA"
+                                        alt="Dr Ayesha subhan"
                                         className="doctor-profile-photo"
                                         style={{ width: '100%', height: 'auto', display: 'block' }}
                                     />
