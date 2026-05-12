@@ -19,10 +19,10 @@ const Footer = () => {
                             healthy. Specialist care without the rush.
                         </p>
                         <div className="social-links">
-                            <a href="#"><Facebook size={20} /></a>
-                            <a href="#"><Twitter size={20} /></a>
-                            <a href="#"><Instagram size={20} /></a>
-                            <a href="#"><Linkedin size={20} /></a>
+                            <a href="#" onClick={(e) => e.preventDefault()} style={{ cursor: 'default' }}><Facebook size={20} /></a>
+                            <a href="#" onClick={(e) => e.preventDefault()} style={{ cursor: 'default' }}><Twitter size={20} /></a>
+                            <a href="#" onClick={(e) => e.preventDefault()} style={{ cursor: 'default' }}><Instagram size={20} /></a>
+                            <a href="#" onClick={(e) => e.preventDefault()} style={{ cursor: 'default' }}><Linkedin size={20} /></a>
                         </div>
                     </div>
 
