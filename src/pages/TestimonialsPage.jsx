@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight, Play, MapPin, ThumbsUp } from 'lucide-react';
 import Header from '../components/Header';
@@ -61,14 +61,26 @@ const TestimonialsPage = () => {
   const [direction, setDirection] = useState(1);
   const CARDS_PER_PAGE = 3;
   const [page, setPage] = useState(0);
+  const [customReviews, setCustomReviews] = useState([]);
 
-  const totalPages = Math.ceil(allTestimonials.length / CARDS_PER_PAGE);
-  const visible = allTestimonials.slice(page * CARDS_PER_PAGE, page * CARDS_PER_PAGE + CARDS_PER_PAGE);
+  useEffect(() => {
+    const saved = localStorage.getItem('custom_reviews');
+    if (saved) {
+      try {
+        setCustomReviews(JSON.parse(saved));
+      } catch(e) {}
+    }
+  }, []);
 
-  const goNext = () => { setDirection(1); setFeatured(f => (f + 1) % allTestimonials.length); };
-  const goPrev = () => { setDirection(-1); setFeatured(f => (f - 1 + allTestimonials.length) % allTestimonials.length); };
+  const combinedTestimonials = [...customReviews, ...allTestimonials];
 
-  const t = allTestimonials[featured];
+  const totalPages = Math.ceil(combinedTestimonials.length / CARDS_PER_PAGE);
+  const visible = combinedTestimonials.slice(page * CARDS_PER_PAGE, page * CARDS_PER_PAGE + CARDS_PER_PAGE);
+
+  const goNext = () => { setDirection(1); setFeatured(f => (f + 1) % combinedTestimonials.length); };
+  const goPrev = () => { setDirection(-1); setFeatured(f => (f - 1 + combinedTestimonials.length) % combinedTestimonials.length); };
+
+  const t = combinedTestimonials[featured];
 
   return (
     <motion.div
@@ -154,7 +166,7 @@ const TestimonialsPage = () => {
 
               <div className="testi-navigation-premium">
                 <div className="testi-dots">
-                    {allTestimonials.map((_, i) => (
+                    {combinedTestimonials.map((_, i) => (
                         <div key={i} className={`testi-dot ${featured === i ? 'active' : ''}`} onClick={() => setFeatured(i)}></div>
                     ))}
                 </div>

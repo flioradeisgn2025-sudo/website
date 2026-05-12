@@ -64,6 +64,20 @@ const Feedback = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    
+    // Save to localStorage for demo purposes
+    const newReview = {
+      name: form.name || 'Anonymous Patient',
+      location: 'Website Review',
+      rating: Math.round(avgRating) || 5,
+      treatment: form.treatment || 'Consultation',
+      text: form.comments,
+      date: new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
+    };
+    
+    const existingReviews = JSON.parse(localStorage.getItem('custom_reviews') || '[]');
+    localStorage.setItem('custom_reviews', JSON.stringify([newReview, ...existingReviews]));
+    
     setSubmitted(true);
   };
 
