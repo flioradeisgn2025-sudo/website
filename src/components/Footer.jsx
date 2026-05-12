@@ -31,7 +31,6 @@ const Footer = () => {
                         <ul>
                             <li><Link to="/about/smile-bright-dental">Smile Bright Dental</Link></li>
                             <li><Link to="/testimonials">Patient Testimonials</Link></li>
-                            <li><Link to="/about/blog">Blog</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>
                         </ul>
                     </div>
@@ -41,9 +40,14 @@ const Footer = () => {
                         <ul>
                             <li><Link to="/services/teeth-replacement">Teeth Replacement</Link></li>
                             <li><Link to="/services/teeth-alignment">Teeth Alignment</Link></li>
+                            <li><Link to="/services/pain-management">Pain Management</Link></li>
+                            <li><Link to="/services/preventive-dentistry">Preventive Dentistry</Link></li>
                             <li><Link to="/services/laser-dentistry">Laser Dentistry</Link></li>
-                            <li><Link to="/services/teeth-whitening">Teeth Whitening</Link></li>
+                            <li><Link to="/services/sedation-dentistry">Sedation Dentistry</Link></li>
                             <li><Link to="/services/pediatric-dentistry">Pediatric Dentistry</Link></li>
+                            <li><Link to="/services/teeth-cleaning">Teeth Cleaning</Link></li>
+                            <li><Link to="/services/teeth-whitening">Teeth Whitening</Link></li>
+                            <li><Link to="/services/oral-cancer-screening">Oral Cancer Screening</Link></li>
                         </ul>
                     </div>
 
